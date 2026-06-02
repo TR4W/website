@@ -6,4 +6,4 @@ Options +Indexes
 # only the target version below is bumped each release (bin/release.sh).
 # 302 = temporary, so caches/proxies don't pin an old version.
 RewriteEngine On
-RewriteRule ^download/tr4w_setup(_[a-z]{3})?\.exe$ /4.148/tr4w_setup_4.148.1$1.exe [R=302,L]
+RewriteRule ^download/tr4w_setup(_[a-z]{3})?\.exe$ https://tr4w.net/4.148/tr4w_setup_4.148.1$1.exe [R=302,L]

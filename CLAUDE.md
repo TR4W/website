@@ -1,66 +1,118 @@
 # CLAUDE.md
 
-Guidance for working in the `tr4w.net` website repository.
+Guidance for working in the `tr4w.net` website repository (**GitHub: `TR4W/website`**, public).
 
 ## What this is
 
-This is the **static website and download mirror for TR4W**, a free Windows contest-logging
-program for amateur radio. It is a web-hosting tree, **not** an application codebase — there is
-no build system, no test suite, no package manager, and (currently) no git repository.
+The **website and download portal for TR4W**, a free Windows contest-logging program for amateur
+radio. It is a web-hosting tree, **not** an application codebase — no build system for the site
+itself, no test suite, no package manager. The TR4W *application* lives elsewhere:
+<https://github.com/n4af/TR4W>. This repo serves the landing page, the installer downloads, and a
+PHP network-diagnostics tool.
 
-The TR4W *application* itself lives elsewhere: <https://github.com/n4af/TR4W>. This repo only
-serves the marketing landing page, hosts the Windows installer downloads, and runs a network
-diagnostics tool.
+**Source-only repo.** The repo tracks the site *source*; the bulky/managed artifacts are
+gitignored and live only on the production web host (synced via rsync from
+`ssh TR4W:/var/www/tr4w.net/public_html/`). See `.gitignore` for the full exclusion list:
+- Installer binaries — `*.exe`, `*.exe.gpg`, `*.7z` (served statically; never committed).
+- `TRMASTER.DTA` / `.ASC` callsign DB — uploaded separately via the n4af/TR4W release process.
+- Abandoned NSIS build toolchain — `NSIS/`, `build/`, `*.nsi`, `make_setup_file.bat`.
+- Secrets/cruft — `info.php`, `serial+key.txt`, `*.bak`, `*~`, etc.
 
 ## Layout
 
 | Path | Purpose |
 |------|---------|
-| `index.html` | Single-file landing page (~22 KB). All CSS is inline in a `<style>` block; terminal/green-on-black theme. Self-contained — no external JS, only Google Fonts. |
-| `public_html/` | The actual deployed web root. ~486 MB, ~883 `.exe` files. |
-| `public_html/4.NN/` | One directory per TR4W release (4.31 → 4.100). Each holds Windows installers `tr4w_setup_4_NN.X.exe` plus localized builds (`_cze`, `_ger`, `_mng`, `_rom`, `_rus`, `_ser` suffixes for Czech, German, Mongolian, Romanian, Russian, Serbian). |
+| `public_html/` | **The canonical deployed web root.** Everything served at `https://tr4w.net/` is here. |
+| `public_html/index.html` | The landing page (single file, inline CSS, terminal/green theme). This is the **source of truth** — there is no longer a separate root-level `index.html`. |
+| `public_html/.htaccess` | Apache config: `Options +Indexes` **plus the download redirect** (see below). |
+| `public_html/4.NN/` | One directory per TR4W release (4.31 → 4.148, ~116 dirs). Holds the Windows installer plus 7 localized builds. |
 | `public_html/*/tr4wmaintlist.html` | Per-version maintenance/changelog pages. |
-| `LookingGlass/` | Third-party PHP network looking-glass tool (ping/traceroute/mtr/host). |
-| `.htaccess` / `public_html/.htaccess` | Apache config — currently just `Options +Indexes` (directory listing enabled). |
+| `bin/release.sh` | Release helper — repoints the site at a new major version (see Releases). |
+| `LookingGlass/` | Third-party PHP looking-glass tool (ping/traceroute/mtr/host). |
 
-## Versioning convention
+## Filename / versioning convention
 
-Releases use `4.<minor>.<patch>`. On disk the patch is encoded with underscores in filenames
-(`tr4w_setup_4_97.11.exe`) but with dots in directory names and URLs (`/4.97/`). Installers are
-binary artifacts — do not attempt to read or modify them.
+Versions are `4.<minor>.<patch>`. **The naming convention changed over time:**
+- Older dirs (≤ ~4.97): underscore — `tr4w_setup_4_97.11.exe`.
+- Current dirs (e.g. 4.148): dots — `tr4w_setup_4.148.1.exe`.
 
-### ⚠️ Known inconsistency
-`index.html` advertises **v4.148.1** (`https://tr4w.net/4.148/...`), but the highest version
-directory actually present is **`public_html/4.100/`**. The landing page download link points at a
-path that does not exist in this tree. Confirm with the user before "fixing" either side — the
-real artifacts may live only on the production server, not in this working copy.
+Localized builds append a 3-letter suffix before `.exe`: `_cze _ger _mng _rom _rus _ser _ukr`
+(Czech, German, Mongolian, Romanian, Russian, Serbian, Ukrainian). The current advertised release
+is **4.148.1**. Installers are binary — never `cat`/read them; exclude `public_html/**/*.exe` from
+bulk search.
+
+## Download redirect (how the homepage links work)
+
+The download buttons in `index.html` point at **stable, version-free URLs** and never change:
+
+```
+https://tr4w.net/download/tr4w_setup.exe          (main installer)
+https://tr4w.net/download/tr4w_setup_<lang>.exe   (ukr/rom/ser/ger/rus/cze/mng)
+```
+
+`public_html/.htaccess` 302-redirects those to the current versioned files via one rule:
+
+```apache
+RewriteRule ^download/tr4w_setup(_[a-z]{3})?\.exe$ https://tr4w.net/4.148/tr4w_setup_4.148.1$1.exe [R=302,L]
+```
+
+So a release only changes **one line** here (and the display labels in `index.html`), not 9 links.
+
+> **⚠️ Server dependency — do not lose this.** This redirect only works because the host
+> (Apache 2.4, Ubuntu) was configured to honor `.htaccess` for this docroot. Ubuntu's stock
+> `AllowOverride None` on `/var/www/` silently ignores all `.htaccess` files. The fix is on the
+> server in `/etc/apache2/conf-available/tr4w-override.conf`:
+> ```apache
+> <Directory /var/www/tr4w.net/public_html>
+>     AllowOverride All
+>     Require all granted
+> </Directory>
+> ```
+> plus `a2enmod rewrite headers`. If `/download/...` ever starts returning **404**, this override
+> (or `mod_rewrite`) got disabled — check there first, not the `.htaccess`.
+
+## Releases
+
+When a new major release ships (e.g. 4.149 in July 2026):
+
+1. Build the installers (in the n4af/TR4W repo) and **upload them to the server** under the new
+   dir, e.g. `/var/www/tr4w.net/public_html/4.149/` (8 files: main + 7 langs). They are gitignored,
+   so they do not go through this repo.
+2. Run `bin/release.sh <version> "<month year>"`, e.g. `bin/release.sh 4.149.1 "July 2026"`.
+   It **validates all 8 installers are live** (curl → 200) before editing — refusing otherwise —
+   then rewrites the `.htaccess` redirect target and the display labels in `index.html`, and prints
+   a diff. It does **not** commit or deploy.
+3. Review the diff, `git commit` + `push`.
+4. Deploy the two changed text files (installers are already up):
+   `rsync -av public_html/.htaccess public_html/index.html TR4W:/var/www/tr4w.net/public_html/`
+5. Verify: `curl -sI https://tr4w.net/download/tr4w_setup.exe` → expect `302` to the new dir.
+
+A GitHub Action could wrap step 4 later; for now deploy is manual rsync.
 
 ## LookingGlass (`LookingGlass/`)
 
 Vendored copy of Nick Adams' "User friendly PHP Looking Glass" v1.3.0 (MIT). Runs server-side
 network diagnostics against a user-supplied host.
 
-- `LookingGlass.php` — command class. Builds shell commands via `proc_open` and streams output.
-- `Config.php` — site config (IPv4 test target, site name `tr4w`, theme). Generated by `configure.sh`.
-- `RateLimit.php` — per-IP hourly rate limiting backed by `ratelimit.db` (SQLite). Disabled when limit is `0` (current config: `$rateLimit = 0`).
-- `configure.sh` — interactive installer that regenerates `Config.php`.
-- `lookingglass-http.nginx.conf` — sample nginx vhost (still references the upstream author's domain/paths; not tr4w-specific).
+- `LookingGlass.php` — command class; builds shell commands via `proc_open` and streams output.
+- `Config.php` — site config (generated by `configure.sh`).
+- `RateLimit.php` — per-IP hourly rate limiting via `ratelimit.db` (SQLite); disabled when limit is `0`.
+- `lookingglass-http.nginx.conf` — sample nginx vhost (upstream author's paths; not tr4w-specific).
 
 **Security caution:** this tool executes network commands with user input. It sanitizes via
 `filter_var(..., FILTER_SANITIZE_URL)`, strips single quotes, and validates IPs/URLs, but it is
-still a remote-command surface. If asked to modify command construction or input handling in
-`LookingGlass.php`, treat it as security-sensitive — preserve the existing validation/sanitization
-and do not introduce new shell interpolation of unvalidated input.
+still a remote-command surface. If asked to modify command construction or input handling, treat it
+as security-sensitive — preserve the validation/sanitization; do not introduce new shell
+interpolation of unvalidated input.
 
 ## Working in this repo
 
-- **No build/test/lint.** Edits to `index.html` or PHP are the deliverable; verify HTML/PHP by
-  inspection. There is nothing to compile.
-- **Not a git repo.** There is no `.git/` here. Do not assume version control; if the user wants
-  commits, confirm and run `git init` first.
-- **Deployment is via web hosting** (Apache/`.htaccess`, separate from the LookingGlass nginx
-  sample). Per global rules: never push changes to the live `tr4w.net` server without explicit
-  approval, and back up remote files before overwriting.
-- **Binary installers** (`*.exe`) are large and numerous — never `cat`/read them, and exclude
-  `public_html/**/*.exe` from any bulk search or content operation.
-- `public_html/.bakindex.php` is a stale Word-exported HTML backup, not active code.
+- **No build/test/lint for the site.** Edits to `index.html`/PHP/`.htaccess` are the deliverable;
+  verify by inspection (and curl against the live site after deploy).
+- **Deployment = rsync to the production host.** Per global rules: **never** change the live
+  `tr4w.net` server (files *or* Apache config) without explicit approval, and **back up remote
+  files before overwriting** (`cp -p file file.bak` on the server first).
+- **Server hygiene (already handled, don't regress):** `info.php` (phpinfo) is removed (404);
+  `serial+key.txt` (an old third-party Delphi 7 key, not ours) is blocked (403). The public
+  `NSIS/` toolkit + `full.nsi` on the server are harmless leftover cruft, low-priority cleanup.
+- **Binary installers** (`*.exe`) are large/numerous — never read them; exclude from bulk ops.
