@@ -1,0 +1,16 @@
+# Installer binaries — served as static files on the web host, NOT tracked in git.
+# The per-version directories under public_html/4.NN/ live on the production
+# server only; git versions the website source, not the download archive.
+# Covers plain installers plus encrypted (.exe.gpg) and archived (.7z/.zip) builds.
+*.exe
+*.gpg
+*.7z
+*.zip
+
+# LookingGlass runtime state (per-IP SQLite rate-limit DB)
+LookingGlass/ratelimit.db
+
+# Editor / hosting cruft
+*.swp
+.ftpquota
+.DS_Store

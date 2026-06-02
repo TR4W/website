@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TR4W — Contest Logger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #39ff6a;
+    --green-dim: #1a7a35;
+    --green-faint: #0d2e18;
+    --amber: #f5a623;
+    --bg: #080c09;
+    --surface: #0e1510;
+    --surface2: #141d16;
+    --border: rgba(57,255,106,0.15);
+    --border-bright: rgba(57,255,106,0.35);
+    --text: #c8e8cd;
+    --muted: #5c8066;
+    --mono: 'Share Tech Mono', monospace;
+    --body: 'Barlow', sans-serif;
+    --display: 'Barlow Condensed', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* Scan line overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.08) 2px,
+      rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8,12,9,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+  }
+
+  .nav-logo {
+    font-family: var(--mono);
+    font-size: 1.1rem;
+    color: var(--green);
+    letter-spacing: 0.1em;
+    text-decoration: none;
+  }
+
+  .nav-logo span { color: var(--muted); }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  nav a:hover { color: var(--green); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 6rem 2rem 4rem;
+    overflow: hidden;
+  }
+
+  .hero-grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(57,255,106,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(57,255,106,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 100%);
+  }
+
+  .hero-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(57,255,106,0.07) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .hero-tag {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--green);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .hero-tag::before {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--green);
+    display: inline-block;
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(3.5rem, 7vw, 6rem);
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 em {
+    font-style: normal;
+    color: var(--green);
+    display: block;
+  }
+
+  .hero-sub {
+    font-size: 1.1rem;
+    color: var(--muted);
+    max-width: 420px;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--green);
+    color: #080c09;
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    padding: 0.9rem 1.75rem;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 0 24px rgba(57,255,106,0.3);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2px;
+    transition: color 0.2s;
+    font-family: var(--mono);
+    letter-spacing: 0.05em;
+  }
+
+  .btn-secondary:hover { color: var(--green); border-color: var(--green); }
+
+  .hero-ctas { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+
+  .hero-version {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-top: 0.75rem;
+  }
+
+  /* Terminal window mock */
+  .terminal {
+    background: var(--surface);
+    border: 1px solid var(--border-bright);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(57,255,106,0.08), 0 0 0 1px rgba(57,255,106,0.05);
+  }
+
+  .terminal-bar {
+    background: var(--surface2);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot.r { background: #ff5f57; }
+  .dot.y { background: #ffbd2e; }
+  .dot.g { background: #28c840; }
+
+  .terminal-title {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin: 0 auto;
+  }
+
+  .terminal-body { padding: 1.25rem 1.5rem; }
+
+  .terminal-body img {
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    opacity: 0.9;
+  }
+
+  /* Stats bar */
+  .stats-bar {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    padding: 1.25rem 2rem;
+  }
+
+  .stats-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .stat {
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .stat-num {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--green);
+    line-height: 1;
+    display: block;
+  }
+
+  .stat-label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 0.35rem;
+    display: block;
+  }
+
+  /* ── SECTIONS ── */
+  section { padding: 5rem 2rem; }
+
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #fff;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.25rem;
+  }
+
+  /* ── FEATURES ── */
+  #features { background: var(--surface); }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 3rem;
+  }
+
+  .feature {
+    background: var(--surface);
+    padding: 1.75rem;
+    transition: background 0.2s;
+  }
+
+  .feature:hover { background: var(--green-faint); }
+
+  .feature-icon {
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    color: var(--green);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+
+  .feature h3 {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature p {
+    font-size: 0.875rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* ── RESOURCES ── */
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .resource-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.25rem 1.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s;
+    gap: 1rem;
+  }
+
+  .resource-card:hover {
+    border-color: var(--border-bright);
+    background: var(--green-faint);
+    transform: translateX(3px);
+  }
+
+  .resource-name {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #fff;
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .resource-desc {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-family: var(--mono);
+  }
+
+  .resource-arrow {
+    color: var(--green);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .resource-card:hover .resource-arrow { opacity: 1; }
+
+  /* ── TRANSLATIONS ── */
+  #translations { background: var(--surface); }
+
+  .lang-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .lang-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 0.6rem 1.1rem;
+    text-decoration: none;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--text);
+    letter-spacing: 0.08em;
+    transition: all 0.2s;
+  }
+
+  .lang-pill:hover {
+    background: var(--green-faint);
+    border-color: var(--border-bright);
+    color: var(--green);
+  }
+
+  .lang-pill .flag { font-size: 1rem; }
+
+  /* ── DOWNLOAD ── */
+  #download {
+    background: linear-gradient(135deg, var(--green-faint) 0%, var(--bg) 100%);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .download-box {
+    background: var(--surface);
+    border: 1px solid var(--border-bright);
+    border-radius: 4px;
+    padding: 3rem 2rem;
+    max-width: 580px;
+    margin: 2rem auto 0;
+    box-shadow: 0 0 80px rgba(57,255,106,0.06);
+  }
+
+  .download-box .btn-primary { font-size: 1rem; padding: 1rem 2.5rem; }
+
+  .download-note {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 1.25rem;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  footer .f-logo {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-family: var(--mono);
+  }
+
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--green); }
+
+  /* Ukraine flag ribbon */
+  .ukraine-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    letter-spacing: 0.08em;
+  }
+
+  .ukraine-flag {
+    width: 20px;
+    height: 14px;
+    border-radius: 1px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .ukraine-flag div:first-child { background: #005BBB; height: 7px; }
+  .ukraine-flag div:last-child { background: #FFD500; height: 7px; }
+
+  /* Blinking cursor */
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+  .cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.15em;
+    background: var(--green);
+    vertical-align: text-bottom;
+    animation: blink 1s step-end infinite;
+    margin-left: 2px;
+  }
+
+  /* Responsive */
+  @media (max-width: 800px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .features-grid { grid-template-columns: 1fr; }
+    .stats-inner { grid-template-columns: repeat(2, 1fr); }
+    .resources-grid { grid-template-columns: 1fr; }
+    nav ul { display: none; }
+  }
+
+  /* Animated entry */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-left > * {
+    animation: fadeUp 0.6s ease both;
+  }
+  .hero-left > *:nth-child(1) { animation-delay: 0.1s; }
+  .hero-left > *:nth-child(2) { animation-delay: 0.2s; }
+  .hero-left > *:nth-child(3) { animation-delay: 0.3s; }
+  .hero-left > *:nth-child(4) { animation-delay: 0.4s; }
+  .hero-left > *:nth-child(5) { animation-delay: 0.5s; }
+
+  .hero-right { animation: fadeUp 0.8s ease 0.3s both; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">TR4W<span>_</span></a>
+  <ul>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#translations">Translations</a></li>
+    <li><a href="#download">Download</a></li>
+    <li><a href="https://github.com/n4af/TR4W" target="_blank">GitHub ↗</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag">Ham Radio Contest Logger</div>
+      <h1>Contest<br>like a <em>pro.<span class="cursor"></span></em></h1>
+      <p class="hero-sub">TR4W is a free, open-source contest logger built for serious operators. Supports 180+ contests, and runs on Windows and Linux.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="https://tr4w.net/4.148/tr4w_setup_4.148.1.exe">
+          ⬇ Download TR4W
+        </a>
+        <a class="btn-secondary" href="https://github.com/n4af/TR4W" target="_blank">View Source ↗</a>
+      </div>
+      <p class="hero-version">v4.148.1 &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; Free &amp; Open Source</p>
+    </div>
+    <div class="hero-right">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <div class="dot r"></div>
+          <div class="dot y"></div>
+          <div class="dot g"></div>
+          <span class="terminal-title">TR4W — Contest Log</span>
+        </div>
+        <div class="terminal-body">
+          <img src="https://tr4w.net/tr4w2.png" alt="TR4W Contest Logger Screenshot" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat">
+      <span class="stat-num">180+</span>
+      <span class="stat-label">Contests</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">&lt;600</span>
+      <span class="stat-label">KB Size</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">7</span>
+      <span class="stat-label">Languages</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">Free</span>
+      <span class="stat-label">Always</span>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="section-inner">
+    <div class="section-label">// capabilities</div>
+    <h2>Built for the pile-up,<br>not the boardroom.</h2>
+    <div class="features-grid">
+      
+      <div class="feature">
+        <div class="feature-icon">[02]</div>
+        <h3>180+ Contests</h3>
+        <p>From CQ WW to local sprints. Full contest list available — if it's real, TR4W probably knows it.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">[03]</div>
+        <h3>Cross-Platform</h3>
+        <p>Runs natively on Windows. Also supported under Linux via Wine — log from wherever you operate.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">[04]</div>
+        <h3>Configurable UI</h3>
+        <p>Arrange windows to match your operating style. Your station, your layout.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">[05]</div>
+        <h3>Free &amp; Open Source</h3>
+        <p>Full source on GitHub. Fork it, audit it, improve it. Hosted by the community, for the community.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">[06]</div>
+        <h3>Multilingual</h3>
+        <p>Localized in 7 languages: Ukrainian, Romanian, Serbian, German, Russian, Czech, and Mongolian.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources">
+  <div class="section-inner">
+    <div class="section-label">// resources</div>
+    <h2>Everything you need<br>to get on the air.</h2>
+    <div class="resources-grid">
+      <a class="resource-card" href="https://github.com/n4af/TR4W" target="_blank">
+        <div>
+          <span class="resource-name">GitHub Repository</span>
+          <span class="resource-desc">Source code, issues, contributions</span>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+      <a class="resource-card" href="https://github.com/n4af/TR4W/wiki" target="_blank">
+        <div>
+          <span class="resource-name">Wiki</span>
+          <span class="resource-desc">Setup guides and how-tos and updated manual</span>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+      <a class="resource-card" href="https://tr4w.net/TR4W_User_Manual_4.01b.pdf" target="_blank">
+        <div>
+          <span class="resource-name">User Manual</span>
+          <span class="resource-desc">PDF — Complete operator guide v4.01b (Obsolete - Please use the Wki above)</span>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+      <a class="resource-card" href="https://tr4w.net/TR4W_Reference_Manual_4.01.pdf" target="_blank">
+        <div>
+          <span class="resource-name">Reference Manual</span>
+          <span class="resource-desc">PDF — Technical reference v4.01 (Obsolete - Please use the Wki above)</span>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+      <a class="resource-card" href="https://groups.google.com/forum/#!forum/tr4w" target="_blank">
+        <div>
+          <span class="resource-name">User Forum</span>
+          <span class="resource-desc">Community Q&amp;A and discussions</span>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+      <a class="resource-card" href="https://github.com/n4af/TR4W/blob/master/RELEASE_NOTES.md" target="_blank">
+        <div>
+          <span class="resource-name">Release Notes</span>
+          <span class="resource-desc">What's changed in each version</span>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+      <a class="resource-card" href="https://tr4w.net/bmfeatures.html" target="_blank">
+        <div>
+          <span class="resource-name">Enhanced Features</span>
+          <span class="resource-desc">Extended capability documentation</span>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+      <a class="resource-card" href="https://tr4w.net/tr4w_contests.txt" target="_blank">
+        <div>
+          <span class="resource-name">Contest List</span>
+          <span class="resource-desc">Full list of supported contests</span>
+        </div>
+        <span class="resource-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSLATIONS -->
+<section id="translations">
+  <div class="section-inner">
+    <div class="section-label">// localized builds</div>
+    <h2>Your language, your log.</h2>
+    <div class="lang-grid">
+      <a class="lang-pill" href="https://tr4w.net/4.148/tr4w_setup_4.148.1_ukr.exe">
+        <span class="flag">🇺🇦</span> Ukrainian
+      </a>
+      <a class="lang-pill" href="https://tr4w.net/4.148/tr4w_setup_4.148.1_rom.exe">
+        <span class="flag">🇷🇴</span> Romanian
+      </a>
+      <a class="lang-pill" href="https://tr4w.net/4.148/tr4w_setup_4.148.1_ser.exe">
+        <span class="flag">🇷🇸</span> Serbian
+      </a>
+      <a class="lang-pill" href="https://tr4w.net/4.148/tr4w_setup_4.148.1_ger.exe">
+        <span class="flag">🇩🇪</span> German
+      </a>
+      <a class="lang-pill" href="https://tr4w.net/4.148/tr4w_setup_4.148.1_rus.exe">
+        <span class="flag">🇷🇺</span> Russian
+      </a>
+      <a class="lang-pill" href="https://tr4w.net/4.148/tr4w_setup_4.148.1_cze.exe">
+        <span class="flag">🇨🇿</span> Czech
+      </a>
+      <a class="lang-pill" href="https://tr4w.net/4.148/tr4w_setup_4.148.1_mng.exe">
+        <span class="flag">🇲🇳</span> Mongolian
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD CTA -->
+<section id="download">
+  <div class="section-inner">
+    <div class="section-label" style="text-align:center">// get started</div>
+    <h2 style="text-align:center">Ready to contest?</h2>
+    <div class="download-box">
+      <a class="btn-primary" href="https://tr4w.net/4.148/tr4w_setup_4.148.1.exe">
+        ⬇ &nbsp;Download TR4W v4.148.1
+      </a>
+      <p class="download-note">Windows installer · 4.148.1 · June 2026 · Free, always</p>
+      <p class="download-note" style="margin-top:0.5rem">
+        Having issues? <a href="https://tr4w.net/problems.html" style="color:var(--green)">See the download help page ↗</a>
+      </p>
+      <hr style="border:none;border-top:1px solid var(--border);margin:1.5rem 0">
+      <a class="lang-pill" href="https://github.com/n4af/TR4W/blob/master/tr4w/target/TRMASTER.DTA" style="display:inline-flex;justify-content:center">
+        TRMASTER.DTA — Callsign database · June 2026
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <p class="f-logo">TR4W_</p>
+    <p style="margin-top:0.35rem">© TR4W Project · Free &amp; Open Source</p>
+  </div>
+  <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap">
+    <div class="ukraine-badge">
+      <div class="ukraine-flag"><div></div><div></div></div>
+      Support Ukraine
+    </div>
+    <a href="https://github.com/n4af/TR4W" target="_blank" style="font-family:var(--mono);font-size:0.75rem">GitHub ↗</a>
+    <a href="https://groups.google.com/forum/#!forum/tr4w" target="_blank" style="font-family:var(--mono);font-size:0.75rem">Forum ↗</a>
+  </div>
+</footer>
+
+</body>
+</html>
