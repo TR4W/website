@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>TR4W under Linux</title>
+  <meta name="GENERATOR" content="LibreOffice 4.0.0.3 (Linux)">
+  <meta name="CREATED" content="20130303;12142300">
+  <meta name="CHANGED" content="0;0">
+  <style type="text/css">
+	<!--
+		@page { size: 8.5in 11in; margin: 0.79in }
+		P { margin-bottom: 0.08in }
+		H1 { margin-bottom: 0.08in; page-break-after: avoid }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt; font-weight: bold }
+		H1.cjk { font-family: "Droid Sans Fallback"; font-size: 16pt; font-weight: bold }
+		H1.ctl { font-family: "FreeSans"; font-size: 16pt; font-weight: bold }
+	-->
+	</style>
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(175, 255, 0);"
+ dir="ltr" alink="#000099" lang="en-US" link="#000080" vlink="#800000">
+<h1 class="western" align="center">TR4W under Linux - Tips and Tricks</h1>
+<p align="center"><br>
+<br>
+</p>
+<p align="left">TR4W runs very well under Linux <i>using the WINE
+compatibility layer</i>.</p>
+<p align="left"><br>
+<br>
+</p>
+<ul>
+
+
+
+</p>
+
+  <li>
+    <p align="left">You will need to set symbolic links to your serial
+ports (examples below) </p>
+  </li>
+  <li>
+    <p align="left">If using usb-to-serial conversion, you need to
+issue dmesg to see what USB# (s) are assigned to your usb2serial
+cable(s) and Winkey. Here is a snippet of my dmesg output:</p>
+    <p align="left"><font style="font-size: 9pt;" size="2">[ 10.493354]
+usb 1-4.2: FTDI USB Serial Device converter now attached to ttyUSB0<br>
+[ 10.493665] mos7840 1-5:1.0: Moschip 7840/7820 USB Serial Driver
+converter detected<br>
+[ 10.494830] usb 1-5: Moschip 7840/7820 USB Serial Driver converter now
+attached to ttyUSB1<br>
+[ 10.496217] usb 1-5: Moschip 7840/7820 USB Serial Driver converter now
+attached to ttyUSB2
+    </font></p>
+  </li>
+  <li><p align='left'>Then 'sudo adduser $USER dialout' and 'sudo chown $USER:dialout' </font></p></li>
+  <li>
+    <p align="left">It may be easier to build a shell program to read
+your USB assignments as they can be dynamic.</p>
+    <p align="left">Here is an example:</p>
+    <p align="left"><font style="font-size: 9pt;" size="2">#!/bin/sh<br>
+dmesg &gt; dmesg.txt<br>
+grep "USB" dmesg.txt
+    </font></p>
+  </li>
+  <li>
+    <p align="left">In the example above, we see that WK is assigned to
+ttyUSB0, and the dual USB2SERIAL is assigned to USB1 and USB2
+respectively. We can now assign the symbolic links as follows:</p>
+    <p align="left"><font style="font-size: 9pt;" size="2">ln -s
+/dev/ttyUSB0 ~/.wine/dosdevices/com3 &lt;&lt; WK =<b> com3 to TR4W</b><br>
+ln -s /dev/ttyUSB1 ~/.wine/dosdevices/com5 &lt;&lt; USB1 connects to <b>com5
+(TR4W)</b><br>
+ln -s /dev/ttyUSB2 ~/.wine/dosdevices/com4 &lt;&lt; USB2 = <b>com4 to
+TR4W</b></font></p>
+    <p align="left">This can be rolled into a shell program to run the
+assignments -if needed:</p>
+    <p align="left"><font style="font-size: 9pt;" size="2">cat tr4w0.sh
+&lt;&lt; arbitrarily named tr4w0.sh as usb0 is assigned to WK</font></p>
+    <p align="left"><font style="font-size: 9pt;" size="2">ln -s
+/dev/ttyUSB0 ~/.wine/dosdevices/com3<br>
+ln -s /dev/ttyUSB1 ~/.wine/dosdevices/com5<br>
+ln -s /dev/ttyUSB2 ~/.wine/dosdevices/com4
+    </font></p>
+  </li>
+  <li>
+    <p align="left">For SO2R, the alt-D function may cause focus on
+TR4W to be lost. Ensure you invoke 'winecfg' from terminal, select
+'graphics', and check “Allow the window manager to control the windows”</p>
+  </li>
+</ul>
+</body>
+</html>

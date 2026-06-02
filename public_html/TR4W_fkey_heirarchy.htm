@@ -1,0 +1,1048 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type" />
+  <title>TR4W_fkey_heirarchy</title>
+</head>
+<body>
+<h2>FKEY HEIRARCHY (CommonMessages.ini being highest priority)</h2>
+<ul>
+  <li>If key exists in CM it will be active else</li>
+  <li>If key exists in contest.cfg or tr4w.ini it will be active else</li>
+  <li>If key exists in contest specific defaults it will be active else</li>
+  <li>If key exists in global defaults it will be active</li>
+</ul>
+<h2><br />
+</h2>
+<h2><br />
+</h2>
+<h2><br />
+</h2>
+<h2>GLOBAL DEFAULT KEYS:</h2>
+&nbsp;SetCQMemoryString(CW, F1, 'CQ TEST \ \ TEST');<br />
+&nbsp; SetCQMemoryString(CW, F2, 'CQ TEST CQ TEST CQ TEST \ \ TEST');<br />
+&nbsp; SetCQMemoryString(CW, F4, 'TU \ TEST');<br />
+&nbsp; SetCQMemoryString(CW, F6, 'DE \');<br />
+&nbsp; SetCQMemoryString(CW, F7, 'SRI QSO B4 TU \ TEST');<br />
+&nbsp; SetCQMemoryString(CW, F8, 'AGN');<br />
+&nbsp; SetCQMemoryString(CW, F9, '?');<br />
+&nbsp; SetCQMemoryString(CW, F10, ':');<br />
+<br />
+&nbsp; SetCQMemoryString(CW, ControlF11, 'QRL?'); //wli<br />
+<br />
+&nbsp; SetEXMemoryString(CW, F8, 'EE');<br />
+&nbsp; SetEXMemoryString(CW, F9, '?');<br />
+&nbsp; SetEXMemoryString(CW, F10, ':');<br />
+&nbsp; SetEXMemoryString(CW, AltF1, 'UR CALL?');<br />
+&nbsp; SetEXMemoryString(CW, AltF2, 'AGN?');<br />
+&nbsp; SetEXMemoryString(CW, AltF10, 'IS UR CALL @?');<br />
+<br />
+{$IF LANG = 'RUS'}<br />
+&nbsp; SetEXCaptionMemoryString(CW, F1, 'Ìîé ïîçûâíîé');<br />
+&nbsp; SetEXCaptionMemoryString(CW, F2, 'Êîíòð. íîìåð');<br />
+{$ELSE}<br />
+&nbsp;SetEXCaptionMemoryString(CW, F1, 'DE+Call');<br />
+&nbsp; SetEXCaptionMemoryString(CW, F2, 'S&amp;P Exchange');<br />
+&nbsp; SetEXCaptionMemoryString(Phone, F2, 'S&amp;P Exchange');<br />
+<br />
+{$IFEND}<br />
+<br />
+<h2>Contest Specific Default Fkeys:</h2>
+(some) contest set default Fkeys as follows. But Fkeys can also be set
+for Qso nr or Zone nr contests that are not shown:<br />
+<br />
+&nbsp;ARRLFIELDDAY:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DigitalModeEnable := True;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VHFBandsEnabled := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WARCBandsEnabled := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F1,
+'CQ^FD \ \ FD');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F2,
+'CQ^FD CQ^FD \ \ FD');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CQExchange := ' ' +
+MyFDClass + ' ' + MySection;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SearchAndPounceExchange :=
+MyFDClass + ' ' + MySection;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QSLMessage := '73 \ FD';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+AddARRLSectionDomesticCountries;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; JIDXSSB, JIDXCW:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if MyCountry = 'JA' then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult :=
+ARRLDXCC;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ActiveInitialExchange := ZoneInitialExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTZoneExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveZoneMult
+:= CQZones;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ActiveDomesticMult := DomesticFile;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTPrefectureExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TempDomesticQTHDataFileName := 'JIDX';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'Japan
+International DX Test';<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CountryTable.ZoneMode :=
+CQZoneMode;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; SOUTHAMERICANWW:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if MyContinent =
+SouthAmerica then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActivePrefixMult
+:= NonSouthAmericanPrefixes<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActivePrefixMult
+:= SouthAmericanPrefixes;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; STEWPERRY:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'STEW PERRY
+TOPBAND CHALLENGE';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CQExchange := ' ' + MyGrid;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SearchAndPounceExchange :=
+MyGrid;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; ALLASIANCW, ALLASIANSSB:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if MyContinent = Asia then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult :=
+ARRLDXCC<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActivePrefixMult
+:= Prefix;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; ALLJA:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band80;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VHFBandsEnabled := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; JALONGPREFECT:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band80;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'JA
+PREFECTURE';<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VHFBandsEnabled := False;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; ARCI:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'ARCI QSO
+PARTY';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVEKH6KL;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; ARI_DX:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'ARI
+International DX Contest';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('I');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('IS');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('*IT9');
+//WLI<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; ARRL10:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band10;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'ARRL Ten
+Meter Contest';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ExchangeMemoryEnable :=
+False;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MultipleBandsEnabled :=
+False;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVEKH6KL;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('XE');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; ARRL160:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if
+ARRLSectionCountry(MyCountry) then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTDomesticOrDXQTHExchange; {*}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult :=
+ARRLDXCCWithNoARRLSections;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTDomesticQTHExchange; {*}<br />
+<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'ARRL 160
+Contest';<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DomesticQTHDataFileName :=
+'ARRLSECT';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+AddARRLSectionDomesticCountries;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; ARRLDXCW, ARRLDXSSB:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (MyCountry = 'K') or
+(MyCountry = 'VE') then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTPowerExchange; {*}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult :=
+ARRLDXCCWithNoUSAOrCanada;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ActiveDomesticMult := DomesticFile;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TempDomesticQTHDataFileName := 'S48P14DC';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTDomesticQTHExchange; {*}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'ARRL DX
+Test';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVE;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; ARRL_RTTY_ROUNDUP:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVE;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+{<br />
+&nbsp;&nbsp;&nbsp; ARRLRTTYROUNDUP:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CountryTable.CountryMode :=
+CQCountryMode;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CountryTable.ZoneMode :=
+CQZoneMode;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDomesticMult :=
+DomesticFile;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult := ARRLDXCC;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange :=
+RSTDomesticQTHOrQSONumberExchange;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveQSOPointMethod :=
+OnePointPerQSO;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'ARRL RTTY
+ROUNDUP';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DigitalModeEnable := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //DomesticQTHDataFileName :=
+'S48P14DC'; //KK1L: 6.72 Used DC file instead per rules<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //QSOByBand := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVE;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+}<br />
+&nbsp;&nbsp;&nbsp; ARRLVHFQSO:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band6;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'VHF QSO
+Party';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HFBandEnable := False;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VHFBandsEnabled := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; ARRLVHFSS:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band6;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'ARRL VHF
+SWEEPSTAKES';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HFBandEnable := False;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VHFBandsEnabled := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MyState := MyGrid;
+//Copy(MyGrid, 1, 4);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; APSPRINT:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band20;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActivePrefixMult := Prefix;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'ASIA
+PACIFIC SPRINT';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; BALTIC:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band80;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; CALQSOPARTY:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if PWORD(@MyState[1])^ =
+$4143 {CA} then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if FoundMyStateInDomFile then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'CALQSOW6';<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult
+:= NoCountDXMults;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= QSONumberDomesticOrDXQTHExchange;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CQP := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'CALCTY';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= QSONumberDomesticQTHExchange; {*}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'California
+QSO Party';<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVEKH6KL;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; CIS:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddRussianDomesticCountrys;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('UR');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('EU');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('4J');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('EK');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('UN');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('EX');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('ER');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('EY');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('EZ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('UK');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('4L');<br />
+<br />
+&nbsp;&nbsp;&nbsp; <br />
+<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CountDomesticCountries :=
+True;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'CIS DX
+Contest';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; CQ160SSB, CQ160CW:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CountryTable.ZoneMode :=
+CQZoneMode;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveInitialExchange :=
+ZoneInitialExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MultipleBandsEnabled :=
+False;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVE;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; CQM:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'CQ M
+Contest';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CTY.ctyR150SMode := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; CQVHF:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band2;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'CQ WORLD
+WIDE VHF Contest';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HFBandEnable := False;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VHFBandsEnabled := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+{<br />
+&nbsp;&nbsp;&nbsp; CQWWRTTY:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CountryTable.CountryMode :=
+CQCountryMode;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CountryTable.ZoneMode :=
+CQZoneMode;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDomesticMult :=
+DomesticFile;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult := CQDXCC;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange :=
+RSTZoneAndPossibleDomesticQTHExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveInitialExchange :=
+ZoneInitialExchange;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveQSOPointMethod :=
+CQWWRTTYQSOPointMethod;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveZoneMult := CQZones;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'CQ WW RTTY
+CONTEST';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DigitalModeEnable := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //DomesticQTHDataFileName :=
+'S48P13';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //MultByBand := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //QSOByBand := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVE;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+}<br />
+<br />
+&nbsp;&nbsp;&nbsp; EUSPRINT_SPRING_SSB, EUSPRINT_AUTUMN_CW,
+EUSPRINT_AUTUMN_SSB, EUSPRINT_SPRING_CW:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band20;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveInitialExchange :=
+NameInitialExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; {CZECH_ACTIVITY_VHF,}RADIOVHFFD:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HFBandEnable := False;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VHFBandsEnabled := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; EUROPEANVHF:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band6;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'EUROPEAN
+VHF CONTEST';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HFBandEnable := False;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VHFBandsEnabled := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+{<br />
+&nbsp;&nbsp;&nbsp; NYQP:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVEKH6KL;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if FoundMyStateInDomFile then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'NYQP'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'FQP';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+}<br />
+&nbsp;&nbsp;&nbsp; FLORIDAQSOPARTY:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if FoundMyStateInDomFile then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'FQP_FL';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTDomesticOrDXQTHExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult :=
+ARRLDXCCWithNoUSACanadaKH6OrKL7;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'FQP';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTDomesticQTHExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVEKH6KL;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; GENERALQSO:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveInitialExchange :=
+NameQTHInitialExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AutoDupeEnableCQ := False;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AutoDupeEnableSandP := False;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'General
+QSOs';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WARCBandsEnabled := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; HADX:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('HA');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; HELVETIA:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if MyCountry = 'HB' then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult :=
+ARRLDXCC<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+AddDomesticCountry('HB');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; OZCR_Z:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'Î÷íî-çàî÷íûé
+÷åìïèîíàò Ðîññèè - çàî÷íûå ó÷àñòíèêè';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; GAGARINCUP:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CTY.ctyR150SMode := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'Yuri Gagarin
+International DX Contest';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; INTERNETSPRINT:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band20;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AutoDupeEnableCQ := False;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AutoDupeEnableSandP := False;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'Internet
+SprINT';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ExchangeMemoryEnable :=
+False;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SprintQSYRule := True;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SearchAndPounceExchange :=
+'@ #&nbsp;&nbsp; (&nbsp;&nbsp; ' + MyState + ' \';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+RepeatSearchAndPounceExchange := '@ #&nbsp;&nbsp; (&nbsp;&nbsp; ' +
+MyState;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CQExchange := ' \
+#&nbsp;&nbsp; (&nbsp;&nbsp; ' + MyState;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QSLMessage := 'EE';<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F1,
+'INT \');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F2,
+'CQ^INT \ \ INT');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F5,
+'&nbsp; ?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F6,
+'&nbsp; INT \');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F7,
+'&nbsp; CQ^INT \ \ INT');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F8,
+'&nbsp; CQ^INT CQ^INT \ \ INT');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F7,
+'&nbsp; CQ^INT \ \ INT');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F8,
+'&nbsp; CQ^INT CQ^INT \ \ INT');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F3,
+'#');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F4,
+'&nbsp; (&nbsp; ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F5,
+MyState);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F6, '@
+\ # ( ' + MyState);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF3,
+'NR?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF4,
+'NAME?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF5,
+'QTH?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVE;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('KL');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; KCJ:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (MyCountry = 'JA') or
+(MyCountry = 'JD1') then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TempDomesticQTHDataFileName := 'JAPREFCT'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TempDomesticQTHDataFileName := 'JAPREF';<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'KCJ Single
+Op Contest';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; KIDSDAY:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AutoDupeEnableCQ := False;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; KVP:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band80;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveInitialExchange :=
+ZoneInitialExchange;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveZoneMult :=
+BranchZones;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'KV
+Prvenstvo ZRS';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+{<br />
+&nbsp;&nbsp;&nbsp; MICHQSOPARTY:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if FoundMyStateInDomFile then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'MIQP';<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= QSONumberDomesticQTHExchange; //KK1L: 6.73<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'MICHCTY';<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= QSONumberDomesticQTHExchange; //KK1L: 6.73<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVEKH6KL;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+}<br />
+&nbsp;&nbsp;&nbsp; MINNQSOPARTY:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if FoundMyStateInDomFile then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'MINNESOTA'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'MINNESOTA_CTY';<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVEKH6KL;<br />
+}<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VHFBandsEnabled := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; NAQSOCW, NAQSOSSB, NAQSORTTY:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveInitialExchange :=
+NameInitialExchange;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'North
+American QSO Party';<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CQExchange := ' ' + MyName +
+' ' + MyState;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QSLMessage := '73 \ NA&gt;';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QuickQSLMessage1 := 'TU';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QSOBeforeMessage := ' QSO B4
+\ NA';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SearchAndPounceExchange :=
+MyName + ' ' + MyState;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CorrectedCallMessage := '}
+R';<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F1,
+'CQ^NA \ \ NA&gt;');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F2,
+'CQ^NA CQ^NA \ \ NA&gt;');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F5,
+'&nbsp;&nbsp; ? ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F6,
+'&nbsp;&nbsp; NA \ NA ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F7,
+'&nbsp;&nbsp; CQ^NA \ \ NA ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F8,
+'&nbsp;&nbsp; CQ^NA CQ^NA \ \ NA ');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, AltF1,
+'NA \ \ NA');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, AltF1,
+'NA \ \ NA');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F3,
+MyName);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F4,
+MyState);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F5, '@
+DE \ ' + MyName + ' ' + MyState);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF3,
+'NAME?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF4,
+'QTH?');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F7,
+'&nbsp;&nbsp; CQ^NA \ \ NA ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F8,
+'&nbsp;&nbsp; CQ^NA CQ^NA \ \ NA ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVEKH6KL;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LiteralDomesticQTH := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; NEWENGLANDQSO:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TempWord :=
+PWORD(@MyState[1])^;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (TempWord =
+Ord('M') + Ord('E') * $100) or<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (TempWord =
+Ord('N') + Ord('H') * $100) or<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (TempWord =
+Ord('V') + Ord('T') * $100) or<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (TempWord =
+Ord('M') + Ord('A') * $100) or<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (TempWord =
+Ord('C') + Ord('T') * $100) or<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (TempWord =
+Ord('R') + Ord('I') * $100) then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TempDomesticQTHDataFileName := 'NEQSOW1';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult :=
+ARRLDXCCWithNoUSACanadaKH6OrKL7;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTDomesticOrDXQTHExchange;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName :=
+'New England QSO Party (within NE)';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TempDomesticQTHDataFileName := 'NEQSO';<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult
+:= NoCountDXMults;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTDomesticQTHExchange;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName :=
+'New England QSO Party (outside NE)';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DXMultLimit := 20;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVEKH6KL;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; NRAUBALTICCW, NRAUBALTICSSB:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band80;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('ES');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('JW');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('JX');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('LA');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('LY');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('OH');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('OH0');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('OX');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('OY');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('OZ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('SM');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('TF');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('YL');<br />
+<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'NRAU
+Baltic Contest';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; OKDX:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CountryTable.ZoneMode :=
+CQZoneMode;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('OK');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('OM');<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'OK/OM DX
+Contest';<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if not
+OKOMStation(MyCountry) then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ActiveDomesticMult := DomesticFile;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TempDomesticQTHDataFileName := 'OKOM';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActivePrefixMult
+:= Prefix;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; PACC:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if MyCountry = 'PA' then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult :=
+PACCCountriesAndPrefixes;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTAndQSONumberOrDomesticQTHExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+AddDomesticCountry('PA');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TempDomesticQTHDataFileName := 'PACCPA';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+LiteralDomesticQTH := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTDomesticQTHExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TempDomesticQTHDataFileName := 'PACC';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; QCWA:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('K');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('KH6');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('KL');<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'QCWA QSO
+Party';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; RAEM:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band80;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'RAEM Ernst
+Krenkel Memorial Contest';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InitialExchangeCursorPos :=
+AtStart;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; RAC_CANADA_DAY, RAC_CANADA_WINTER:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('VE');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('CY0');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('CY9');<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VHFBandsEnabled := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; RSGB_ROPOCO_CW, RSGB_ROPOCO_SSB:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band80;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'UK
+Rotating Postal Code';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MultipleBandsEnabled :=
+False;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CQExchange := '_~ %5NN (';
+// + MyPostalCode;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+RepeatSearchAndPounceExchange := '5NN (';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SearchAndPounceExchange :=
+'~ %5NN (';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F3,
+'5NN (');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F3,
+'5NN');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F4,
+'(');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F5, '@
+DE \ 5NN (');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF3,
+'RST?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF4,
+'PC?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; RDA:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddRussianDomesticCountrys;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CountDomesticCountries :=
+True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if not RussianID(MyCountry)
+then ActiveDXMult := NoDXMults;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DomesticMultByBand :=
+dmbbAllBand;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; RUSSIANDX, RADIO160:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddRussianDomesticCountrys;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('CE9');<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CountDomesticCountries :=
+True;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'Russian DX
+Contest';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; SALMONRUN:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if PWORD(@MyState[1])^ =
+$4157 {WA} then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if FoundMyStateInDomFile then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'SALMONWA';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTDomesticOrDXQTHExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult :=
+ARRLDXCCWithNoUSAOrCanada;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DomesticQTHDataFileName := 'SALMON';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveExchange
+:= RSTDomesticQTHExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'Washington
+State Salmon Run';<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVEKH6KL;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; SACCW, SACSSB:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if
+ScandinavianCountry(MyCountry) then<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveDXMult :=
+ARRLDXCC<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActivePrefixMult
+:= SACDistricts;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band80;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; SPDX:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'SP-DX
+Contest';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('SP');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; NASPRINTCW, NASPRINTSSB, NASPRINTRTTY:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveBand := Band20;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveInitialExchange :=
+NameQTHInitialExchange;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'North
+American Sprint';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, AltF1,
+'NA \ NA');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CQExchange := '^&nbsp;
+\&nbsp;&nbsp; # ' + MyName + ' ' + MyState;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QSLMessage := 'TU';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QuickQSLMessage1 := 'EE';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QSOBeforeMessage := 'B4 \
+NA';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SearchAndPounceExchange :=
+'@ # ' + MyName + ' ' + MyState + '&nbsp; \ ';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+RepeatSearchAndPounceExchange := '# ' + MyName + ' ' + MyState;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CorrectedCallMessage := '}
+R';<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F1,
+'NA \');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F2,
+'CQ^NA CQ^NA \ \ NA');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F5,
+'&nbsp;&nbsp; ? ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F6,
+'&nbsp;&nbsp; NA \ NA ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F7,
+'&nbsp;&nbsp; CQ^NA \ \ NA ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F8,
+'&nbsp;&nbsp; CQ^NA CQ^NA \ \ NA ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, AltF1,
+'NA \ \ NA');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F3,
+'NR #');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F4,
+MyName);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F5,
+MyState);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F6, '@
+\ NR^# ' + MyName + ' ' + MyState);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F7,
+'&nbsp;&nbsp; CQ^NA \ \ NA ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F8,
+'&nbsp;&nbsp; CQ^NA CQ^NA \ \ NA ');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF3,
+'NR?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF4,
+'NAME?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF5,
+'QTH?');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //QSOByBand := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SprintQSYRule := True;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add_KVE;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddDomesticCountry('KL');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+&nbsp;&nbsp;&nbsp; ARRLSSCW, ARRLSSSSB:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begin<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActiveInitialExchange :=
+CheckSectionInitialExchange;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CallsignUpdateEnable := True;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContestName := 'ARRL
+Sweepstakes';<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+AddARRLSectionDomesticCountries;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, AltF1,
+'CQ^SS \ SS');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CQExchange := '_# ' + MyPrec
++ '&nbsp; ' + MyCall + '&nbsp; ' + MyCheck + ' ' + MySection;<br />
+{(*}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+SearchAndPounceExchange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; := 'NR # '
++ MyPrec + ' ' + MyCall + ' ' + MyCheck + ' ' + MySection;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+RepeatSearchAndPounceExchange := SearchAndPounceExchange;//'NR # ' +
+MyPrec + ' ' + MyCall + ' ' + MyCheck + ' ' + MySection;<br />
+{*)}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QSLMessage := '73 ' + MyCall
++ ' SS&gt;';<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QSOBeforeMessage := 'SRI QSO
+' + MyCall + ' SS';<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QuickQSLMessage1 := 'TU&gt;';<br />
+{(*}<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+SearchAndPounceExchange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; := 'NR # '
++ MyPrec + ' ' + MyCall + ' ' + MyCheck + ' ' + MySection;<br />
+//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+RepeatSearchAndPounceExchange := 'NR # ' + MyPrec + ' ' + MyCall + ' '
++ MyCheck + ' ' + MySection;<br />
+{*)}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CorrectedCallMessage := '}
+R';<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F1,
+'SS ' + MyCall + ' SS&gt;');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F2,
+'CQ^SS ' + MyCall + ' ' + MyCall + ' SS&gt;');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F3,
+'CQ^SS CQ^SS ' + MyCall + ' ' + MyCall + ' SS&gt;');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F7,
+'&nbsp; CQ^SS ' + MyCall + ' SS');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, F8,
+'&nbsp; CQ^SS CQ^SS ' + MyCall + ' ' + MyCall + ' SS');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, AltF1,
+'SS ' + MyCall + ' SS');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, AltF2,
+'CQ^SS cq^ss ' + MyCall + ' ' + MyCall + ' SS');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetCQMemoryString(CW, AltF3,
+'CQ^SS cq^ss ' + MyCall + ' ' + MyCall + ' SS');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF7,
+' CQ^SS CQ^SS ' + MyCall + ' ' + MyCall + ' SS');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F3,
+'NR #');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F4,
+MyPrec);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F5,
+MyCheck);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F6,
+MySection);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F7,
+'&nbsp; CQ^SS ' + MyCall + ' SS');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, F8,
+'&nbsp; CQ^SS CQ^SS ' + MyCall + ' SS');<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF3,
+'NR?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF4,
+'PREC?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF5,
+'CK?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF6,
+'SEC?');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetEXMemoryString(CW, AltF7,
+' CQ^SS CQ^SS ' + MyCall + ' ' + MyCall + ' SS');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;<br />
+<br />
+</body>
+</html>
