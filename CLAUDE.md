@@ -28,6 +28,8 @@ gitignored and live only on the production web host (synced via rsync from
 | `public_html/4.NN/` | One directory per TR4W release (4.31 → 4.148, ~116 dirs). Holds the Windows installer plus 7 localized builds. |
 | `public_html/*/tr4wmaintlist.html` | Per-version maintenance/changelog pages. |
 | `bin/release.sh` | Release helper — repoints the site at a new major version (see Releases). |
+| `public_html/tr4w_contests.html` | Searchable table of supported contests — **generated**, do not hand-edit. |
+| `tools/contests/` | Generator + vendored data for the contest list page (`build_contests.py`, see its README). |
 | `LookingGlass/` | Third-party PHP looking-glass tool (ping/traceroute/mtr/host). |
 
 ## Filename / versioning convention
