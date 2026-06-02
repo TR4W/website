@@ -1,0 +1,84 @@
+	
+div {text-align:center;}	
+<!--body {background-color:#000000;}-->
+body {
+  color: E3EAA7;
+  background-image: url('ukr.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 { text-align:center; font-style:oblique; font-weight:bold; color:#000000;}	
+h2 { text-align:center; color:#000000;}	
+h3 { text-align:center;}
+
+
+/* table.rounded-corners  {border:0; border-spacing:0; overflow:hidden; padding:2; border-radius: 25px;  width:70%;}
+table.rounded-corners trbody {border-radius: 25px;}
+table.rounded-corners tr {border-radius: 25px;}
+table.rounded-coners td {border-radius:25px;} */
+
+<!--div.background {background-image: url(n5aw.png);border: 2px solid black; } -->
+/* div.background {background-image: url(tr4w-logo.jpg);border: 2px solid black; background-size: 100% 100%; } */          
+
+table.t1 {background-color:black; margin:auto ; border="0" ; cellpadding="2"; cellspacing="2"; }
+td.td1 {height="75"; width="200";}
+table.t2 {margin: auto; border="0" ; cellpadding="2" ;cellspacing="2"; width: 65%;}
+
+/* #t1 {width="300"; height="100"} */
+div.trans {  
+  /* margin-left: 30px;
+  margin-right: 35%; */
+/*  text-align: center; */
+  background-color: #ffffff;
+  border: 5px solid red;
+  border-radius:35px;
+/*  opacity:0.75; */
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+          }
+div.trans ul {
+   
+    font-weight: bold;
+    color: #000000;
+      text-align:left; 
+            }
+br {text-align:center;}
+
+  img {margin-left:30px;} 
+
+p {text-align:center;}
+
+div.trans li
+{font-weight:bold;
+font-size:20px;
+font:Arial, Helvetica, sans-serif; 
+color:#000000;}
+
+
+div.hamq {border: 1px solid black;opacity:.90;margin: auto; margin-right:40%;margin-left:40%;}
+
+div.w3c {text-align:center;}
+ 
+
+	.style1 {color: #669900; }
+   .style2 {color: #E3EAA7;} 
+   .style3 {color: #FFFFFF}
+
+</style>
+    
+   
+        
+ /* a:link {
+    text-decoration: none;
+E3EAA7}*/
+
+a:visited { text-decoration: none; }
+ 
+a:hover  {color:#FF0099;} 
+
+
+a:link    { color: #00FFFF; text-decoration: none; }
+a:visited { color: #DDDDDD; text-decoration: none; }
+a:hover   { color: #FF0099; text-decoration: none; }
+a:active  { color: #E3EAA7; text-decoration: none; }
+ 

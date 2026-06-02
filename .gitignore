@@ -10,7 +10,31 @@
 # LookingGlass runtime state (per-IP SQLite rate-limit DB)
 LookingGlass/ratelimit.db
 
-# Editor / hosting cruft
+# Installer build toolchain — abandoned NSIS direction, not website content.
+# (Lives in public_html/ on the server but is not part of the site.)
+NSIS/
+build/
+*.nsi
+make_setup_file.bat
+
+# Callsign database — uploaded separately via the program-repo (n4af/TR4W)
+# release process, like the installers. The live copy stays on the web host.
+TRMASTER.DTA
+TRMASTER.ASC
+
+# Secrets / information disclosure — must never be in a public repo.
+# (Also remove these from the live server: they are world-readable at tr4w.net/)
+info.php
+serial+key.txt
+
+# Editor / backup / test cruft
 *.swp
+*.bak
+*~
 .ftpquota
 .DS_Store
+.bakindex.php
+index.html.10.14
+index.html.20260602
+tr.out
+testupload.txt

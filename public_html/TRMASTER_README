@@ -1,0 +1,5 @@
+Here is the latest version of the TRMASTER file. It contains the complete FOC list (up to #2225 OZ8X), CWops list (up to #3488 M0WXG), HSC list (up to #2014 EA6EJ) and many calls frequently appearing in CW events. TRMASTER.ASC source is included.
+=N name
+=F FOC
+=U CWops (should be used as USER1 in initial exchanges and/or user info shown)
+=V HSC (should be used as USER2 in initial exchanges and/or user info shown)

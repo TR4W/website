@@ -1,0 +1,5096 @@
+2E0DCW  Gerald  
+2E0OBO  Bob  2381
+3B9FR  Robert  
+3D2AG  Antoine  2554
+3DA0AQ  Hans  
+3Z50GP  Dick  
+4O3A  Ranko  172
+4U1ITU    
+4X0A  Jan  
+4X1DF  Karl  
+4X1VF  Jan  
+4X4DK  Ami  234
+4X4NJ  Riki  
+4X4PP  Eric  1442
+4X6GP  Vic  5
+4X6KF  Moshe  659
+4Z1UF  Ilya  636
+4Z4DX  Dov  175
+4Z4KX  Mark  
+4Z5LA  Ros  
+5B/SM7RYR  Roger  1855
+5T5PA  Johannes  
+6Y2T  Yuri  21
+6Y5WJ  Josh  
+7J1ABD  Dan  1176
+7S3A  Jan  824
+7X2TT  Abdel  2344
+7X3DA  Hamid  1676
+7Z1HL  Harry  
+8P9AA  Yuri  21
+8P9AL  Chuck  969
+8P9NX  Peter  503
+9A/S57KM  Sandi  
+9A/UX1HW  Art  1890
+9A1AA  Ivo  2447
+9A2AJ  Tom  2506
+9A2EU  Zlatko  
+9A2KI  Ico  
+9A2N  Dado  
+9A2UN  Bert  
+9A3R  Amir  
+9A3SMS  Srdan  
+9A3XV  Sale  2590
+9A5KVU  Mike  1247
+9A5MX  Sven  2697
+9A5W  Nikola  
+9A7R  Braco  1482
+9A9A  Emil  
+9A9CW  Rif  2576
+9A9XX  Marin  
+9H1XT  John  
+9H3AK  Steve  1268
+9M6BG  Alex  
+9N7DX  Dov  175
+9V1VV  John  678
+9V1YC  James  66
+A61AD  Don  2
+AA0AI  Steve  IA
+AA0AW  Doug  MN
+AA0FO  Marsh  1532
+AA0O  Pat  2626
+AA0RS  Dave  2222
+AA1K  Jon  2055
+AA1TJ  Mike  VT
+AA1V  Don  53
+AA2AD  Pete  2162
+AA2EA  Phil  KY
+AA2IL  Joe  CA
+AA2LF  Val  NJ
+AA2U  Randy  NY
+AA2VG  Peter  NY
+AA2XB  Frank  NY
+AA2Z  Mikio  NY
+AA2ZW  Bob  937
+AA3B  Bud  242
+AA3GM  Ken  PA
+AA3J  Eric  2473
+AA3NC  Steve  NY
+AA4AK  Steve  ME
+AA4BG  Steve  OK
+AA4BQ  Bill  FL
+AA4CF  Chas  1389
+AA4FU  Alan  1121
+AA4GA  Lee  973
+AA4LS  Chas  2133
+AA4MC  Mike  2332
+AA4NC  Will  2371
+AA4NN  Joe  354
+AA4NP  Jim  1954
+AA4Q  Bill  AZ
+AA4SD  Kraig  SC
+AA4V  Steve  1867
+AA5AD  Joe  2366
+AA5AU  Don  LA
+AA5B  Bruce  NM
+AA5BG  Richard  454
+AA5CF  Ken  2680
+AA5JF  Andy  2751
+AA5OY  Bob  LA
+AA5QY  Floyd  AR
+AA5SR  Dave  TX
+AA5TL  Rick  OR
+AA5W  Jim  1826
+AA5ZT  Mike  OK
+AA6MK  Mike  1909
+AA6MU  Dim  CA
+AA6OC  Bob  CA
+AA6VX  Rich  CA
+AA6W  Don  2311
+AA6XA  Jeff  2118
+AA7CT  Bob  OR
+AA7FV  Darrel  1578
+AA7OA  Dan  OR
+AA7ST  John  2263
+AA7V  Steve  AZ
+AA7WU  Mike  ID
+AA8IA  Mike  966
+AA8P  Ralph  OH
+AA8R  Randy  2214
+AA8TA  Joe  1821
+AA8TK  Evan  MI
+AA9A  Tom  1092
+AA9K  Bob  1006
+AA9SN  Scott  2622
+AA9WJ  Jeff  IN
+AB0AB  Jim  MO
+AB0BM  Gary  IA
+AB0DK  Dave  1932
+AB0S  Tim  1857
+AB0TX  Mike  2507
+AB1CW  Howard  1117
+AB1BX  Andy  2191
+AB1DQ  James  CT
+AB1GJ  Ken  161
+AB1J  Ken  MA
+AB1MC  Scott  ME
+AB1SG  Kyle  MA
+AB1WV  Marcus  CT
+AB1XB  Bill  MA
+AB2E  Darrell  NJ
+AB2EZ  Stu  NJ
+AB2SO  Steve  NJ
+AB2ZT  Venkat  NJ
+AB3CX  Mike  NY
+AB3RU  Jon  PA
+AB4PP  JP  2572
+AB4WL  Jim  AL
+AB5EB  Mike  2115
+AB5M  Scott  2738
+AB5OR  Joe  1338
+AB5XS  Jim  TX
+AB6CC  Charles  CA
+AB6UR  Dan  2315
+AB6XG  Rich  1754
+AB6Z  Tom  1664
+AB7MP  Mark  1350
+AB7RW  Phil  2249
+AB9BZ  Dave  IL
+AB9PR  Rick  IL
+AB9V  Mike  IN
+AB9XI  Dick  WI
+AB9YC  AJ  1249
+AC0E  Jim  KS
+AC0W  Bill  1564
+AC1FE  Rich  783
+AC1GF  Bob  NH
+AC2FA  Bob  1026
+AC2II  Robert  NY
+AC2IK  Frank  NY
+AC2K  Alan  35
+AC2KJ  Dima  1376
+AC3K  Pat  DC
+AC3U  Bill  1699
+AC4BT  Jerry  1148
+AC4CA  John  650
+AC4DP  Dave  CWA
+AC4PA  Pavel  GA
+AC5EZ  Ken  TX
+AC5GG  Lee  TX
+AC5JH  Tom  WI
+AC5K  Wes  54
+AC5O  Jeff  LA
+AC6AC  Buz  1911
+AC6SL  John  CA
+AC6T  Steve  CA
+AC6YY  Ned  1244
+AC6ZM  Juan  2419
+AC7JW  Jason  627
+AC7T  Doug  822
+AC8PL  Ulrich  MI
+AC8SI  Dave  mi
+AC8W  Stan  695
+AC9EM  Steve  IL
+AC9EZ  Jim  2342
+AC9OH  Ron  IL
+AD0AB  Jim  2114
+AD0BI  Lar  MO
+AD0DX  Ron  1019
+AD0IU  Rob  864
+AD0IV  Kevin  NM
+AD0K  Don  TX
+AD0LI  Jim  CO
+AD0RX  Brad  CO
+AD0UA  Ken  MO
+AD0WE  Kurt  2167
+AD1C  Jim  131
+AD4C  Hector  FL
+AD4DP  Dave  CWA
+AD4EB  Jim  867
+AD4ES  Chuck  2044
+AD4J  Jim  1144
+AD4N  Ray  2679
+AD4S  Pickett  487
+AD4TJ  TJ  1960
+AD4UM  Joe  2765
+AD5A  Mike  1415
+AD5A/VP5  Mike  1415
+AD5MT  Pat  2602
+AD6E  Alan  217
+AD6FC  Fred  CA
+AD6JV  Bill  1719
+AD7AF  Rich  OR
+AD7KG  Jed  UT
+AD8CW  Doug  412
+AD8J  John  1395
+AD8J/HR9  John  1395
+AD8Y  David  OH
+AE0EE  Bill  MN
+AE0P  Brian  1051
+AE1CW  Jim  ME
+AE1N  Lane  NH
+AE1T  Peter  1404
+AE1T/1  Pete  1404
+AE2T  Al  NY
+AE2U  Mike  869
+AE3J  Bill  PA
+AE4DT  Jim  GA
+AE4EY  Fred  AL
+AE4QQ  Dave  1625
+AE4RM  Roger  FL
+AE4Y  Kent  2002
+AE5DT  Dennis  TX
+AE5WD  Clark  TX
+AE5X  John  TX
+AE5XQ  Dave  TX
+AE6RF  Donald  CA
+AE6Y  Andy  38
+AE7EU  Martin  2725
+AE7I  Craig  NV
+AE7IS  Frank  OR
+AE7OV  Gary  AZ
+AE7PG  Allen  WA
+AE7TG  Allen  WA
+AE7US  Rocky  1781
+AE8TF  Tom  MI
+AF1E  Joe  2605
+AF1R  Leandra  MA
+AF1Z  Mark  FL
+AF3K  John  2186
+AF4FG  Earl  GA
+AF4K  Bry  FL
+AF4NC  Tom  1521
+AF4QK  Ken  2746
+AF4T  Doug  2675
+AF5CC  John  1675
+AF5DM  Dave  1205
+AF5OD  Lando  AR
+AF5Q  Ron  1805
+AF5RA  Robert  TX
+AF5TR  Peter  TX
+AF5U  Dave  500
+AF5WT  Lance  AR
+AF6GA  Phil  CA
+AF7QD  Jess  WA
+AF8A  Gary  2092
+AF9W  Bob  1173
+AG2O  Mike  NY
+AG3I  Marty  2579
+AG3R  Pete  467
+AG3Y  James  AL
+AG4CC  KC  2712
+AG4EA  Bill  2373
+AG4JT  Matt  VA
+AG5FX  Jamie  OK
+AG5M  Richard  1747
+AG5QX  Mike  2401
+AG5W  Greg  TX
+AG6FU  Phil  CA
+AG6V  Donna  911
+AG7CC  Cliff  ID
+AG9A  Mark  641
+AG9C  Bob  IN
+AG9U  Ben  IL
+AH0U  Bruce  1825
+AH6C  Jerry  FL
+AH6KO  Stan  1794
+AH6RE  Curt  830
+AH6V  Jeremy  HI
+AH6VV  Carl  2300
+AH7I/W4  Bob  GA
+AI2Q  Alex  ME
+AI2S  Ray  FL
+AI2T  Barry  NY
+AI5IN  Marty  TX
+AI6DO  Ryan  CA
+AI6O  Ed  1337
+AI6PW  Andrew  CA
+AI6V  Wyatt  2242
+AI6XN  Amlan  CA
+AI8Z  Mike  CO
+AJ1AJ  AJ  NH
+AJ1DM  John  1973
+AJ3AA  Nate  445
+AJ4F  Robie  TX
+AJ4HP  Olon  1467
+AJ4SB  Rob  TN
+AJ6AN  Rowdy  CA
+AJ6CL  Martin  2597
+AJ6DU  Ted  2269
+AJ6GI  Jaime  2465
+AJ7F  Tim  WA
+AJ8B  Bill  1567
+AJ8M  Bruce  OH
+AJ9C  Mike  IN
+AK1MD  Alex  MA
+AK4AO  Doug  2145
+AK4AT  John  2391
+AK4HA  Glen  KY
+AK4IC  David  SC
+AK4NY  Tom  1544
+AK4SQ  Dan  1296
+AK5CT  Bill  MS
+AK5Y  Will  TX
+AL1G  Corliss  2161
+AL7JK  Bill  AK
+AL7N  Ed  AK
+AL7R  Brent  AZ
+AO1AAW  Juanjo  714
+BA1RB  Bin  
+BA4TB  Dale  259
+C6AKQ  Bob  
+C6AQQ  Brian  302
+C6ARU  Tim  
+C6AUM  Mike  1182
+C92ZO  Mark  1224
+CE2LR  Matt  2281
+CE3DNP  Carlos  
+CM8NMN  Noe  2082
+CN8YR  Med  1656
+CO2IR  Frank  1147
+CO2UE  Fred  
+CO6RD  Rey  1898
+CO8CY  Oriol  
+CO8NMN  Noe  2082
+CO8ZZ  Raul  1682
+CR6K  Fil  2699
+CR7AJL  Men  
+CT1BOH  Jose  
+CT1DBS  Pedro  
+CT1DRB  Dave  430
+CT1ILT  Fil  2699
+CT7/K9PM  Paul  2573
+CT7AFN  Carlos  
+CT7AGZ  Ken  2126
+CT8/SM0Y  Lars  1155
+CT9ABV  Ulf  1517
+CU3AA  Joao  1804
+CU3H  Dave  
+CU3HQ  Dave  
+CX6VM  Jorge  525
+CX7CW  Phil  570
+CX7TT  Tom  518
+DD5CF  Colin  1832
+DD5KG  Gabor  2471
+DD5XX  Saki  2354
+DD7CW  Rocky  2587
+DF0BA  Vlad  
+DF1J  Ugene  
+DF1PY  Steve  2502
+DF1TL  Klaus  
+DF2UD  Bernd  
+DF2UU  Hans  
+DF3CE  Wolf  
+DF3FS  Bert  
+DF3IAL  Andy  176
+DF3PN  Guenter  
+DF4XX  Kurt  1753
+DF4ZK  Gunter  
+DF4ZL  Paul  2707
+DF5EG  Joe  2687
+DF5RF  Gernot  
+DF5RI  Laft  
+DF6FQ  Juergen  
+DF6RI  Alfred  
+DF9TF  Richard  
+DF7TV  Tom  2613
+DF8LY  Sven  
+DF9TF  Rich  2493
+DH4NWG  Martin  
+DJ0AJ  Ekrem  
+DJ0MCH  Relly  409
+DJ0MDR  Mike  
+DJ0QN  Mitch  747
+DJ0SP  Hans  
+DJ1KJ  Hans  
+DJ1OJ  Heijo  425
+DJ1PQ  Rob  
+DJ1YFK  Fabian  1566
+DJ2AX  Peter  
+DJ2JES  Hardy  
+DJ2PR  Rudi  
+DJ4MX  Sven  2697
+DJ6PC  Fred  
+DJ6TK  Wilf  
+DJ7AO  Steve  2254
+DJ7MH  Mario  
+DJ7UC  Dirk  2575
+DJ7YP  Helmut  
+DJ8GE  Gunter  2546
+DJ8QQ  Horst  
+DJ9AO  Oli  
+DJ9IE  Uli  
+DJ9RB  Nob  
+DK0LT  Hans  
+DK1OU  Fritz  
+DK1WI  Ed  1602
+DK2FE  Leo  
+DK3HM  Heinz  
+DK3WW  Uwe  2523
+DK4BX  Erwin  
+DK4FP  Gerd  
+DK4LX  Holger  802
+DK5AX  Markus  1812
+DK5KK  Kolja  1965
+DK5TX  Ulf  
+DK6SP  Phil  2588
+DK6XZ  Suad  
+DK7LX  Georg  
+DK7PE  Rudi  
+DK8FG  Peter  
+DK8MCT  Tom  
+DK8SR  Paul  2539
+DK8WZ  Joerg  
+DK8ZB  Jo  
+DK9HE  Andy  2553
+DK9PY  Armin  2062
+DL0AF  Fritz  
+DL1AXX  Seb  
+DL1EJM  Christ  
+DL1FY  Erwin  2636
+DL1IAO  Stef  1884
+DL1LBV  Heinz  
+DL1NKB  Bernd  2486
+DL1NKS  Steve  
+DL1ONI  Olli  
+DL1QQ  Sandy  1581
+DL1REM  Frank  2382
+DL1RNN  Lutz  
+DL1XX  Klaus  
+DL2ANM  Heinz  
+DL2CC  Frank  511
+DL2DSL  Joerg  
+DL2DXA  Ben  
+DL2JRM  Rene  
+DL2MKZ  Rainer  
+DL2NYC  Gunther  
+DL2OE  Mike  2735
+DL2RNF  Fritz  
+DL2RPS  Klaus  
+DL2SWU  Siggi  
+DL2VPF  Gerd  
+DL3AZ  Andy  982
+DL3DXX  Mar  1164
+DL3NAA  Peter  
+DL3PB  Peter  
+DL3RDM  Max  
+DL3XH  Wim  
+DL3XO  Etlev  
+DL3YM  Andy  2520
+DL3ZI  Fred  
+DL4FDM  Fritz  1084
+DL4FO  Chris  2484
+DL4IA  Bernd  
+DL4JU  Yuri  
+DL4KG  Gerald  2501
+DL4MO  Loy  
+DL4NAC  Maddiin  
+DL5ANT  Ben  
+DL5AXX  Ulf  1517
+DL5AZZ  Alex  
+DL5CW  Paul  2677
+DL5DBY  Tom  1751
+DL5DQZ  Frank  
+DL5OAB  Ben  
+DL5JQ  Erhard  2376
+DL5RJ  Josef  
+DL5XL  Felix  2268
+DL5YCI  Mic  
+DL5YL  Tina  
+DL5YM  Fred  
+DL6AST  Andre  
+DL6BE  Volkert  
+DL6KVA  Axel  1678
+DL6LBI  Ingo  
+DL6MIG  Wil  
+DL6RDR  Stephan  
+DL6UNF  Frank  
+DL7AA  Alex  
+DL7CX  Olaf  
+DL7FAZ  Karl  
+DL7HU  Wolf  
+DL7JV  Jan  
+DL7LPH  Peter  
+DL7SBV  Ben  
+DL7SX  Ruedi  
+DL7UC  Dirk  
+DL8BH  Bernd  2596
+DL8BV  Harry  
+DL8FBH  Mike  
+DL8IH  Willi  
+DL8KX  Tommy  
+DL8MX  Wil  
+DL8PG  Gerd  833
+DL8TG  Klaus  2524
+DL9ABM  Stefan  1922
+DL9FCQ  Tom  
+DL9GFB  Franz  2535
+DL9LM  Yuri  
+DL9MDW  Chris  
+DL9MFY  Bodo  
+DL9UO  Mike  
+DL9YPS  Joerg  
+DM1TT  Hannu  333
+DM2DMI  Peter  
+DM2DZM  Peter  
+DM3KF  Horst  
+DM3XI  Klaus  
+DM4CW  Martin  1870
+DM4EE  Joe  
+DM4WL  Dieter  
+DM6EE  Lutz  2654
+DO4DXA  Marc  1851
+DO6AN  Nils  
+DU3LA  Larry  644
+E21EIC  Champ  264
+E71A  Emil  484
+E73ESP  RC  
+E74D  Nermin  
+E74X  Veljko  2583
+E77XZ  Suad  
+EA1ARB  Vic  
+EA1CS  Luis  
+EA1DP  Jose  2503
+EA1DR  Oscar  
+EA1WX  Juanjo  714
+EA1X  Juan  2562
+EA2AJB  Andres  1048
+EA2BD  Igna  
+EA2CW  Mike  
+EA2DDE  Jorge  
+EA2DPA  Raul  2519
+EA2HW  Enio  
+EA3BV  Jon  
+EA3FZT  Francis  2560
+EA3GHZ  Joan  
+EA3HSO  Al  2132
+EA3IAA  Manel  
+EA3NN  Dany  
+EA4GMX  Felipe  
+EA4KD  Pete  
+EA4M  Rick  1070
+EA4OR  Ignacio  2218
+EA4ZK  Rick  1070
+EA5FV  Dani  
+EA5IIK  Andy  
+EA5IUY  Gary  2508
+EA5KA  Raul  1512
+EA5KO  Andy  2545
+EA5M  Dani  
+EA6/DL4JU  Yuri  
+EA6TS  Pedro  1510
+EA7AM  Pedro  
+EA7EGU  Manuel  2505
+EA7JW  David  1933
+EA8/DH2MS  Manfred  
+EA8/DJ9RB  Nob  
+EA8/DL4KCA  Joe  
+EA8/SA6G  Lars  173
+EA8AY  Luis  
+EA8BEX  Manuel  
+EA8BMG  Luis  1063
+EA8CAC  Juan  850
+EA8CN  Andy  265
+EA8DDM  Carlos  
+EA8DP  Marino  
+EA8F  Franky  
+EA8KW  Carlos  1565
+EA8NQ  Isi  
+EA8OM  Heijo  425
+EA8RM  Juan  850
+EA8ZS  Manuel  907
+EC7ABV  Tony  1558
+EE8E  Juan  850
+EE8X  Luis  
+EF8M  Val  536
+EF8N  Andy  265
+EF8O  Heijo  425
+EF8R  Juan  850
+EF8USA  Luis  
+EF8X  Luis  
+EI2CN  Doug  1503
+EI3HA  Tony  
+EI2HIB  Martin  
+EI2IDB  Slav  
+EI2IM  Don  55
+EI3KB  Ray  1872
+EI6FR  Declan  
+EI6KW  Slav  
+EI7BA  John  
+ER/UW7LL  Yarik  2229
+ER1SN  Alex  
+ER5AL  Tony  
+ES0NW  Ivo  
+EU3AA  Vic  
+EU8F  Serg  
+EV1R  Alex  
+EW1I  Alex  
+EW1TZ  Serge  
+EW7LO  Vlad  
+EY8MM  Nodir  815
+F2IL  Jean Marie  
+F3OA  Mike  
+F4GFT  Andy  
+F4IBT  Jose  
+F4WAR  Jose  CWA
+F5BQU  Seb  
+F5BWA  Dan  
+F5EQR  Regis  
+F5IN  Mike   
+F5IUZ  Moise  
+F5IYC  Chris  
+F5IYJ  Phil  1842
+F5JLQ  Georges  
+F5JU  Jon  
+F5JVP  Didier  2248
+F5MAI  Regis  
+F5MNK  LO  1291
+F5MNW  Guy  
+F5NTZ  Xavier  
+F5NZY  Steph  1528
+F5OHM  Chris  
+F5PBL  Claude  2326
+F5PGA  Peter  
+F5PLC  Mike  2370
+F5ROW  Eric  
+F5SGI  Jean  2532
+F5TGR  Jean  
+F5TYQ  Elio  
+F5VHN  Rob  
+F5VJC  Deni  2142
+F4VRS  Gil  
+F5VV  Joel  1885
+F6ARL  Dan  
+F6AXX  Norbert  2428
+F6BUL  Lo  
+F6CEL  Ghis  1876
+F6ENO  Alain  2261
+F6FNL  Pedro  
+F6FTI  Pierre  
+F6GPT  John  
+F6HKA  Bert  1088
+F6IRE  Charles  
+F6JOE  Jean  1091
+F6UIG  Pascal  
+F8BBL  Lor  
+F8BJE  Guy  
+F8DGF  Nico  
+F8DGY  Chris  
+F8DML  Bernard  
+F8FQX  Nic  1755
+F8FSN  Georges  2610
+F8NUH  Jean  
+FG8NY  Jean  1091
+G0AYD  Dave  2159
+G0BQV  Mary  
+G0BYH  Geoff  
+G0CEJ  Harry  
+G0CKP  Steve  2451
+G0DJA  Dave  266
+G0DJA/P  Dave  266
+G0EFO  Mike  
+G0ELZ  Bill  239
+G0EML  Ray  
+G0HKC  Keith  1739
+G0IBN  Andy  
+G0JPS  Chris  2080
+G0KDZ  Mike  
+G0LLX  Andy  
+G0MFR  Gareth  2490
+G0MGM  Rob  1771
+G0NIG  Nigel  
+G0ORH  Ken  
+G0PNM  Peter  
+G0RDO  John  362
+G0UJK  Colin  
+G0UYG  Andy  2453
+G0VQW  Sandy  521
+G0WCZ  Grae  1983
+G1ZOS  Colin  1832
+G2CWO  Duncan  1979
+G2JL  Mort  32
+G3ILO  Steve  
+G3KDP  Tony  
+G3KSU  Alan  
+G3KTZ  Ron  
+G3LDI  Roger  1843
+G3LIK  Mick  
+G3LQC  Ray  
+G3MPN  Dave  
+G3NKC  Dave  449
+G3OAC  Ken  
+G3OKA  John  
+G3PXT  Gordon  
+G3ROO  Ian  606
+G3SVK  Fred  1357
+G3SYS  Darrel  1578
+G3TXF  Nigel  166
+G3UNA  David  509
+G3USA  Colin  
+G3VDB  Jim  
+G3WAB  Phile  
+G3WCY  Brian  
+G3WGN  Dave  482
+G3WPH  Mike  
+G3WRJ  Dick  2209
+G3WZD  Duncan  1979
+G3XLG  Ray  1365
+G3XPO  Ken  
+G3XTT  Don  1874
+G3YIQ  Bob  618
+G3YJQ  Fred  1378
+G3YLA  Jim  2015
+G3YXX  David  493
+G3ZRJ  Tony  
+G3ZYV  Dave  356
+G4AFU  Paul  293
+G4AJY  Dave  
+G4AON  Dave  
+G4AXX  Mark  1057
+G4BSW  Nigel  2083
+G4BUE  Chris  1294
+G4CCX  Chris  2003
+G4CPA  Geoff  
+G4DJX  Alan  
+G4DRS  John  1457
+G4DYC  Mike  2116
+G4E  Chris  1294
+G4FAD  Rich  547
+G4FJW  Chris  
+G4GIR  Ian  
+G4HOM  Fred  
+G4HXL  Larry  
+G4HZE  Ed  2753
+G4HZV  Bob  1636
+G4ILW  James  1729
+G4IZZ  Mike  2511
+G4IRN  John  268
+G4LJU  Colin  
+G4LMW  Rob  
+G4LPP  Phil  2547
+G4MPN  Dave  
+G4NVR  Phil  1583
+G4PFZ  John  
+G4PIQ  Andy  2767
+G4PVM  Paul  2413
+G4PVN  Paul  
+G4RCG  John  2379
+G4RMV  Mike  1614
+G4SMB  Mike  2700
+G4TSH  Justin  
+G4USI  Daimon  2496
+G4VYI  Mike  
+G4UZE  Chris  2641
+G4UZN  Tony  
+G4VIW  Andy  2586
+G4WQI  Dean  
+G4XUM  Martin  569
+G5CL  Ryan  422
+G7VJR  Michael  968
+G8AJM  Chris  1572
+G8VKQ  Clive  CWA
+G8VPE  John  
+G8VR  Kerry  
+GD0OUD  Stu  1829
+GD4EIP  Colyn  2187
+GI2CWO    
+GI4CFQ  Gary  765
+GI4SZW  Jim  
+GM0EPO  John  1974
+GM0EUL  Peter  1899
+GM0LIR  Phil  
+GM2CWO    
+GM2V  Chris  2436
+GM3JOB  Rod  2204
+GM3WOJ  Chris  2436
+GM3YOR  Drew  
+GM4JPZ  Colin  2537
+GM4WZG  Bernie  2689
+GU4CHY  Dick  1543
+GW0ETF  Stew  919
+GW2CWO    
+GW3KGV  Ken  
+GW3NJW  Clive  
+GW3YDX  Ron  100
+GW4GNY  Martin  
+GW4J  Stew  919
+GW4MVA  Glen  2178
+GW4OKT  Keith  1952
+GW4VXE  Tim  2755
+GW7N  Glen  2178
+HA0NAR  Laszlo  2172
+HA1RJ  Andras  
+HA2NP  Robert  
+HA2NY  Feri  
+HA2SB  Gabor  
+HA3HK  Zoli  
+HA3MN  Egon  
+HA4AA  Andras  
+HA5AO  Istvan  1522
+HA5CQZ  Zoltan  
+HA5JI  Gyuri  538
+HA5NR  Gabor  
+HA5UL  Feri  
+HA6OA  Gabi  
+HA7AP  Imre  
+HA7I  Laci  
+HA7JQK  Alex  
+HA7MF  Gabor  
+HA8EV  Peter  2655
+HA8JV  Paul  
+HA8LLK  Aty  
+HA8RM  Peter  
+HA8TI  Janos  
+HA8VV  Paul  
+HA8VX  Marty  
+HA8WV  Janos  
+HA9RC  Zoli  2766
+HA9RT  Joska  1213
+HB9AJY  Fritz  2672
+HB9ARF  Phil  1354
+HB9AUK  Walt  2593
+HB9BJL  Chris  2541
+HB9CAT  Marco  
+HB9CBR  Bruno  
+HB9CPS  Geo  
+HB9CSA  Fri  1084
+HB9CTU  Herbert  
+HB9CVQ  Andy  219
+HB9DAQ  Peter  2592
+HB9DAX  Fred  687
+HB9DDZ  Nick  2442
+HB9DHG  Fulvio  
+HB9DQJ  Marco  2747
+HB9DQL  Juerg  2582
+HB9EBC  Mike  
+HB9EGA  Marcin  2047
+HB9FBP  Francesco  
+HB9FIR  Clay  598
+HB9JAI  Karl  
+HC2AO  Alex  
+HC2TDZ  Yuri  21
+HF1D  Jerzy  
+HG1G  Gus  
+HG2DX  Joe  
+HG8C  Tami  
+HH2AA    
+HI3CC  Tino  1780
+HK1AR  Tony  
+HK3CQ  Juan  
+HK3CW  Roberto  877
+HP1XT  Tom  518
+HQ9X  Dennis  431
+HR9/AD8J  John  1395
+HR9/N3AD  Alan  727
+HR9/SP4Z  Wes  
+HR9/W1UE  Dennis  437
+HS0ZCK  Joe  339
+HS0ZDJ  John  751
+I0GOJ  Tony  602
+I0YQX  Italo  1746
+I0ZUT  Jan  
+I2AZ  Joe  
+I2CZQ  Peter  
+I2IFT  John  2704
+I2RTF  Piero  621
+I2WIJ  Bob  2406
+I5ECW  Vanni  1679
+I5EFO  Emil  1486
+I5LHY  Fabio  
+I5NHG  Stefano  
+I8NHJ  Max  24
+I8QFK  Ben  2769
+I8QJU  Joe  
+IK0HBN  Sante  617
+IK0IXI  Fabio  
+IK0NOJ  Dany  1732
+IK0OPS  Piero  
+IK0XCB  Clay  598
+IK0XFD  Giordano  1570
+IK0YGJ  Carlo  
+IK0YUJ  Luigi  
+IK0YVV  Marco  1505
+IK1HGE  Rob  2632
+IK1NEG  Gab  
+IK1PML  Otto  (Ottavio)  Borgone Di Susa Italy  
+IK1RGK  Aldo  2574
+IK1WNO  Enrico  2525
+IK1YRA  Carl  
+IK2QEI  Nel  
+IK2SAT  Mauro  
+IK2WAD  Joe  2200
+IK2YYM  Giu  
+IK3YBX  Ricky  2563
+IK4EWX  Ian  
+IK4VFD  Rudy  
+IK4ZIF  Lou  
+IK5DFE  Enroco  
+IK5FKF  Larry  
+IK5TBK  Steve  
+IK5VLL  Andy  1545
+IK7MIY  Raffael  
+IK7UKF  Sal  2762
+IK8BIZ  Bob  
+IK8TEO  Francesco  
+IN3FHE  Helga  1548
+IS0AFM  Simone  692
+IS0ESG  Gian  
+IT9BLB  Joe  2138
+IT9CDU  Vince  
+IT9CKA  Serafino  2584
+IT9IML  Rosario  
+IT9MUO  Alf  1569
+IT9RZU  Joe  
+IT9SSI  Dario  2137
+IT9VDQ  Giu  1538
+IU4APC  Andrea  
+IV3ZUY  Dudine  
+IW0EFO  Daniele  
+IW2MXE  Diego  2165
+IW4AOT  Piero  
+IW4EGA  Gian  
+IW5EFO  Dan  1574
+IW9HPE  Biagio  
+IX1IIU  Maurizzio  
+IZ0KBW  Luigi  2156
+IZ0TZI  Gian  
+IZ1IFT  John  
+IZ2DQD  Renato  
+IZ2FME  Mik  2151
+IZ3GOM  GAbrielle  
+IZ3YPS  Guido  
+IZ4AKO  Pierluigi  
+IZ4ORF  Joi  
+IZ5BBS  Renato  
+IZ7DJR  Nigo  
+IZ7GEG  Luca  
+IZ8VKW  Luigi  
+J6/K4ZGB  Tom  468
+J6/WA4PGM  Kyle  255
+J68SS  Steve  1862
+J75Y  Doug  817
+J79IX  John  984
+J79SB  Steve  1268
+JA1GQC  Kazu  1204
+JA1GZV  Moto  1014
+JA1LZR  Joe  1010
+JA1NUT  Shin  15
+JA2BCQ  Kaz  
+JA3AVO  Masumi  1200
+JA4IIJ  Takeshi  733
+JA4MRL  MasaG  269
+JA5DQH  Aki  777
+JA6LCJ  Yuki  
+JA7QVI  Tac  
+JA8CDG  Ken  161
+JE1TRV  Atsu  141
+JF1TTN  Masa  
+JF2IWL  Dai  1286
+JF3KNW  Nobu  394
+JH1GNU  Shigeru  713
+JH1JDI  Mai  1199
+JH3MUV/2  Yoshie  
+JI1RXQ  Hiro  2223
+JI3CJP  Kan  1140
+JJ1BDX  Kenji  384
+JJ8KGZ  Leo   
+JK1JHB  Satoru  879
+JK2VOC  Yoshie  
+JL1GEL  Aki  1202
+JL1IRB  Hoz  420
+JL8KUS  Tubo  1179
+JN1THL  Ken  161
+JN1WFF  Naoki  
+JO1LVZ  OM  
+JR1NHD  Shin  
+JT1AA  Gan  
+JT1AS  Sank  
+JT1BE  Timur  
+JT1CD  Khos  
+JT1CO  Chak  
+JT1CS  Bat  
+JT1DA  Enkh  
+JT1DX  Bat  
+JT1F  RC  
+K0AD  Al  138
+K0ALN  Bob  CO
+K0AP  Dragan  370
+K0AV  Alan  1129
+K0BJ  Bruce  KS
+K0BRO  Ron  MO
+K0CA  Cliff  903
+K0CF  Craig  1834
+K0CMH  Craig  MO
+K0DEQ  Bill  1683
+K0DQ  Scott  VA
+K0DTJ  Brian  717
+K0DTQ  John  MN
+K0DXC  Cal  152
+K0EJ  Mark  2016
+K0ERE  Bill  AZ
+K0EU  Ken  1113
+K0EX  Mark  667
+K0FG  Fred  1893
+K0FHG  Bob  MO
+K0FUZ  John  KS
+K0FX  Don  1326
+K0GUZ  Steve  1889
+K0HD  John  MN
+K0HB  Hans  231
+K0HT  Luc  GA
+K0HX  Stan  1721
+K0IDX  Ron  ND
+K0INN  Tom  1704
+K0IR  Ralph  519
+K0JD  John  WI
+K0JP  Jack  1047
+K0JVX  John  KS
+K0JZ  Clarence  KS
+K0KG  Keith  1401
+K0KT  Bill  IA
+K0LUZ  Red  956
+K0MD  Scott  305
+K0MLF  Don  UT
+K0MP  Bill  1736
+K0MPH  Roger  MN
+K0MVB  Bob  2649
+K0MZN  Del  NV
+K0NIA  Mark  IA
+K0NM  Niz  1430
+K0NW  Ed  CA
+K0ODF  Lynn  2252
+K0OSW  Ken  NM
+K0OU  Club  MO
+K0PC  Pat  947
+K0PD  Dave  2035
+K0PFX  Mel  271
+K0PGE  Ron  1712
+K0PK  Paul  2233
+K0PV  Don  1823
+K0RAR  Rob  KS
+K0RF  Chuck  887
+K0RU  Rob  KS
+K0SN  Tom  1344
+K0TC  Ron  1421
+K0TG  John  1830
+K0TQ  Mike  2434
+K0TRL  Brad  KS
+K0UK  Bill  1154
+K0UU  Jeff  MN
+K0VBU  Bill  844
+K0VD  Sam  2670
+K0VW  JJ  2098
+K0VXU  Russ  836
+K0WA  Lee  1859
+K0WOI  Dan  IA
+K0XP  Steve  CA
+K0XQ  Sean  1844
+K0XX  John  2061
+K0YL  Nancy  1831
+K0ZR  Jeff  1533
+K0ZU  Doug  1880
+K0ZX  Rich  463
+K1AJ  Bruce  212
+K1APJ  Andy  2466
+K1AQB  Bill  1708
+K1AR  John  1741
+K1ARR  Art  VT
+K1AY  Chris  2405
+K1BG  Bruce  1276
+K1BV  Ted  CT
+K1BX  Art  NH
+K1BZ  Dave  1958
+K1CDX  Rich  MA
+K1CHM  Craig  1900
+K1CP  Clif  168
+K1CTR  Doug  2339
+K1CX  Hank  61
+K1DC  Don  AL
+K1DFT  Rob  RI
+K1DG  Doug  817
+K1DJ  Rich  1556
+K1DT  Tess  RI
+K1DW  Dallas  326
+K1EBY  Frank  1593
+K1EP  Ed  465
+K1ESE  John  792
+K1FQL  Martin  NH
+K1FV  Sheila  MA
+K1GQ  Bill  NH
+K1GU  Ned  884
+K1GU/0  Ned  884
+K1GU/4  Ned  884
+K1GUP  Jerry  363
+K1HTV  Rich  198
+K1IFJ  Jack  1554
+K1IG  George  2396
+K1IR  Jim  73
+K1IU  Bob  IA
+K1JD  John  75
+K1KK  David  NC
+K1KNJ  Reg  ME
+K1KS  Al  1561
+K1LB  Woody  1633
+K1LGM  Joe  CT
+K1LGO  Dennis  NH
+K1LGQ  Dennis  NH
+K1LHO  Mike  2494
+K1LKP  Carmen  724
+K1LZ  Krassy  ME
+K1MAZ  Nick  MA
+K1MD  Michael  RI
+K1MK  Mike  385
+K1MM  Bill  43
+K1MMB  Jeff  1716
+K1MT  David  2581
+K1NMF  Den  NH
+K1NOK  Bob  764
+K1NY  Gerry  1929
+K1NZ  Maz  MA
+K1OA  Scott  736
+K1OIK  Burt  MA
+K1OJ  OJ  2398
+K1OKD  Jerry  2734
+K1ON  Larry  VT
+K1PDY  Ron  NH
+K1PKZ  Paul  118
+K1PL  Paul  CT
+K1PX  Jim  1080
+K1QED  Robert  MA
+K1QVX  Bob  CT
+K1QX  Craig  1358
+K1RF  Steve  CT
+K1RM  Vin  116
+K1RO  Mark  1306
+K1RV  Pi  639
+K1RWR  Bob  MA
+K1RX  Mark  NH
+K1SA  Bernie  40
+K1SEC  Paul  1710
+K1SEI  Tage  2623
+K1SM  Bill  506
+K1SND  Tony  MA
+K1SU  Scott  MA
+K1SWL  Dave  NH
+K1SX  Dave  1448
+K1TA  Tom  CT
+K1TH  Tom  720
+K1TL  Tom  367
+K1TN  Jim  WI
+K1TR  Ed  1957
+K1TZL  Howie  
+K1USN  Watson  MA
+K1VLB  Mike  NH
+K1VLB/1  Mike  NH
+K1VMT  Joe  1400
+K1VR  Fred  57
+K1VSJ  Howie  2032
+K1VT  Jack  1513
+K1VU  Mike  1247
+K1VUT  Dave  1878
+K1WAT  Oleg  PA
+K1WGM  Bob  2257
+K1WNO  Enrico  2525
+K1XM  Paul  74
+K1XX  Charlie  FL
+K1YM  John  MA
+K1YR  Lou  AZ
+K1YT  Bill  44
+K1YY  Bob  1783
+K1ZJA  Bill  2645
+K1ZR  Shane  NH
+K1ZZ  Dave  2352
+K1ZZI  Ed  677
+K2AAW  Edib  NY
+K2ACX  Brian  2761
+K2AU  Mark  235
+K2AV  Guy  1671
+K2CDX  Mike  NY
+K2CJ  CJ  2201
+K2CM  Geo  NY
+K2CS  Chris  NY
+K2CUB  Scott  2030
+K2DB  Paul  686
+K2DIW  Seth  2051
+K2DM  George  2652
+K2EK  Bill  2072
+K2EKM  Bill  VA
+K2EQ  Howard  NY
+K2FX  Paul  NY
+K2GO  Tom  518
+K2HZO  Paul  2589
+K2IW  Zach  2521
+K2KQ  Don  192
+K2KRG  Steve  1926
+K2KRG/M  Steve  1926
+K2KW  Ken  80
+K2LE  Andy  39
+K2LNS  Herb  2208
+K2LP  Bud  MA
+K2MF  Barry  1253
+K2MGR  Kurt  915
+K2MMO  Mike  NY
+K2MRK  Mark  FL
+K2MYQ  Bill  NJ
+K2MYQ/1  Bill  ME
+K2NEL  Sean  2232
+K2NEL/P  Sean  2232
+K2NV  Tony  1027
+K2NV/VE3  Tony  1027
+K2ONP  Doc  NY
+K2OO  Andy  OH
+K2OS  Frank  2194
+K2PI  Harv  1456
+K2PJC  Paul  NY
+K2PO  Bill  848
+K2PS  Pete  FL
+K2QB  Jim  935
+K2QBN  Evan  FL
+K2QMF  Ted  105
+K2QO  Mark  573
+K2RB  Rick  NY
+K2RD  Ira  63
+K2RP  Ron  CA
+K2RS  Jack  CT
+K2RSK  Peter  936
+K2SAN  Paul  TX
+K2SD  Scott  2266
+K2SEI  Tage  NJ
+K2SG  Tony  252
+K2SX  Dennis  124
+K2TQC  Bill  NY
+K2TT  Bill  586
+K2TTM  Mike  NY
+K2TW  Tom  2000
+K2UA  Rus  2121
+K2UCW  Rich  NY
+K2UFT  Dick  209
+K2UV  Warren  NY
+K2VCO  Vic  5
+K2VV  John  2292
+K2WDE  Seth  LA
+K2WK  Walt  444
+K2WR  Rich  NY
+K2XA  Saul  347
+K2XR  Dave  PA
+K2XX  Joe  339
+K2YEF  Bill  FL
+K2YGM  Bob  2130
+K2YGM/4  Bob  2130
+K2YR  Carl  2567
+K2YWE  Dan  395
+K2YY  John  
+K2ZC  Dave  1405
+K2ZF  Jim  716
+K2ZM  John  NY
+K2ZM/M  John  NY
+K2ZR  Dick  515
+K2ZR/4  Dick  515
+K3AO  Serge  NH
+K3ATO  Hal  2552
+K3BLN  Gil  PA
+K3BR  Brad  SC
+K3CT  John  466
+K3CWO    PA
+K3DGR  Dave  694
+K3DMG  Lee  1837
+K3DMG/P4  Lee  1837
+K3DQ  James  MD
+K3DY  Tony  PA
+K3ESE  Lloyd  2504
+K3EST  Bob  CA
+K3EW  Phil  2236
+K3FH  Mike  2516
+K3FX  Charlie  NJ
+K3GBB  George  2612
+K3GHH  John  1212
+K3GHH/2  John  1212
+K3GHH/5  John  1212
+K3HW  Bill  1998
+K3IE  Hunter  990
+K3IN  Peter  2196
+K3IU  Ken  364
+K3JHT  John  PA
+K3JLM  Dennis  PA
+K3JST  John  PA
+K3JT  Terry  1398
+K3LR  Tim  943
+K3MD  John  750
+K3MIY  Ron  PA
+K3MM  Ty  MD
+K3MR  Matt  2070
+K3MTR  Tyler  MD
+K3NA  Eric  MA
+K3NF  Harry  VA
+K3NG  Goody  PA
+K3NL  Nick  PA
+K3OO  Rick  PA
+K3OOL  Craig  PA
+K3OX  Kevin  2024
+K3PA  Drew  1046
+K3PH  Bob  2195
+K3PID  Ron  2514
+K3PO  David  MD
+K3PP  Glenn  1787
+K3PSD  Paul  PA
+K3QP  Bill  1387
+K3RC  Bob  OH
+K3SEN  Dale  1391
+K3SEW  Ron  PA
+K3SFP  Peter  VA
+K3SK  Steve  VA
+K3STX  Paul  711
+K3SV  Bill  1946
+K3SW  SW  1964
+K3TEJ  John  2757
+K3TF  Tom  1123
+K3TN  John  245
+K3TS  Tony  1970
+K3TX  Dave  1997
+K3UA  Phil  1579
+K3UK  Andy  NY
+K3UL  Bob  1673
+K3US  John  VA
+K3UT  Phil  1537
+K3VIG  Ron  PA
+K3VZ  Don  PA
+K3WA  Bill  319
+K3WI  Bill  2347
+K3WJV  Bill  1465
+K3WT  Tom  732
+K3WW  Chas  178
+K3WWP  John  PA
+K3XA  Bill  763
+K3YEO  Ron  1846
+K3YMI  Jim  MD
+K3YNY  Rick  MD
+K3YP  Ray  1845
+K3ZA  Tony  2695
+K3ZGA  Bob  1811
+K4AB  Larry  704
+K4ADI  Frank  SC
+K4AEN  Tom  1861
+K4AFE  John  1560
+K4AHO  Jim  1049
+K4ALE  Bevin  VA
+K4AMC  Jim  922
+K4ANU  Richard  NC
+K4ARQ  John  1437
+K4AVX  John  2059
+K4BAI  John  76
+K4BB  Bob  GA
+K4BFL  Royce  GA
+K4BG  Bob  GA
+K4BKD  Pete  GA
+K4CJX  Steve  TN
+K4CWT    AL
+K4DJ  Rich  NC
+K4DME  Dave  VA
+K4DXV  Steve  1966
+K4EA  Neal  2357
+K4EDX  Rene  451
+K4EES  Ken  2389
+K4EET  Dave  1724
+K4EFZ  Chris  FL
+K4EJ  Frank  FL
+K4EOR  George  1655
+K4EU  Steve  1329
+K4EWG  Pete  502
+K3FCG  OJ  FL
+K4FJU  Hal  NC
+K4FN  Dan  1639
+K4FT  John  304
+K4FV  Neil  FL
+K4GJF  Gary  VA
+K4GK  Chas  GA
+K4GM  Geo  779
+K4GMH  Mike  1015
+K4GUF  Jim  TN
+K4HC  Chris  371
+K4HEN  Theo  2481
+K4HQK  John  894
+K4HR  Davy  1494
+K4IA  Craig  2073
+K4IG  John  SC
+K4ITV  Chas  1312
+K4IU  Fred  507
+K4IWW  Will  NC
+K4JAZ  Paul  1260
+K4JC  Vince  2721
+K4JKL  Jerry  948
+K4JPD  Steve  832
+K4JPN  Steve  VA
+K4JQV  Jake  AR
+K4JTA  Jim  KS
+K4KIR  Matt  FL
+K4KO  Greg  TN
+K4KSR  Bill  2107
+K4KZ  Lon  NC
+K4LQ  Fred  FL
+K4LTA  Bill  TN
+K4LW  Bob  2717
+K4LY  Doug  SC
+K4MIL  Stu  VA
+K4MM  Tom  1568
+K4MQ  Wayne  GA
+K4MSG  Paul  315
+K4MTI  Mike  FL
+K4NA  Tom  AL
+K4NAX  Don  TN
+K4NE  Phil  2220
+K4NMR  Tom  2298
+K4NP  Don  TN
+K4OAH  Garey  VA
+K4OAQ  Fritz  1658
+K4ODL  Randy  1464
+K4ORD  Riley  1024
+K4OSO  Milt  775
+K4OV  Rob  1592
+K4OWR  Bill  TN
+K4OY  Greg  2464
+K4PI  Mike  1066
+K4QPL  Jim  244
+K4QS  Chuck  1749
+K4QS/M  Chuck  1749
+K4QU  Mike  2318
+K4QY  Mike  VA
+K4RB  Bob  236
+K4RIC  Rich  VA
+K4RLC  Bob  NC
+K4RO  Kirk  387
+K4RUM  Mike  1182
+K4SNE  Mark  AL
+K4SNX  Bill  NC
+K4SPO  Paul  KY
+K4SX  Ron  810
+K4TD  Rick  AL
+K4TZ  Tom  1993
+K4UEE  Bob  GA
+K4VBM  Bob  GA
+K4VIZ  Tom  AR
+K4WG  Gene  AL
+K4WJ  John  193
+K4WNY  Don  TN
+K4WTL    FL
+K4WW  Bo  2017
+K4XDR  Andy  NC
+K4XR  Craig  AL
+K4XU  Dick  1083
+K4YFH  Jim  1711
+K4YJ  Dwight  OH
+K4YYL  Art  1177
+K4ZA  Don  298
+K4ZDH  Riley  PA
+K4ZGB  Tom  468
+K4ZLE  Jay  562
+K4ZW  Ken  VA
+K5AB  Alan  299
+K5ALU  Red  MO
+K5ALU/KL7  Red  AK
+K5AM  Mark  NM
+K5AR  Brad  TX
+K5AUP  Jim  1803
+K5AX  Tom  107
+K5AZR  Ed  LA
+K5BGB  Rod  195
+K5BRY  Joe  TX
+K5CI  Leo  2262
+K5CID  James  MS
+K5CM  Con  1662
+K5CRX  Bob  TX
+K5DQ  Peggy  TX
+K5DU  Susan  88
+K5DX/50  Kevin  1293
+K5EDI  Brent  TX
+K5EDM  Greg  1967
+K5EJF  Ray  TX
+K5ESW  Paul  2665
+K5EW  Stan  LA
+K5FNQ  Art  795
+K5FP  Fred  TX
+K5FRC    TX
+K5GA  Bill  TX
+K5GH  George  1071
+K5GM  Pete  322
+K5GN  Dave  TX
+K5GO  Stan  272
+K5GP  Gene  2104
+K5GQ  Mark  672
+K5HEM  Hal  2749
+K5HK  Carl  803
+K5HP  Monk  1717
+K5IRH  Tom  LA
+K5IU  Dick  1303
+K5IX  Dave  1472
+K5IZO  John  TX
+K5JK  Tom  CO
+K5JTH  Jim  TX
+K5JX  Rene  1003
+K5KB  Bill  TX
+K5KC  Ken  2067
+K5KG  Geo  FL
+K5KJ  Sam  1547
+K5KLA  Bill  LA
+K5KPE  Bob  AR
+K5KU  Gary  LA
+K5KV  Benny  273
+K5LG  Les  857
+K5LN  Bill  1152
+K5LY  Lee  1124
+K5MA  Jan  7
+K5ME  Bob  2671
+K5MM  Ron  1984
+K5MP  Mike  2084
+K5NA  Richard  TX
+K5NT  Dave  2368
+K5NZ  Mike  TX
+K5OA  Russ  2158
+K5OGX  Phil  AR
+K5OT  Larry  127
+K5OY  Steve  2551
+K5PHB  Frank  2657
+K5PI  Rob  2124
+K5PP  Max  LA
+K5QR  Andy  2476
+K5RC  Tom  108
+K5RHZ  Chas  TX
+K5RM  John  1776
+K5RT  Paul  1073
+K5SGE  Phil  1470
+K5SNA  Larry  TX
+K5TA  Scott  496
+K5TF  Dick  1033
+K5TM  Tom  SC
+K5TO  Wally  1341
+K5TTE  Doc  TX
+K5TR  George  2684
+K5TU  Kim  1626
+K5UO  Mike  TX
+K5UR  Rick  2439
+K5UTG  Warren  OK
+K5UV  Mike  2701
+K5UZ  David  1316
+K5VI  Andy  1923
+K5VR  Stan  889
+K5VWW  Orville  TX
+K5WA  Bob  1280
+K5WAF  Bill  651
+K5WE  Jeff  OK
+K5WJ  Ken  OK
+K5WK  Ken  1446
+K5WL  Bill  TX
+K5WNU  John  MS
+K5WSN  Bill  TX
+K5WQG  Ed  2127
+K5XK  Ron  AR
+K5XQ  Bud  AL
+K5XS  bernie  AR
+K5XU  Mike  1584
+K5YAA  Jerry  OK
+K5YQF  Cecil  1370
+K5YZW  Ed  2290
+K5ZD  Randy  899
+K6ACQ  Spencer  CA
+K6AKW  Andy  CA
+K6AM  John  CA
+K6AR  Jim  546
+K6BFL  Bren  2340
+K6BHH  Curt  CA
+K6BL  Barbara  CA
+K6CSL  Bert  CA
+K6CTA  Ed  233
+K6DDJ  Doyle  CA
+K6DGW  Skip  142
+K6DMT  Sid  CA
+K6ERI  Erin  CA
+K6EU  Tom  CA
+K6GHA  Don  CA
+K6GT  George  939
+K6GVG  ROY  1207
+K6HP  Ed  1267
+K6HTN  Kate  1068
+K6HZR  Jose  CA
+K6IFF  Bill  CA
+K6III  Jerry  CA
+K6IJ  Fred  216
+K6JEB  Jack  1044
+K6JJR  Mark  CA
+K6JS  Jim  2312
+K6KAP  Mac  CA
+K6KI  Jorma  144
+K6KII  Cliff  CO
+K6KM  Rob  2450
+K6KPH    CA
+K6KQV  Bill  CA
+K6KR  Dick  257
+K6KX  Fred  274
+K6LL  Dave  1455
+K6LRC  Bob  CA
+K6LRN  Rich  CA
+K6MM  John  11
+K6MR  Ken  1270
+K6NA  Glen  548
+K6NR  Dana  2380
+K6NV  Bob  675
+K6PB  Pete  2469
+K6PO  Paul  1758
+K6PO/VE7  Paul  1758
+K6QU  Jerry  715
+K6RB  Rob  3
+K6RB/7  Rob  3
+K6RC  Dave  2363
+K6RM  Barry  NC
+K6RQT  Ryan  1172
+K6RR  Bob  1412
+K6RV  Don  1877
+K6SRZ  Alan  36
+K6SSS  Fred  691
+K6TA  Ken  CA
+K6TD  Kevin  81
+K6TET  Ted  CA
+K6TOR  Rick  2732
+K6TTT  Bruce  2595
+K6UFO  Mark  403
+K6VVA  Rick  CA
+K6WDE  Dave  CA
+K6WG  Stan  CA
+K6WV  Jon  CA
+K6XT  Art  728
+K6XV  Bob  CA
+K6XX  Bob  CA
+K6YF  Robert  1908
+K6YXH  Norm  2304
+K6ZD  Dave  2157
+K6ZGW  Barry  2390
+K6ZO  Don  1375
+K6ZY  Alan  2388
+K7AAK  Rob  AZ
+K7ABV  Eric  2023
+K7AHR  Andy  2460
+K7AJG  Al  VA
+K7AJM  Jim  1730
+K7AZT  Paul  1621
+K7BTW  Rich  2313
+K7BV  Dennis  1733
+K7CNT  Rick  2565
+K7EK  Gary  997
+K7EY  Bruce  UT
+K7FOP  Roland  2600
+K7FOS  Evan  OR
+K7FU  Ray  UT
+K7GA  Jeff  AZ
+K7GM  Rick  NC
+K7GS  Gary  1624
+K7GT  Allan  682
+K7HBN  George  2168
+K7III  Jason  2387
+K7INA  Russ  WA
+K7JA  Chip  CA
+K7JKZ  John  OK
+K7JOE  Joe  2102
+K7JPN  John  AZ
+K7JQ  Bob  592
+K7KHC  Kevin  1298
+K7KY  Doug  1396
+K7LV  George  800
+K7LVJ  John  1833
+K7MOA  Key  1594
+K7MOA/4  Key  1594
+K7MOT  Key  CA
+K7NJ  Riki  275
+K7NM  Lee  801
+K7NV  Kurt  441
+K7ON  Brian  AZ
+K7PAX  Paula  WA
+K7PKG  Matt  AZ
+K7QA  Tom  1959
+K7QBW  Robert  2091
+K7RAT  Tree  OR
+K7RF  Jon  OR
+K7RI  Tom  WA
+K7RL  Mitch  2285
+K7RR  Peter  1575
+K7SF  Steve  1137
+K7SO  Doc  WA
+K7SS  Dan  WA
+K7SV  Lar  1004
+K7TAN  Don  ID
+K7TD  Terry  1948
+K7TQ  Randy  ID
+K7UA  Boryce  UT
+K7ULM  Haines  MT
+K7ULS  Mike  UT
+K7UT  Darryl  2071
+K7VM  Craig  1256
+K7WA  Jim  2338
+K7WEH  Bill  NV
+K7WP  John  479
+K7XC  Tim  NV
+K7XH  Mike  1441
+K7YEM  Steve  2604
+K7ZD  Gary  1814
+K7ZOO  Curt  2075
+K8AAV  Rod  OH
+K8AJS  John  1694
+K8AQM  Ted  2043
+K8AZT  John  2210
+K8BAT  John  OH
+K8BKM  Tom  1925
+K8BL  Bob  OH
+K8BTU  Bill  MI
+K8BZ  Steve  1397
+K8CIT  Art  2321
+K8CMO  Dave  1652
+K8CMR  Carl  MI
+K8CXM  Jim  OH
+K8DK  Doug  1728
+K8DSS  Ed  FL
+K8DV  Dave  OH
+K8EJ  Steve  528
+K8EK  Ed  2475
+K8FC  Joe  581
+K8FP  Daryl  OH
+K8FU  Mark  1772
+K8G  Rich  2123
+K8GL  Greg  693
+K8GT  Gerry  2031
+K8GU  Ethan  2179
+K8KG  Kevin  MI
+K8MH  Marc  MI
+K8HMS  Steve  OH
+K8HU  Charles  VA
+K8IA  Bob  666
+K8IHQ  Carl  OH
+K8IU  Orville  PA
+K8JP  Joe  TX
+K8JPM  Bob  787
+K8JQ  Steve  1402
+K8LBQ  Brian  2320
+K8LSB  Marc  1447
+K8MAJ  Bill  MN
+K8MM  Ian  MI
+K8MP  Joe  2415
+K8MR  Jim  2533
+K8MW  Dick  MI
+K8NA  Ted  MI
+K8NS  Mike  FL
+K8NU  Carl  OH
+K8NYG  Gary  WV
+K8NZ  Ron  2119
+K8OD  Joe  1484
+K8PGJ  Pete  MI
+K8PK  Peter  2226
+K8PO  Doug  847
+K8QKY  Steve  1705
+K8RD  Ed  145
+K8RDH  Rob  OH
+K8RGI  Bob  OH
+K8RJW  Bob  2146
+K8RF  Dan  2267
+K8SIA  Jim  748
+K8TL  Tom  OH
+K8TS  Dale  MI
+K8UDH  Bruce  1654
+K8UT  Larry  1672
+K8VA  Mike  2468
+K8WP  Jim  MI
+K8WWS  Bill  2621
+K8XF  Mike  1379
+K8Y  Chas  2133
+K8YIB  Jim  MI
+K8ZT  Al  OH
+K8ZZ  Ed  1706
+K9ACM  Mike  IL
+K9AJ  Mike  IL
+K9CH  Curt  VA
+K9CJ  Bob  IL
+K9CJM  Tom  WI
+K9CNP  Jim  IL
+K9CPO  Nate  2666
+K9CS  Carl  IL
+K9CT  Craig  276
+K9CW  Drew  979
+K9DUR  Ray  IN
+K9DX  John  184
+K9EU  Erik  886
+K9EXY  Rick  IN
+K9FD  Merv  987
+K9FN  Dave  IN
+K9FS  Bob  1524
+K9FZ  Alex  WI
+K9GDF  Rich  Wi
+K9GDT  George  530
+K9GS  Gary  1032
+K9GY  Eric  IL
+K8HU  Bob  2741
+K9HXO  Bill  1126
+K9IBM  Dan  1677
+K9ID  Ron  IL
+K9IG  Greg  1650
+K9IO  Rob  IL
+K9IR  Paula  600
+K9JF  Jim  951
+K9JM  Jim  909
+K9JP  Jeff  MI
+K9JQ  Jim  818
+K9JWI  Clyde  2103
+K9KJ  TJ  IN
+K9KM  Howie  1886
+K9KSG  Junior  IL
+K9LA  Carl  920
+K9MA  Scott  1385
+K9MM  John  120
+K9MMS  Gary  277
+K9NN  Dale  2568
+K9NR  Don  1072
+K9NW  Mike  2534
+K9NZ  Perry  IN
+K9OM  Dick  1440
+K9OR  Randy  147
+K9OZ  Bruce  852
+K9PL  Philip  IL
+K9PLX  Chuck  IL
+K9PM  Paul  2573
+K9PY  Jerry  IL
+K9QJS  Hoop  WA
+K9QVB  John  159
+K9QVB/9  John  159
+K9RQ  Dan  FL
+K9RS  Ray  218
+K9SO  Fred  WI
+K9SS  Norb  IL
+K9UCX  Ken  2693
+K9SW  Dave  IL
+K9UIY  Vic  505
+K9UQN  Don  423
+K9UT  Jerry  IN
+K9VA  Kurt  VA
+K9VP  Roger  1016
+K9VV  Fubar  524
+K9WA  Jim  IL
+K9WWS  Bill  CWA
+K9WZB  Gerry  AZ
+K9WX  Tim  1462
+K9WX/M  Tim  1462
+K9XV  Tom  FL
+K9YC  Jim  69
+K9YII  Fred  IL
+K9ZO  Al  1761
+K9ZTV  Kent  676
+KA0AAM  Dwayne  1497
+KA1CFP  Marshall  VA
+KA1IOR  Geoff  351
+KA1LOR  Len  MA
+KA1YQC  Mark  2718
+KA2F  John  NJ
+KA2KGP  Tom  NY
+KA3DRR  Scot  CA
+KA3J  Ron  MD
+KA3LXM  Jim  2294
+KA3NAM  Joe  KS
+KA3NZR  Harry  VA
+KA3OCS  Bob  2108
+KA3QLF  Scott  1197
+KA3SJK  Nicholas  PA
+KA4DXP  Allen  WA
+KA4RRU  Mike  1388
+KA4RUR  Fred  2678
+KA5CAV  John  AR
+KA5KPE  Bob  AR
+KA5M  Marsh  1433
+KA5CAV  John  2284
+KA5QQA  Rob  TX
+KA5ZLQ  Jackie  OR
+KA6AIL  Duaine  CA
+KA6JLT  Rob  NV
+KA6KKE  Ken  CA
+KA6U  Peter  CA
+KA6U/VY2  Peter  PE
+KA6S  Steve  CA
+KA7GPP  Dan  2720
+KA7MDM  Gregg  2598
+KA7SPS  Dick  OR
+KA7T  Don  ID
+KA8G  Dave  OH
+KA8HDE  Chuck  MN
+KA8SYV  Frank  2430
+KA9BHD  Bob  1809
+KA9CAR  John  IL
+KA9P  Scott  1698
+KA9SXV  Joel  2046
+KA9ZAP  Arthur  TN
+KB0FJU  Scott  IL
+KB0GUS  Josh  KS
+KB0JSH  Amanda  IA
+KB0R  Larry  MN
+KB1BMF  Wolf  ME
+KB1H  Dick  MA
+KB1KXL  Jeff  CA
+KB1MEE  Mark  ME
+KB1VX  Barry  ME
+KB1W  Len  2038
+KB1WTF  Nicolas  MA
+KB1YJ  William  NH
+KB1ZEB  Larry  VT
+KB1ZIR  Eric  CT
+KB2ADB  Art  NY
+KB2PIZ  Mark  NY
+KB3AAY  Ron  1866
+KB3CT  Matt  PA
+KB3ML  Paul  1495
+KB3VQL  Jay  PA
+KB3Z  Mark  1483
+KB4CG  Jack  VA
+KB4DE  Bill  2093
+KB4GYT  Paul  SC
+KB4KBS  Scott  GA
+KB4LA  Dave  AL
+KB4QQJ  Randy  NC
+KB4WLF  Wolf  1982
+KB5EDR  Rich  TX
+KB5FLA  Rich  AR
+KB5GA  Ray  LA
+KB5RF  Tom  2358
+KB5ZCR  Tim  2314
+KB6K  Ron  CA
+KB6NU  Dan  1418
+KB6VME  Steve  CA
+KB7EIU  Dan  FL
+KB7KP  Dave  UT
+KB7N  Mark  WA
+KB7Q  Gene  318
+KB7QOA  Jeremy  ID
+KB7V  Paul  CA
+KB8GAE  Rich  2123
+KB8NOD  Ron  OH
+KB8PGW  John  2078
+KB8TT  Dave  OH
+KB8W  Dan  MI
+KB8XG  Dave  MI
+KB9DKR  Carl  2258
+KB9GKG  Ken  IN
+KB9LLD  Tony  MO
+KB9OWD  Ryan  1086
+KB9S  Mark  WI
+KC0CCR  Ran  KS
+KC0CGR  Bob  SD
+KC0DEB  Jan  KS
+KC0DX  Ed  AR
+KC0INP  Tom  NM
+KC0TVD  Chris  2644
+KC0UDT  Matt  MO
+KC0URL  Ray  1872
+KC0VKN  Joe  635
+KC0WHR  Gary  MO
+KC1AID  Len  MA
+KC1APK  Dave  VT
+KC1CRS  Anne  MA
+KC1DLY  Matt  CT
+KC1KUG  Bray  MA
+KC1LZX  Rob  2417
+KC1RL  Ric  MA
+KC1SA  Steve  CT
+KC2JAJ  John  NY
+KC2LM  Ed  2334
+KC2LMX  Bob  NJ
+KC2LSD  Cody  2627
+KC2SZ  Jim  NJ
+KC2ZBZ  Don  NY
+KC3CVN  Patrick  DC
+KC3FQF  Rosti  CT
+KC3JJF  Daryl  MD
+KC3KBE  Jon  MD
+KC3TOM  Tom  PA
+KC3X  Hollis  1725
+KC4D  Bill  419
+KC4DUT  Silas  IN
+KC4HW  Jim  AL
+KC4LE  Red  AL
+KC4T  Mark  GA
+KC4UCT  John  GA
+KC4WQ  Bud  2440
+KC5F  Steve  NC
+KC5KWZ  John  LA
+KC5PL  Dixon  LA
+KC5QIH  Chris  TX
+KC6SSE  Mike  CA
+KC7V  Mike  260
+KC7ZO  Dan  MT
+KC8GTX  Mike  MI
+KC8J  Walt  2085
+KC8UR  Tony  2278
+KC8ZH  Dave  2756
+KC9EE  Gary  1240
+KC9JVB  Bob  2606
+KC9JYF  Tom  IL
+KC9K  Dave  1875
+KC9LIF  Kent  IL
+KC9MRA  Claudia  WI
+KC9QQ  Fred  IN
+KC9RXI  Tom  WI
+KC9SS  Pete  WI
+KC9TCP  Steven  IL
+KC9TTR  Ken  IN
+KD0NPM  Rich  2295
+KD0PQU  Romy  CO
+KD0Q  Glenn  IA
+KD0UKC  Neil  IA
+KD0VAS  Leroy  MN
+KD1CT  Bob  NH
+KD2BGM  Steve  MI
+KD2BMX  Peter  NY
+KD2CAP  Brendan  IL
+KD2DC  Mon  NJ
+KD2DGM  Anthony  NY
+KD2DUL  Steve  NJ
+KD2E  Dave  2420
+KD2EHH  Ed  NY
+KD2EPM  Dom  NJ
+KD2FSH  Jerry  1918
+KD2FVG  Allen  NJ
+KD2HE  Vic  2536
+KD2KW  Ken  2478
+KD2MLY  Joe  NY
+KD2NEL  Sean  NY
+KD2OMV  Peter  NY
+KD2S  Al  NJ
+KD2ST  Al  2711
+KD4EE  Scott  1330
+KD4LYC  Andrew  DC
+KD4OS  Emmett  1188
+KD4Q  Bob  2743
+KD4UKW  John  GA
+KD4UYP  Brian  GA
+KD5BKW  Abdul  LA
+KD5DD  Doc  MS
+KD5J  Cord  2491
+KD7UI  John  1363
+KD7YDT  Peter  WA
+KD8BBK  Tony  OH
+KD8CMB  Claire  OH
+KD8HSV  Rob  OH
+KD8IFJ  Curt  MI
+KD8RQE  Mike  1599
+KD8SAV  Gary  1089
+KD9OIN  Dan  IL
+KE0EBK  Dave  KS
+KE0EK  David  1819
+KE0HWZ  Bill  CO
+KE0L  Jim  TN
+KE0N  Eliot  2580
+KE0NLJ  Mike  IA
+KE0QMB  Dakota  MN
+KE0RWJ  Cary  1828
+KE0TT  Dan  2260
+KE0UI  Bob  CO
+KE0YI  John  IL
+KE1B  Rich  735
+KE1DX  Angelo  CT
+KE1F  Louis  769
+KE1J  Lars  2037
+KE2CWO    NY
+KE2D  Bob  1796
+KE2SX  Gregg  NC
+KE2WY  Bob  CWA
+KE2YK  Gary  NY
+KE3KK  Ron  MA
+KE3X  Ken  DC
+KE4D  John  1688
+KE4KY  Tom  1763
+KE4RG  Ken  1765
+KE4S  Dave  1508
+KE4TWI  Wes  TN
+KE5AKL  Mike  NM
+KE5C  John  TX
+KE5EN  Eric  TX
+KE5FRF  Heath  LA
+KE5KOV  Jay  TX
+KE5MI/0  Bill  CO
+KE5P  Bill  TX
+KE6CWO    CA
+KE6K  John  1427
+KE6MT  Rex  CA
+KE6OIO  Ann  CA
+KE6YLH  Jeff  CA
+KE7ZJC  Kim  UT
+KE8AKC  Steve  MI
+KE8AQW  Mike  MI
+KE8DI  Dave  MI
+KE8EAS  Josh  OH
+KE8G  Jim  1616
+KE8G/5  Jim  1616
+KE9I  George  IL
+KE9SA  Chuck  WI
+KF1P  Bob  SC
+KF3B  Alan  PA
+KF3G  Sam  PA
+KF3N  Ray  NC
+KF4A  Don  1666
+KF4QFJ  Jerome  VA
+KF4T  Brian  FL
+KF4ZGZ  Matt  NC
+KF5GZJ  Mike  TX
+KF5JUO  Lynda  TX
+KF5RDN  Julianne  TX
+KF5TXL  Kenneth  TX
+KF5WJ  Jack  CWA
+KF5YNM  Dorothy  LA
+KF5YNN  Frank  LA
+KF5YXA  Robert  TX
+KF6C  Brian  NY
+KF6MK  Fred  CA
+KF6NCX  Larry  CA
+KF6T  Jack  CA
+KF7AXE  Mark  WA
+KF7DUR  Ken  AZ
+KF7E  Jim  AZ
+KF7GGN  Scott  OR
+KF7PXT  Matt  WA
+KF7U  Chuck  AZ
+KF7YHB  Wyatt  2564
+KF7Z  Danny  1468
+KF8O  Ron  2230
+KF9D  Roger  2068
+KF9FH  George  IL
+KF9HE  Andy  IL
+KF9SW  Victor  IN
+KF9VV  Jim  2452
+KG0EW  Dave  2369
+KG3V  Tom  1034
+KG4CRJ  Brian  2378
+KG4IKQ  Jim  1458
+KG4MTN  Mike  TN
+KG4Q  Larry  1956
+KG4W  Ed  2577
+KG4ZQY  Wayne  GA
+KG5AOP  Jerry  CWA
+KG5EMR  Annie  TX
+KG5FRS  Kathy  LA
+KG5HVO  Bryant  1795
+KG5OWB  Terry  2683
+KG5RSG  Mike  TX
+KG5RXG  Mike  2643
+KG5U  Dale  1241
+KG5VK  Steve  1806
+KG5YOV  Ben  TX
+KG5IEE  Randal  2733
+KG6IIP  Paco  1313
+KG6N  Frank  CA
+KG6NRV  Bill  2639
+KG6O  Chris  WA
+KG6PB  Jim  MI
+KG7A  Ron  1939
+KG7IRR  Andrew  WA
+KG7WHX  Scott  UT
+KG7YU  Gord  WA
+KG7ZOK  Bob  2608
+KG9LB  Jim  2018
+KG9MG  Jay  WI
+KG9ML  Mike  IL
+KG9N  Chuck  969
+KG9X  Fred  1881
+KH0ZZ  Atsu  141
+KH2N  Asa  2019
+KH6/VA7CW  Andy  352
+KH6/W7EE  Gary  1949
+KH6AQ  Dave  2446
+KH6CJJ  Kent  2160
+KH6DV  Ron  HI
+KH6FHI  Joe  2458
+KH6LC  Lloyd  85
+KH6MB  Martin  TX
+KH6ND  Mike  HI
+KH6NO/W7  Wil  NV
+KH6TU  Alan  217
+KH6Y  Bob  HI
+KH7Y  Fred  216
+KI0I  Mark  1187
+KI0KN  Jim  1995
+KI0T  Mark  MO
+KI1U  Mike  2327
+KI2N  Mark  2730
+KI3F  Denny  2008
+KI4EZL  Steve  NC
+KI4FW  Rick  VA
+KI4MZC  Don  1539
+KI4ODO  Marvin  NC
+KI4POV  Will  CWA
+KI4XH  Fred  1206
+KI5EE  Joe  LA
+KI5IO  Nolan  2549
+KI5T  Wade  295
+KI6M  John  CA
+KI6NTB  Shin  CA
+KI6OY  Lee  2013
+KI6RRN  Axel  CA
+KI6UP  JIM  TX
+KI7MT  Greg  MT
+KI7OMH  Mike  2282
+KI7OY  Larry  CA
+KI7RS  Ryan  2708
+KI7WNS  Jacob  2731
+KI7Y  Jim  699
+KI8P  Mark  FL
+KI9R  Basil  IN
+KI9T  Pat  2293
+KJ0D  Eric  MO
+KJ1J  John  NH
+KJ3Q  Al  FL
+KJ4CC  Ben  AL
+KJ4DEM  Ben  NC
+KJ4FDV  Trey  AL
+KJ4IOR  David  GA
+KJ4J  Gene  NC
+KJ4M  Gene  2109
+KJ4WKD  Jim  CT
+KJ4YM  Mark  2317
+KJ5T  Steve  TX
+KJ5Y  Pat  TX
+KJ6NGF  Tim  CA
+KJ6UVQ  Dennis  CA
+KJ9C  Mel  898
+KJ9I  Dave  WI
+KK0ECT  Eric  2066
+KK0U  Jim  MO
+KK1CWO  Pete  91
+KK1MM  Mike  1272
+KK1W  Jim  2479
+KK3F  Pat  MD
+KK4BNC  Randy  GA
+KK4NZH  Gene  GA
+KK4R  Rob  1953
+KK4SJ  Gord  FL
+KK4TE  Chuck  AL
+KK5NA  Joe  1523
+KK5RX  Rick  GA
+KK5T  Billy  AR
+KK6AFK  Chris  CA
+KK6CHF  Jeff  CA
+KK6GHA  Ken  1604
+KK6GHR  Dave  CA
+KK6I  Ron  2135
+KK6M  Roy  2177
+KK6MF  Lawrence  CA
+KK6MU  Mike  CA
+KK6NON  Levi  CA
+KK6NVZ  Kevin  2251
+KK6ZHK  Ken  2686
+KK7A  Jim  1975
+KK7L  John  2599
+KK7X  Dennis  ID
+KK8A  Jim  OH
+KK9DX  Cornel  256
+KK9G  Dan  IN
+KK9H  Don  IL
+KK9N  Ken  IL
+KK9V  Mike  1647
+KL/K3GHH  John  1212
+KL2A  Jon  AK
+KL2KL  Chris  MA
+KL2ZZ  James  AK
+KL3W  Tom  1461
+KL7/K3GHH  John  1212
+KL7IXW  Ward  2457
+KL7SB  Steve  1268
+KL7W  Tom  1461
+KL9A  Chris  1576
+KM0O  Tony  1037
+KM3A  Dave  2611
+KM3T  Dave  50
+KM4CH  John  2039
+KM4CUB  Ron  GA
+KM4DR  Gale  TX
+KM4FO  Dwight  1436
+KM4HI  Jim  FL
+KM4JTE  John  FL
+KM4LAO  Ruth  2063
+KM4OIX  John  1560
+KM4SII  Mason  NC
+KM4WHO  John  2336
+KM4ZZ  Charlie  VA
+KM5G  Chuck  AR
+KM5PO  Jim  2522
+KM6SJT  Erin  CA
+KM6JKI  Yoon  CA
+KM6Z  Vlad  OH
+KM6ZT  Dave  1476
+KM7Q  Bob  1353
+KM7W  Chris  1576
+KM9M  Zig  854
+KM9R  Mike  1502
+KN1GUN  Rocky  2587
+KN2X  John  NY
+KN4DEB  Arnie  2658
+KN4IIY  Eric  FL
+KN4IXU  Rob  CWA
+KN4NL  Dave  424
+KN4VCE  Mike  VA
+KN4VV  John  2331
+KN5CWO    
+KN5O  Ted  LA
+KN6NVZ  Kevin  CA
+KN7T  Mark  2274
+KN8CWO    
+KN8U  Bruce  2297
+KN9X  Don  IL
+KO0L  Joe  AR
+KO1E  Dave  RI
+KO1U  Mark  MA
+KO4AXD  Brian  2745
+KO4D  Fred  VA
+KO5USA  Tom  TX
+KO6U  Nathan  CA
+KO8SCA  Adrian  2408
+KP2/K3CT  John  466
+KP2M  Phil  
+KP2Q  John  466
+KP3SK  Angel  1792
+KP3W  Jose  1499
+KP4/AC6ZM  Juan  2419
+KP4/KZ5D  Art  12
+KP4/N5TOO  Van  1557
+KP4/W4XO  Lex  2217
+KP4AF  Carlos  2518
+KP4AW  Danny  1526
+KP4EJ  Carlos  1501
+KP4JFR  Jose  PR
+KP4P  Tele  490
+KP4TF  Eddie  PR
+KQ3H  Tony  NC
+KQ4R  Ed  FL
+KQ7A  Rio  AZ
+KQ7W  Matt  WA
+KR2AA  Eric  2550
+KR2Q  Doug  438
+KR3E  Ed  133
+KR4AE  Alan  1460
+KR4CRJ  Brian  NC
+KR4TH  Jerry  2128
+KR4UA  Tom  GA
+KR4WI  Matt  2650
+KR6N  Bob  CA
+KR7C  Stan  1021
+KR7RK  Keith  746
+KR7X  Hank  OR
+KR8V  Gary  MI
+KS0MO  KC  KS
+KS3K  Steve  FL
+KS3N  Tom  CWA
+KS4L  Randy  AL
+KS5A  Guff  391
+KS5H  Tim  TX
+KS9M  Jean  AZ
+KS9W  Bob  2219
+KS9W/5  Bob  2219
+KT0G  Jeff  WV
+KT0K  Greg  NE
+KT1K  Bob  MA
+KT3M  Rob  CO
+KT3Y  Phil  VA
+KT4E  Amy  TN
+KT4XN  Tom  1738
+KT5CWO    
+KT5V  David  1323
+KT5W  Will  NC
+KT5X  Fred  58
+KT6Q    CA
+KT6V    TX
+KT9P  Scott  IL
+KU1N  Keith  1968
+KU2CW  Terry  2279
+KU3X  Barry  PA
+KU4NY  Tony  TN
+KU4V  Wayne  NC
+KU5B  Colin  418
+KU6CW  Trey  CA
+KU6CWO    
+KU7T    
+KU7Y  Ron  1211
+KU8E  Jeff  208
+KV0I  Bill  2265
+KV1E  Jack  1150
+KV3T  KC  IL
+KV4JQ  Mark  FL
+KV4TE  Jason  GA
+KV4WV  Sean  FL
+KV8O  Pete  MI
+KV8Q  Tom  2175
+KW0J  GAry  IA
+KW1C  Marty  ME
+KW1L  Paul  MI
+KW1U  Marcia  706
+KW3F  Bob  1450
+KW4AU  Kyle  AL
+KW4JM  Scott  CWA
+KW4MG  Gary  FL
+KW4V  Les  2333
+KW5CW  Jim  2346
+KW6MYK  Michael  CA
+KW7A  John  UT
+KW7D  Paul  NM
+KW7Q  Steve  1039
+KW7XX  Dean  WA
+KW8N  Bob  1454
+KW9R  Theo  WI
+KX1E  Bob  ME
+KX2P  Jeff  2676
+KX3H  Tony  CWA
+KX4CWO    
+KX4FZ  Terry  2737
+KX4KU  Kevin  1978
+KX6A  Mike  1782
+KX6X  Ken  AZ
+KX8I    MD
+KX9DX  Rick  IL
+KX9X  Sean  683
+KY0B  Gary  NC
+KY0Q  Rick  2703
+KY2D  Jim  2096
+KY4F  Doug  847
+KY4FH  Jim  NC
+KY4GW  Joe  KY
+KY7K  Steve  AZ
+KY7M  Lee  84
+KY9I  Jay  2341
+KZ5D  Art  12
+KZ6H  Steve  2286
+LA/SM7RYR  Roger  1855
+LA0CX  Uli  
+LA1IO  Halvor  2651
+LA1K  Jens  
+LA1XFA  Tore  
+LA2T  Jan  
+LA3RK  Olaf  
+LA4XX  Hal  989
+LA6CF  Jim  
+LA6FJA  Rag  
+LA6PH  John  2448
+LA6RK  Olaf  
+LA7GIA  Ken  1888
+LA7XIA  Morten  
+LA8OM  Chris  1848
+LB1GB  Bjorn  992
+LB3RE  Rag  
+LB6GG  Hans  2530
+LJ3RE  Rag  
+LU1AW  Juan  1835
+LU3MAM  Osvaldo  
+LX/DJ1YFK  Fabian  1566
+LY2AX  Arunas  
+LY5A  Jonas  1459
+LY5G  Vitas  1518
+LY7M  Al  
+LY8O  Remi  1858
+LZ1HW  Spas  2001
+LZ1QI  Petko  
+LZ1QN  Boyko  2653
+LZ1UK  Savi  
+LZ1XC  Mitko  
+LZ1ZJ  Slav  
+LZ2CH  Krasimir  
+LZ2FH  Stefan  
+LZ2PP  Valentin  
+LZ2RS  Rumi  
+LZ4YJ  Rosenh  
+LZ5DB  Milen  2393
+LZ5GB  Eugen  
+LZ5PW  Vasy  2660
+LZ5R  Milen  2393
+LZ5XQ  Steve  
+M/K1DJ  Rich  1556
+M0AGA  Kevin  
+M0DHP  Ray  2090
+M0DOV  Dov  175
+M0DSR  Dick  
+M0GAA  Motoaki  1014
+M0GGK  Dave  
+M0HPF  Angel  
+M0IBC  David  
+M0IHT  Harry  560
+M0JWB  Jim  
+M0NGN  Nige  2459
+M0NPT  Abdel  2344
+M0ORD  Roger  
+M0RJC  Rich  2752
+M0RYB  Peter  2061
+M0TJU  Evan  
+M0TZX  Ed  2462
+M0XUU  Pan  CWA
+M1X  Steve  2451
+M2D  Phil  1583
+M2S  Rob  1771
+M2U  Ray  2090
+M3X  Harry  560
+M3ZFF  David  
+M5KVK  Gaz  
+M6O  Dave  482
+MD0CCE  Bob  552
+MI0AYR  Paul  
+MI0SAI  Simon  
+MI0VKO  Dave  2445
+MI0WWB  Will  2081
+MJ0ASP  Mat  
+MM0FME  Mik  2151
+MM0WXE  Tony  
+MM2D  Phil  1583
+MM3AWD  Scott  
+N0AC  Bill  1252
+N0AC/M  Bill  1252
+N0AIE  Everett  SD
+N0AT  Ron  MN
+N0AV  Jim  359
+N0AX  Ward  1744
+N0BK  Bruce  2763
+N0BM  Brian  2772
+N0CVW  Chas  2661
+N0CWO    
+N0DIR  Nodir  815
+N0DNF  Bill  ID
+N0EF  John  1299
+N0FED  Loyd  ID
+N0FN  Neil  IA
+N0GEF  Greg  MN
+N0HYD  Burke  KS
+N0IJ  John  MN
+N0JAV  Jason  IA
+N0JL  Jim  IA
+N0KK  Kirk  698
+N0KQ  Bill  1463
+N0KV  Barry  1723
+N0MII  Jeff  MO
+N0MP  Bill  AZ
+N0MPM  Mike  IA
+N0OI  Scott  2628
+N0PP  Juerg  2048
+N0QLT  Russ  MO
+N0QM  Larry  644
+N0QQ  Sandy  1581
+N0RT  Ralph  MO
+N0SM  Steve  705
+N0SMX  Dennis  FL
+N0SN  Tom  AK
+N0TA  John  885
+N0TLW  Tom  2364
+N0TOP  John  MO
+N0UA  Vince  CO
+N0UR  Jim  1445
+N0XC  Steve  WI
+N0XE  Jim  IA
+N0YY  Rick  1434
+N1AE  John  MA
+N1BG  Fred  1030
+N1CC  Jim  TX
+N1CCK  Nick  2710
+N1CK  Nick  AZ
+N1DC  Rick  1257
+N1DC/4  Rick  1257
+N1DG  Don  2
+N1DN  Phil  CT
+N1EA  David  MA
+N1EN  Mike  1247
+N1FG  Larry  2012
+N1FJ  Andy  MA
+N1FN  Marsh  CO
+N1FV  John  WV
+N1GKE  Myrt  929
+N1GSA  Gary  CT
+N1HN  Dus  ME
+N1KL  Kevin  MA
+N1KM  Mark  RI
+N1KW  Bob  1022
+N1LN  Bruce  1141
+N1LU  Don  CT
+N1MM  Tom  CT
+N1RM  Rick  2659
+N1RR  Charlie  2631
+N1SNB  Jeff  2748
+N1SU  Jason  NY
+N1SUZ  Suzanne  CT
+N1TA  Mike  MA
+N1TO  Ed  685
+N1TWC  Jeff  OH
+N1TX  Larry  AK
+N1UO  Chris  RI
+N1VH  Marty  1927
+N1XF  Glen  ME
+N1XS  Chris  1817
+N1YL  Anne  MA
+N1ZTY  Ron  AZ
+N1ZX  Stan  473
+N2AA  Gene  NJ
+N2ADC  Gary  2074
+N2AK  Mario  NJ
+N2AML  Frank  NM
+N2AN  Jeff  1715
+N2ATB  Tony  213
+N2BA  Brooke  NJ
+N2BA/M  Brooke  
+N2CJ  Glenn  1419
+N2DE  Ric  NY
+N2EA  Jim  VT
+N2ED  Ed  2264
+N2EI  Skip  2060
+N2EIM  Bob  NJ
+N2EY  Jim  2216
+N2FME  Mik  2151
+N2GA  George  344
+N2GC  Mike  821
+N2GG  Gil  2705
+N2GM  Geo  NJ
+N2IC  Steve  1790
+N2JDQ  Steve  NY
+N2JFD  Jim  1785
+N2JJ  Jim  1128
+N2JNE  Charlie  NY
+N2JT  Jack  640
+N2JW  John  FL
+N2KW  Allen  NY
+N2LK  John  NJ
+N2MM  Carol  NJ
+N2NC  John  2180
+N2NL  Dave  424
+N2NT  Andy  2036
+N2OO  Bob  2171
+N2PD  Paul  NY
+N2PH  Peter  NJ
+N2PP  Victor  NY
+N2RC  Mike  1203
+N2RI  Paul  462
+N2RRA  Eric  NY
+N2SO  Chas  1435
+N2SR  Tom  NJ
+N2TSQ  Bob  WI
+N2UN  Tony  NY
+N2UT  Bob  NM
+N2UU  Bob  121
+N2WCQ  Yuri  21
+N2WF  Scott  2488
+N2WG  Bill  NC
+N2WK  Wayne  1767
+N2WKS  Zev  NJ
+N2WY  Robert  NY
+N2YO  Chip  405
+N2ZN  Ken  697
+N2ZN/M  Ken  697
+N2ZN/M  Ken  697
+N2ZX  Curt  1167
+N3AAK  Bob  1720
+N3AC  Dave  1235
+N3AD  Alan  727
+N3AD/0  Alan  727
+N3ALG  Jay  DE
+N3AM  John  6
+N3AO  Carter  719
+N3ATQ  Scott  1759
+N3BB  Jim  70
+N3BXY  David  IL
+N3CI  Dave  2010
+N3CKI  Dave  NC
+N3CU  Ken  PA
+N3CW  Ed  1509
+N3CZ  Vlad  1891
+N3DXX  Art  DE
+N3DXX/0  Art  
+N3EA  Al  1438
+N3ED  Ed  PA
+N3FJ  Robert  PA
+N3FTO  Paul  PA
+N3FZ  Bryan  2273
+N3GGT  Ron  PA
+N3HE  Dave  OH
+N3HEE  Joe  1283
+N3HIH  Frank  NC
+N3IQ  Brian  302
+N3JT  Jim  1
+N3JUY  Ridge  FL
+N3KN  Tony  VA
+N3KR  Paul  PA
+N3KS  Kam  146
+N3MNT  Bob  1292
+N3ND  Dan  189
+N3QE  Tim  1223
+N3RC  Roger  429
+N3RD  Dave  232
+N3RM  Theo  PA
+N3RS  Sig  34
+N3RSD  Frank  DE
+N3SD  Greg  1768
+N3SW  Scott  2397
+N3TM  Thayer  PA
+N3TOD  Igor  MD
+N3TWM  Evan  PA
+N3UA  Sejo  VA
+N3WT  John  185
+N3ZL  Greg  SC
+N3ZN  Tony  1690
+N3ZP  Phil  PA
+N3ZZ  Tom  793
+N4ACW  Lisa  VA
+N4AF  Howie  132
+N4APR  Ray  NC
+N4ARY  Aaron  2759
+N4ASF  Dave  1924
+N4BA  Fred  2221
+N4BAA  Jose  PA
+N4BCB  Bruce  AL
+N4BP  Bob  2463
+N4CD  Bob  1928
+N4CJ  Chris  1294
+N4CO  Lew  SC
+N4CR  Phil  FL
+N4CU  Bob  2302
+N4CW  Bert  671
+N4CWZ  Dave  2407
+N4DD  Dennis  1000
+N4DL  GARY  
+N4DPM  Rich  2287
+N4DR  Marc  MD
+N4DT  Danny  1740
+N4DU  Jim  GA
+N4DW  Dave  923
+N4EEB  John  2335
+N4EEV  Mike  1600
+N4EII  Al  2291
+N4ETC  Eden  NC
+N4EWF  Ed  AL
+N4EWT  Newt  GA
+N4FP  Wayne  1090
+N4FP/M  Wayne  1090
+N4FP/P  Wayne  1090
+N4GG  Hal  2288
+N4GJ  Wink  SC
+N4GK  Jim  AL
+N4GL  Marty  1644
+N4GU  Mike  737
+N4HAI  Tom  1099
+N4IJ  Doug  1938
+N4IQ  Bill  1610
+N4IR  Jim  940
+N4IRN  John  268
+N4IY  Terry  2250
+N4JGD  David  NC
+N4KD  David  GA
+N4KH  Jim  2409
+N4KHZ  John  2620
+N4KM  Kevin  FL
+N4KS  Ken  1274
+N4KS/3  Ken  1274
+N4KW  Pete  1638
+N4LAG  Andy  CWA
+N4LGG  Andy  
+N4LW  Bob  CWA
+N4NBM  Al  FL
+N4NM  Chuck  AL
+N4NQ  Sid  1611
+N4NR  Dennis  AL
+N4NS  Ken  FL
+N4NSS  Kyle  FL
+N4NW  Tom  VA
+N4NX  Bill  GA
+N4NYK  Doug  SC
+N4OGW  Tor  MS
+N4OI  Ken  1536
+N4OO  Brian  1045
+N4OX  Bill  1038
+N4PD  Paul  663
+N4PIR  Gary  1936
+N4PJ  Art  1011
+N4QS  Dave  1653
+N4RKK  Jeff  FL
+N4RLD  Rick  GA
+N4RR  Roger  IL
+N4RSS  Roger  2529
+N4RT  Ron  2404
+N4RV  Jack  VA
+N4SHA  Andrew  DC
+N4SJK  Steve  2301
+N4SR  Todd  1050
+N4TB  Terry  106
+N4TMM  Jim  1791
+N4TP  Pete  FL
+N4TY  Tyler  501
+N4UB  Don  GA
+N4UC  Art  858
+N4UM  Tim  FL
+N4UP  Peter  1228
+N4WDC  David  VA
+N4WJ  Frank  KY
+N4WO  Greg  1511
+N4XL  Ken  2356
+N4XP  Tom  GA
+N4XY  Ed  452
+N4YA  Chris  1657
+N4YDU  Nate  445
+N4YG  Joe  AL
+N4YYL  Lionel  NC
+N4ZH  Terry  2337
+N4ZR  Pete  1277
+N4ZZ  Don  902
+N5AAS  Lane  2480
+N5AHM  Gary  2325
+N5AN  Bud  140
+N5AW  Marv  157
+N5AW/0  Marv  157
+N5BA  Brian  1453
+N5CW  Curt  572
+N5DDX  Tracy  TX
+N5DX  Kevin  1293
+N5EE  Ken  1766
+N5EIL  Neil  1635
+N5EP  Steve  CWA
+N5ER  John  AR
+N5EVE  Frank  RI
+N5FIW  Joel  IL
+N5FO  Sam  1680
+N5GKJ  Gerald  LA
+N5HC  Bruce  NM
+N5HZ  Jim  1425
+N5IKD  Robert  TX
+N5IR  Bill  799
+N5JJ  Rich  TX
+N5JR  Joel  1229
+N5KB  Mike  2495
+N5KD  Pete  TX
+N5KO  TREY  CA
+N5KT  Gerald  1606
+N5KW  Pam  1863
+N5KY  Jim  401
+N5LB  Lionel  1691
+N5LL  Leslie  TX
+N5LNX  Craig  TX
+N5LYJ  Ken  994
+N5NA  Alan  TX
+N5NHJ  Max  24
+N5NU  Jason  1920
+N5OE  Carl  983
+N5OT  Mark  2198
+N5PHT  Gary  1489
+N5PV  Sean  TX
+N5QQ  Ron  TX
+N5RP  Bob  1797
+N5RR  Bill  226
+N5RZ  Gator  1221
+N5SQR  Scott  NM
+N5TIT  Jeff  TX
+N5TJ  Jeff  TX
+N5TM  Dan  856
+N5TOO  Van  1557
+N5TVN  Terry  TX
+N5TW  Tom  1160
+N5VI  Walt  TX
+N5VR  Bill  1788
+N5WA  Wes  2418
+N5WE  Charlie  LA
+N5WNG  Mike  2472
+N5WW  Wes  TX
+N5WX  Ron  OK
+N5XE  Carl  1102
+N5XM  Rick  AR
+N5XTH  Michael  NC
+N5XZ  Allen  447
+N5YT  Guy  MS
+N5YZ  Bill  TX
+N5ZC  Rich  2153
+N5ZO  Mark  1224
+8Q7ZO  Mark  1224
+N6BT  Tom  281
+N6BV  Dean  CA
+N6CK  Greg  643
+N6CW  Terry  2279
+N6DA  Don  CA
+N6DE  Dean  CA
+N6EE  Ron  310
+N6EED  Terry  2122
+N6ER  Kevin  CA
+N6ERD  Dan  CA
+N6ERD/1  Dan  CT
+N6EV  Paul  380
+N6EWT  Chris  CA
+N6GA  Cam  1295
+N6GQ  Jeff  67
+N6HCN  John  1914
+N6HD  David  1098
+N6HE  Ray  2022
+N6HI  John  AZ
+N6IET  Richard  1466
+N6JV  Norm  329
+N6JW  John  CA
+N6KI  Dennis  1380
+N6KR  Wayne  CA
+N6LKA  Larry  CA
+N6LRA  Laura  2244
+N6MA  Paul  2422
+N6MJ  Dan  2164
+N6ML  Mike  CA
+N6MST  Mike  CA
+N6NC  Lars  1290
+N6NF  Tom  2011
+N6NR  Rich  WA
+N6PN  Matt  253
+N6RA  Tom  109
+N6RK  Rick  97
+N6RO  Ken  79
+N6TR  Tree  83
+N6TT  Steve  535
+N6TU  Bruce  CA
+N6TV  Bob  CA
+N6TVN  Carl  1930
+N6UG  Ray  CA
+N6VOH  Barry  1248
+N6WG  Bob  CA
+N6WIN  Tim  1942
+N6WM  Chris  688
+N6WT  Kent  CA
+N6XI  Rick  4
+N6XT  Ron  CA
+N6YEU  Fred  CA
+N6YQ  Rob  CA
+N6ZD  Gary  CA
+N6ZFO  Bill  101
+N6ZI  Al  CA
+N6ZY  Alan  CA
+N7AUE  Jim  NV
+N7BV  Chuck  2131
+N7CLP  Cody  AZ
+N7CQR  Dan  OR
+N7DC  Danny  VA
+N7DH  Dennis  ME
+N7DRW  Bud  WA
+N7DX  Tony  2764
+N7DXT  Gary  MT
+N7EDK  Ed  FL
+N7ELL  James  AZ
+N7ETI  Mark  OR
+N7GBK  James  WA
+N7HRK  Rick  1169
+N7ID  Mike  2310
+N7IV  Jos  ND
+N7JCT  Thor  2609
+N7JI  Scott  2348
+N7JP  John  2615
+N7KA  Arne  NM
+N7KM  Ken  UT
+N7KY  Tim  TN
+N7LOX  Brian  WA
+N7LU  Pat  CA
+N7MB  Mike  629
+N7MQ  Steve  2215
+N7MU  Jim  2243
+N7NM  Doug  1944
+N7NR  David  CA
+N7OC  Stan  WA
+N7ON  John  628
+N7PHI  Derek  UT
+N7QT  Rob  2637
+N7RC  Dick  CA
+N7RCS  Jim  1580
+N7RD  Ron  1551
+N7RR  Bruce  846
+N7RT  Hardy  FL
+N7RVD  Brian  WA
+N7SU  Dan  2283
+N7TB  Terry  1999
+N7TES  John  WA
+N7TR  Rich  NV
+N7TX  Steve  AZ
+N7UN  Guy  NJ
+N7US  Jim  486
+N7WY  Bob  1406
+N7XM  Josh  WV
+N7YT  Bill  1271
+N7YY  Dan  1865
+N7ZZ  Stu  WI
+N8AA  John  723
+N8AI  Chris  1934
+N8BIZ  Bill  MI
+N8BJQ  Steve  103
+N8CC  Jeff  MI
+N8DEA  Dean  OH
+N8DLL  David  MI
+N8DNA  Mike  1743
+N8EA  Joe  725
+N8EK  John  SC
+N8FE  Marsha  MI
+N8FF  Ken  TN
+N8FYL  John  MI
+N8GAS  Greg  MI
+N8HHG  Paul  OH
+N8HP  Ed  OH
+N8HZM  Marv  2726
+N8II  Jeff  2088
+N8JA  Jay  1234
+N8JLM  Jay  OH
+N8KMY  Craig  MI
+N8KR  Ken  IN
+N8LA  Lou  1339
+N8LJ  Lee  MI
+N8LR  Gary  1818
+N8MTV  Mike  2065
+N8MU  Doug  VA
+N8NA  Karl  839
+N8OO  Vic  LA
+N8PE  John  OH
+N8RQJ  Harold  OH
+N8RR  Chas  649
+N8TCP  Roger  OH
+N8TD  Tom  749
+N8UM  John  1535
+N8VAR  Ron  OH
+N8WE  Glen  OH
+N8ZYA  John  WV
+N9BOR  Mike  312
+N9BX  Bruce  MS
+N9CK  Steve  1287
+N9CO  Charlie  357
+N9CX  Bill  OH
+N9DJ  John  IL
+N9EAW  Tom  WI
+N9EP  Ed  991
+N9EXL  Lyndel  IL
+N9FB  Rob  IN
+N9GFU  Jim  IN
+N9GG  Bob  2517
+N9ITO  Jim  IL
+N9IXD  Marty  1393
+N9LGP  David  IL
+N9LJX  Scott  IN
+N9LQ  Joel  1996
+N9MM  Norm  566
+N9NA  John  1390
+N9NB  Ted  VA
+N9NM  Barb  TX
+N9OK  Joe  IL
+N9OL  John  2383
+N9PL  Paul  NC
+N9RD  Juergen  582
+N9RV  Pat  MT
+N9SD  Scott  WI
+N9SE  Marty  1562
+N9SW  Gene  798
+N9SZ  Steve  1793
+N9TK  Jim  1986
+N9UA  Mike  1097
+N9VJ  Charles  WI
+N9WKE  Bruce  2512
+N9XX  Dan  601
+NA1LZ  Yan  IL
+NA1VT  Andy  2050
+NA2AA  David  1198
+NA2CC  Chas  CA
+NA2M  Bill  NY
+NA2N  Greg  FL
+NA2U  Fred  2455
+NA3M  Nick  MD
+NA3R  Tony  PA
+NA4A  Ian  AL
+NA4J  Jim  2027
+NA4K  Steve  TN
+NA4P  Fred  2483
+NA4SO  Ted  GA
+NA5C  Steve  2154
+NA5G  Ed  170
+NA6M  Mark  925
+NA6O  Gary  1345
+NA6Z  Don  2727
+NA7C  Ted  1289
+NA8V  Greg  1214
+NB0Z  James  KS
+NB1U  Mark  754
+NB3R  Dave  1520
+NB4F  Robert  GA
+NB5N  Dave  OK
+NB6M  Wayne  1178
+NB6O  Dave  KY
+NB8Q  Ron  MI
+NC1M  Hugh  1668
+NC3Y  Tom  2147
+NC4ON  Stefan  NC
+NC4RB  John  NC
+NC4S  Gary  757
+NC6K  Eric  1640
+NC7M  Marc  1002
+ND1R  Dai  1286
+ND2T  Tom  110
+ND3D  Bob  MD
+ND4K  Steve  GA
+ND4V  Mike  GA
+ND4Y  David  2414
+ND7J  Bob  NC
+ND8MS  Mark  2112
+ND9G  Mike  2148
+ND9M  Jim  389
+ND9M/7  Jim  389
+NE0DA  Jim  2272
+NE0N  Leon  CO
+NE4EA  Al  SC
+NE5ET  Perry  TX
+NE6DX  Mike  CA
+NE7D  Rocky  829
+NE7EE  Chris  2616
+NE8J  Howard  1940
+NE9U  Scott  2438
+NF0N  Mike  1383
+NF1A  Art  MA
+NF1R  Clay  CA
+NF3R  Joel  1971
+NF4A  Charlie  282
+NF5KF  Klod  2326
+NF7D  Bob  1279
+NF8H  Pat  AR
+NF8M  Frank  1634
+NF9V  Rudy  593
+NG0C  Charlie  MN
+NG1R  Roger  2087
+NG2H  Ken  1477
+NG2J  Jim  GA
+NG3A  Chas  2133
+NG3J  Fred  PA
+NG3P  Gwen  PA
+NG5E  Dave  TX
+NG7A  George  2206
+NG7M  Max  1201
+NG7W  Matt  1586
+NG7Z  Paul  AZ
+NI0C  Chuck  431
+NI0N  Leon  MN
+NI0R  Roger  400
+NI1L  Les  2713
+NI2F  Tom  NY
+NI4E  Eric  1372
+NI4Y  Lin  AL
+NI6T  Garry  CA
+NI8N  Jack  1315
+NI9Y  Dan  2432
+NJ1F  Brian  2029
+NJ1T  Doug  2213
+NJ3I  Jon  2515
+NJ3K  Bruce  2431
+NJ4Q  Will  2374
+NJ4V  Dan  2395
+NJ4X  Dave  MO
+NJ5N  Chris  2105
+NJ6Q  Jeremy  2617
+NJ8J  Ben  2007
+NJ8M  Morgan  1590
+NJ8V  Dew  1969
+NK1N  Glen  NJ
+NK2F  Phil  1842
+NK4I  Tighe  1481
+NK4O  AJ  2690
+NK7B  Jim  1774
+NK7U  Joe  708
+NK8A  Dave  OH
+NK8O  Chas  KS
+NK8S  Mike  MA
+NL7V  Paul  AK
+NL7VX  Steve  1052
+NM1Y  Jeff  1887
+NM1Y/PJ6  Jeff  1887
+NM2L  Greg  1118
+NM5G  Keith  2570
+NM5M  Eric  974
+NM5S  Alan  1171
+NM8RT  Steve  MI
+NN1C  Marty  2276
+NN1N  Dave  123
+NN2DX  Bray  NY
+NN3W  Rich  187
+NN4K  Mac  1227
+NN4RB  Rick  VA
+NN4SS  Larry  SC
+NN5O  Larry  1327
+NN5P  Madison  1479
+NN6B  Joe  2709
+NN6N  Joe  CA
+NN6T  Glen  781
+NN7M  Ryan  2245
+NN7W  TC  2057
+NO0B  James  IA
+NO3M  Ty  PA
+NO3U  Otto  PA
+NO4J  Dave  FL
+NO5LA  Katrina  LA
+NO5W  Chuck  311
+NO6T  Mark  1224
+NP2/N3RD  Dave  232
+NP2J  Dan  2267
+NP2X  Fred  524
+NP3A  Eric  1112
+NP3K  Charlie  1238
+NP4H  Nomar  1550
+NP4Z  Felipe  350
+NQ0N  Pat  MO
+NQ6E  Frank  CA
+NQ6N  Matt  1013
+NR1R  Ray  841
+NR1X  Allen  738
+NR3N  Angel  1792
+NR3Z  Marty  2322
+NR4M  Steve  993
+NR4N  Angel  VA
+NR5W  Doug  2722
+NS0R  Morgan  1264
+NS3C  Dick  1807
+NS3U  Tom  PA
+NS4T  Pat  1989
+NS4T/2  Pat  1989
+NS4X  Bart  2571
+NS6W  Sergej  2271
+NS7F  Ross  AZ
+NS7V  Ken  WA
+NS8O  Greg  1496
+NS9I  Dwight  WI
+NT0K    NC
+NT1N  Bill  ME
+NT2A  Gene  NY
+NT4K  CJ  FL
+NT5I  Dennis  LA
+NT5PH  Pat  TX
+NT6Q  Marko  CA
+NT6X  Mike  167
+NT7R  Steve  FL
+NT8B  Leon  VA
+NU1N  Brian  MA
+NU1O  Chris  1670
+NU2J  Marc  NJ
+NU4C  Paul  FL
+NU6N  Marcia  2152
+NU6T  Richard  CA
+NU7J  Tom  WA
+NU7Y  Quint  1261
+NV1U  Tom  2303
+NV3N  Stu  1815
+NV5F  Ginnie  2149
+NV9X  Jim  774
+NW0M  Mitch  1064
+NW2I  Patricia  NY
+NW2K  Dean  1065
+NW2Z  Robert  2392
+NW3H  Bill  PA
+NW3Y  Chick  2185
+NW4V  Ed  348
+NW6P  Tom  CA
+NX3T  Martin  PA
+NX3V  Fred  PA
+NX4CU  Bob  
+NX4N  Chris  1917
+NX8F  Ron  FL
+NX8Y  Ron  1598
+NX9G  Yan  1882
+NY1Z  Bub  NH
+NY2H  Lou  2176
+NY2PO  Pat  2578
+NY3A  Steve  2296
+NY3B  Steve  1862
+NY3N  Steve  TX
+NY4A  Gaea  132
+NY4G  Ariel  SC
+NY4ZZ  Neil  NC
+NZ2Z  Bob  GA
+NZ3O  Byron  2026
+NZ4CW  Craig  SC
+NZ6Q  John  CA
+NZ8J  Tim  1217
+OD5NJ  Gabe  
+OE1TKW  Helmut  2770
+OE2BZL  Knut  
+OE3BBC  Rain  
+OE3GSA  Gerd  537
+OE3K  Ivan  
+OE3KAB  Karl  
+OE3MWS  Fred  
+OE3THC  Heinz  
+OE3XMA  Ian  
+OE4AAC  Eric  
+OE5FIN  Fritz  2193
+OE5TXF  Nigel  166
+OE6FYG  Herb  1661
+OE6GC  Harry  
+OE7LVI  Viktor  
+OE8DEK  Gerald  
+OE9TXF  Nigel  166
+OE9WGI  Walt  2635
+OH/UX1HW/M  Art  1890
+OH0XX  Olli  328
+OH1RX  Jouko  608
+OH1SIC  GI  2094
+OH1VR  Seppo  
+OH1ZAA  Zaba  1856
+OH2BH  Marty  
+OH2BN  Jarmo  135
+OH2BR  Jukka  616
+OH2EA  Hans  2014
+OH2EV  Esa  510
+OH2JSR  Denis  
+OH2KI  Jorma  144
+OH2KM  Jyri  
+OH2MA  Jukka  
+OH2MGA  Sam  
+OH2MZA  Zaba  1856
+OH3BCX  Zaba  1856
+OH5BM  Tap  
+OH5LQ  Pentti  
+OH5NZ  John  
+OH5RP  Raino  
+OH5ZA  Zaba  1856
+OH6LW  Roy  
+OH6NJ  Jarno  
+OH6NVC  Mika  1919
+OH6OS  Juna  
+OH7CW  Panu  1559
+OK1AK  Josef  
+OK1AL  Kaj  
+OK1AU  Stan  
+OK1AVG  Jan  
+OK1AY  Josef  
+OK1BZ  Mirek  
+OK1DSA  Roman  
+OK1DSP  Slava  
+OK1FFU  Petr  
+OK1FHD  Josef  
+OK1FKM  Petr  
+OK1GS  Miro  
+OK1KT  Vrata  
+OK1MAG  Karelk  
+OK1NE  Julius  
+OK1NU  Jan  
+OK1OA  Jiri  
+OK1RP  Petr  2437
+OK1RR  Martin  87
+OL8R  Petr  
+OK1TN  Slavek  662
+OK1US  Jiri  
+OK1VD  Vasek  
+OK1VK  Pavel  1897
+OK1ZE  Vasek  
+OK2AP  Milan  2497
+OK2BOB  Bob  
+OK2BTE  Alois  
+OK2FD  Karel  
+OK2JS  Jan  
+OK2NAJ  Jiri  2740
+OK2PAY  Lada  816
+OK2PBA  Mirek  
+OK2PTU  Zdeno  
+OK2RJC  Jiri  
+OK2RRR  Jiri  
+OK2RZ  Jiri  
+OK2TJ  Mirk  
+OK2ZV  Vit  
+OK4MM  Jara  2669
+OK5M  Vit  2499
+OK5MM  Vit  2499
+OK5OK  Jiri  
+OK6DJ  David  
+OK7AN  Petr  92
+OK8AU  Slav  
+OK8RB  Dave  
+OM0CS  Kamil  1194
+OM0DX  Pedro  
+OM2DT  Dusan  
+OM2VL  Laci  1542
+OM3EY  Ed  
+OM3TBG  Milan  
+OM3YAD  Rudo  
+ON1DX  Ron  2423
+ON3MK  Maurits  
+ON4AEF  Jean  
+ON4BEN  Ben  
+ON4CAS  Egbert  756
+ON4CLF  Theo  
+ON4FD  Gil  
+ON4RO  Guy  
+ON4TC  Jean  
+ON4VT  Danny  2170
+ON4WW  Mark  
+ON5AM  Albert  ON
+ON5JT  Jean  
+ON5LGS  Edy  
+ON5LK  Erik  
+ON5UK  Luk  971
+ON5ZO  Franki  56
+ON6DC/A  Morris  
+ON6LEO  Leo  
+ON6LY  Francis  2429
+ON6PJ  Jelle  2736
+ON6PQ  Ed  
+ON6QEP  Bruno  
+ON6SAS  Fil  2561
+ON6UQ  Cel  
+ON6WP  Pol  1009
+ON6XY  Jean Marie  
+ON7PQ  Pat  2365
+OP4A  Francis  2429
+OQ3R  Mar  
+OT4V  Danny  2170
+OT7T  John  
+OV2V  Per  
+OX3XR  Peter  1116
+OY1CT  Carsten  797
+OZ/DM6EE  Lutz  2654
+OZ1AAR  Villy  2694
+OZ1JHM  Jal  1420
+OZ1THC  Tommy  
+OZ3SM  Steve  2361
+OZ4UN  Paul  
+OZ4WIL  Neils  
+OZ5DX  Hans  
+OZ6FRS  Per  
+OZ7JC  Jorgen  
+P4/K3DMG  Lee  1837
+P40LE  Andy  39
+P40S  Ray  128
+P40TA  Ken  
+P40W  John  204
+P44W  John  204
+P49Y  Andy  38
+PA/DK5KK/P  Kolja  1965
+PA/W1NN  Hal  785
+PA0HOP  Hans  
+PA0IA  LJ  
+PA0INA  Frans  443
+PA0JLS  Hans  849
+PA0KBN  Klaas  
+PA0MIR  Nico  
+PA0VDV  Joeke  
+PA0VLD  Jan  2307
+PA0ZAV  Jan  
+PA1AT  Gerrey  
+PA1FOX  Alex  1225
+PA1HR  Hans  386
+PA1LEX  Lex  
+PA1LIO  Adriaan  
+PA2ST  Ben  CWA
+PA3AAV  Gert  2624
+PA3ACA  Hans  1320
+PA3BFH  Herman  2485
+PA3CNI  Willem  
+PA3CWN  Oene  
+PA3DBS  Peter  702
+PA3DEU  Dick  
+PA3DZM  Eric  2569
+PA3EVY  Willy  
+PA3GLH  Rimus  
+PA3HEN  Theo  2481
+PA3KC  Jurgen  
+PA4M  Mark  
+PA4N  Frank  1161
+PA5KT  Henk  1962
+PA5TT  Teun  283
+PA5V  Bob  179
+PA5XM  Kees  
+PA7CG  Kees  
+PA7RA  Rien  284
+PA8MM  Victor  
+PA9WOR  Bart  
+PC4H  Henk  
+PE2K  Adi  2638
+PE5B  Ben  
+PE5O  Onno  1852
+PF5X  Enno  2531
+PG1I  Marinus  
+PG4I  Jo  2225
+PG7V  Jan  
+PJ2/W8WTS  Jim  1689
+PJ4/K2SX  Dennis  124
+PJ4/K4BAI  John  76
+PJ4/KU8E  Jeff  208
+PJ4/N3RD  Dave  232
+PJ4/W2LK  Les  726
+PJ4LS  Hans  849
+PJ5/K1XM  Paul  74
+PJ6/K4UEE  Bob  543
+PJ6/NM1Y  Jeff  1887
+PJ7AA  Tom  1092
+PP5EG  Oms  549
+PR7AB  Junior  
+PS7CE  CHA  
+PY1NB  Felipe  
+PY2EGM  Sergio  
+PY2OMS  Oms  549
+PY2XC  Carlos  
+PY4XX  Carlos  2750
+PY5EG  Oms  549
+PZ5RA  Ramon  745
+PZ5T  Yuri  21
+R2ZM  Alex  
+R3/K5GO  Stan  272
+R3/VE7CC  Lee  139
+R3EV  Larry  
+R3LB  Alex  
+R4AZ  Yuri  
+R5AF  Ilya  2474
+R5AK  Anatoly  
+R6AF  Vic  406
+R6AF/P  Vic  406
+R6KD  Slave  
+R7DA  Alex  
+R9SK  Vlad  
+RA2FV  Anatoly  
+RA3AV  Alek  
+RA3CQ  Igor  20
+RA3LDP  Alex  
+RA4ACX  Alexey  
+RC6R  Vlad  
+RD1AP  Ogpr  
+RD3A  Val  536
+RD3AF  Val  536
+RG6G  Alex  399
+RK1OWZ  Serg  
+RK6F  Victor  
+RL3AA  Mikhail  
+RM2D  Mats  1820
+RM3F  Marko  1224
+RN1QA  Yuri  
+RN4W  Igor  
+RO5A  Joe  
+RO9O  Alex  
+RQ3D  Alex  
+RT1Q  Andy  
+RT5G  Dima  
+RT5P  Gene  2706
+RT9S  Yuri  
+RT9T/3  Tony  
+RU3TJ  Dima  
+RV3FF  Andy  
+RV3ZN  Alex  
+RW3RN  Alex  
+RW3YW  Vlad  
+RW3ZA  Toly  
+RW3ZO  Sergey  
+RW4CLF/3  Gene  
+RW4CLF  Gene  
+RW6HX  Alex  399
+RW9QA  Vlad  
+RX3FC  Vlad  
+RX3QNE  Misha  
+RX4CD  Sergey  
+RX6CB  Ed  
+RX9TX  Art  
+RY3PAE  Savin  2706
+RY7KV  Mike  
+RZ3AM  Vlad  
+RZ3DN  Alex  
+RZ9OO  Alex  
+S50R  Leo  
+S51DV  Alojz  
+S51MF  Franz  
+S51NM  Herman  
+S51RU  Marjan  
+S51V  Silvo  
+S51WO  Sam  
+S52R  Tone  
+S53O  Ljubo  
+S53R  Rob  492
+S55N  Joc  2513
+S56A  Mario  
+S57KM  Sandi  
+S58M  Dare  
+S58Q  Darko  
+S59N  Dan  
+SA0BXV  Claes  1849
+SA2RFQ  Dan  1601
+SA6BGR  Per  1773
+SA6G  Lars  173
+SA7UFO  Uno  
+SC3N  Andy  265
+SD1A  Eric  1718
+SD6F  Klas  2163
+SD6M  Per  1773
+SE0C  Ola  1737
+SE4E  Lars  950
+SE5E  Ingo  2097
+SE5L  Ben  1237
+SF0Z  Jens  2237
+SF1Z  Jens  2237
+SF3A  Jan   
+SI5Y  Kurt  904
+SJ6W  Sten  
+SK2T    
+SK6SAQ    
+SM0AIG  Ingemar  
+SM0BYD  Hans  998
+SM0CUH  Ola  1737
+SM0FPR  Mats  2125
+SM0HEV  Jens  2237
+SM0OY  Lars  1155
+SM0Y  Lars  1155
+SM1IRS  Andy  
+SM1TDE  Eric  1718
+SM2CEW  Peter  2385
+SM2EKM  Jim  
+SM3/EA8CN  Andy  265
+SM3CER  Jan   
+SM3EVR  Tord  261
+SM3KMB  Ben  
+SM4DQE  Lars  950
+SM4EMO  Ken  
+SM4ASX  Len  
+SM5ACQ  Don  
+SM5AJV  Ingo  2097
+SM5ALJ  Ben  1237
+SM5BKK  Kurt  904
+SM5CCE  Kjell  169
+SM5CIL  Arne  1410
+SM5COP  Rune  
+SM5DJZ  Jan  SM
+SM5GLC  Lasse  1529
+SM5IMO  Dan  1854
+SM5S  GI  2094
+SM5SIC  Goran  2094
+SM6BGA  Hans  456
+SM6CLU  Len  
+SM6CMU  Ingemar   
+SM6CNN  Andy  176
+SM6CUK  Lars  173
+SM6CWK  Sven  
+SM6FKF  Fredy  999
+SM6IQD  Rolf  
+SM6JWR  Klas  2163
+SM6LRR  Mats  1820
+SM6M  Peter  2663
+SM6MCW  Peter  2663
+SM6NT  Lars  
+SM6YNO  Hans  
+SM6X  Len  
+SM7ATL  Ulf  
+SM7BUA  Mats  1950
+SM7CIL  Arne  1410
+SM7DLK  Goran  
+SM7DZD  Lars  
+SM7FCU  Bengt  2033
+SM7IUN  Bjorn  2101
+SM7RYR  Roger  1855
+SM7WNM  Jocke  
+SM7YIN  Ingvar  
+SM9A  Stef  1884
+SM9X  Jaan  2548
+SN1T  Ted  
+SN5N  Chris  
+SN9MT  Mirek  
+SO5CW  Fabian  1566
+SP1AEN  Max  
+SP1ALK  Jan  
+SP1D  Robert  2542
+SP1HN  Piotr  
+SP2AQB  Joe  
+SP2BMX  Jan  
+SP2DX  Wes  
+SP2IST  Matt  
+SP2LNW  Slaw  2544
+SP2R  Darek  2674
+SP3BLC  Mietek  
+SP3FSM  Stan  
+SP4AWE  Kaz  
+SP4Z  Wes  
+SP5ICQ  Wes  2498
+SP5ENA  Mirek  
+SP5ULV  Krisz  
+SP6A  Zbig  
+SP7BCA  Tom  
+SP8ARY  Ron  
+SP9AVR  Claudio  
+SP9BRP  Jan  2343
+SP9R  Jan  2343
+SP9RXP  Peter  
+SP9FOW  Roman  2377
+SQ5VCO  Adam  
+SQ5WAJ  Jacek  
+SQ6GIT  Konrad  2045
+SQ6MIH  Barteck  
+SQ9IWA  Tomasz  2240
+SQ9S  Adam  2309
+ST2AR  Rob  
+SV0XCC/9  Paul  1009
+SV1ACL  John  
+SV1CEI  Nik  
+SV1CQN  Kostas  
+SV1DOJ  Tassos  
+SV1JB  Dimis  31
+SV1RUX  Dave  
+SV2BBK  Theo  1976
+SV2BXA  Alex  2400
+SV2ESW    
+SV2KF  George  
+SV5BYR  Mike  
+SV8PMM  Panos  
+SV9/OH1VR  Seppo  153
+SV9RNG  Pol  1009
+T6AA  Rob  492
+T6AG  Dave   
+TI7W  Chris  1576
+TA1UT  Bora  2768
+TA2BD  Halil  
+TA3AER  kadir  
+TA7I  Ozkan  2646
+TF3DC  Oskar  285
+TF3Y  Yngvi  238
+TF4M  Thor  177
+TG9AJR  Juan  
+TI5KS  Kam  146
+TI5W  Nate  445
+TO9W  John  471
+TX5T  Madison  1479
+TY2AC  Nicolas  1755
+TZ4AM  Jeff  1716
+UA1ABW  Val  
+UA1AJ  VAl  
+UA1MU  Victor  
+UA2FAK  Mikolaj  
+UA3AB  Andy  
+UA3AO  Lery  
+UA3AP  Serge  
+UA3DSN  Sergey  
+UA3GR  Sergi  
+UA3QAM  Alex  
+UA6AF  Vic  406
+UA6HAQ  Dima  
+UA6HRB  Boris  
+UA6XT  Tolik  
+UA9BA  Willy  428
+UA9CDC  Igor  
+UA9FAR  Vlad  
+UA9FGJ  Valery  
+UN7GP  Boris  
+UR0CB  Gena  
+UR0IG  Ivan  
+UR1YAA  Seva  
+UR2Y  Val  2689
+UR3HC  Alex  
+UR4GA  Boris  
+UR5AO  Vlad  
+UR5FCM  Igor  
+UR5LMB  Sergey  
+UR5MM  Rudy  382
+UR5ZW  Victor  
+UR7GO  Alex  2685
+US0KF  Jackob  
+US0MF  Serge  381
+US2YW  Slava  
+US3EZ  Serge  
+US4IRC  Gena  
+UT1LF  Alex  
+UT2UB  Andre  
+UT3GP  Vlad  
+UT3RN  Nick  
+UT3UZ  Alex  614
+UT4UP  Alex  
+UT4UZ  Yuri  21
+UT4WA  Igor  
+UT5CW  Bob  527
+UT5EOX  Ion  
+UT5UDX  Serg  
+UT5WAA  Volod  2234
+UT6UA  Dim  1756
+UT7UJ  Dim  619
+UT7UV  Sasha  
+UU5JZ  Stan  
+UW2ZO  Igor  
+UW3HM  Slava  1810
+UW3QV  Victor  
+UW7LL  Yarik  2229
+UX0CQ  Vlad  
+UX0KR  Vlad  
+UX1HW  Art  1890
+UX1HW/M  Art  1890
+UX2HB  Waddy  2538
+HB0/UX1HW/M  Art  1890
+UX1IW  Serge  
+UX1UA  Sergei  522
+UX1VT  Pavlo  
+UX7VA  Vlad  
+UY1HY  VAl  2349
+UY2UA  Vlad  
+UY3QT  Alex  
+UY5LX  Mike  
+UY5MB  Vlad  
+UY5QZ  Val  
+UY7LU  Alex  
+UZ1WW  Bob  527
+V21XN  Bill  KY
+V26K  Bud  242
+V26M  Alan  727
+V31AT  Rob  
+V31JP  Joe  
+V31MA  Marc  1851
+V31SP  Phil  2588
+V31UB  Colin  418
+V47NT  Andy  2036
+V47UM  Bill  1699
+VA1CWO  Gerald  NS
+VA1RST  Roger  2049
+VA2AGW  Andy  2328
+VA2CZ  Pete  2184
+VA2EBI  George  9
+VA2FDT  Szabi  1193
+VA2MA  MA  QC
+VA2RAC    QC
+VA2SG  Pete   QC
+VA2UR  Guy  
+VA2WA  Vic  2212
+VA3CX  Ron  1775
+VA3DKL  Dave  ON
+VA3FH  Victor  ON
+VA3FV  Les  1701
+VA3GE  John  ON
+VA3ICC  Ian  ON
+VA3JFF  Jeff  ON
+VA3OPN  Glenn  457
+VA3PJC  Pat  ON
+VA3PM  Pierre  1617
+VA3QV  Bob  ON
+VA3RJ  Dave  ON
+VA3SB  Serge  1488
+VA3SY  Syl  2433
+VA3TTB  Chuck  ON
+VA3WB  Dennis  ON
+VA3WHU  Carole  2773
+VA3YG  Brent  ON
+VA3ZB  Bruce  ON
+VA3ZC  Paul  ON
+VA5SCA  Neil  SK
+VA6CA  Kam  2714
+VA6SP  Peter  AB
+VA7ADI  Adrian  BC
+VA7BWG    BC
+VA7CDB  Paul  BC
+VA7CW  Andy  352
+VA7DX  Neil  2691
+VA7ETR  Tamara  2619
+VA7OM  Les  2739
+VA7QCE  Carole  1913
+VA7ST  Bud  1622
+VE1AOE  Don  1703
+VE1ASE  Mike  NB
+VE1BAB  Wayne  NS
+VE1DT  Gerald  941
+VE1DX  Paul  NS
+VE1EJ  Joe  1386
+VE1EM  Jesse  NS
+VE1KCO  Corey  NS
+VE1MU  Mike  NS
+VE1TTT  Mike  1347
+VE1VEI  Lloyd  2742
+VE1YVN  Sam  NS
+VE2AEJ  Alan  336
+VE2AEJ/3  Alan  336
+VE2AXO  Bob  1596
+VE2BWL  Guy  859
+VE2BZO  Andre  1356
+VE2CSM  Sylvain  QC
+VE2EBK  Dany  QC
+VE2FD  Steve  2607
+VE2FK  Claude  1181
+VE2FK/M  Claude  1181
+VE2FU  Phil  QC
+VE2FWW  Noel  QC
+VE2HEW  Tony  QC
+VE2HB  Claude  1181
+VE2ICU  Paolo  QC
+VE2IM  Yuri  21
+VE2IR  Don  1822
+VE2JCW  Jean  2640
+VE2KM  Tony  2424
+VE2MF  Mario  2556
+VE2MFD  Mark  QC
+VE2NCG  Nick  QC
+VE2PGI  Paul  QC
+VE2QA  Vlad  QC
+VE2PID  Pierre  1278
+VE2SG  Step  QC
+VE2SRP  Simon  2144
+VE2SSS  Pete  225
+VE2VIA  Jean  QC
+VE2WU  Marten  QC
+VE2ZM  Simon  2144
+VE3ABN  Les  1701
+VE3AIH  Art  ON
+VE3AXC  Carl  ON
+VE3AYR  Hugh  ON
+VE3BXG  Mark  ON
+VE3CEB  Gerd  1916
+VE3CX  Tom  1399
+VE3DTI  Jose  ON
+VE3DZ  Yuri  21
+VE3EFM  Les  1701
+VE3EIB  Nick  ON
+VE3EJ  John  513
+VE3EY  Nick  ON
+VE3FAL  Fred  ON
+VE3FP  Adam  2323
+VE3FU  Chris  ON
+VE3FWF  Bernie  ON
+VE3FXX  Ron  1775
+VE3GFN  Mike  1119
+VE3GNA  Glenn  457
+VE3GO  Ron  ON
+VE3HEU  Vic  2536
+VE3IKV  Pete  ON
+VE3KAE  Alan  ON
+VE3KBI  Paul  ON
+VE3KCY  Ken  ON
+VE3KI  Rich  783
+VE3KP  Ken  1246
+VE3KPV  Jesse  ON
+VE3KQN  Jim  ON
+VE3KQK  Mike  ON
+VE3KZ  Bob  2585
+VE3MA  Al  1860
+VE3MGY  Brian  1285
+VE3MM  Rick  1947
+VE3MS  Rodger  ON
+VE3MV  Doug  1642
+VE3NE  Lali  128
+VE3NI  Daniel  ON
+VE3NNT  Les  1701
+VE3NR  Bob  ON
+VE3NUL  Rich  ON
+VE3NWN  James  ON
+VE3NZ  Ben  ON
+VE3OI  Dave  ON
+VE3OP  Craig  ON
+VE3OU  Ernie  ON
+VE3PQ  Paul  ON
+VE3PVI  Tom  1735
+VE3QN  Bryan  ON
+VE3RDE  Roger  ON
+VE3RIA  Andrew  1025
+VE3RUA  Jack  1047
+VE3SMA  Steve  ON
+VE3TM  Vlad  2543
+VE3TW  Stan  1563
+VE3UTT  Art  2647
+VE3VGI  John  1373
+VE3VIG  MA  ON
+VE3VJC  Chauhan  ON
+VE3VTG  Enzo  2120
+VE3WNS  Norm  2728
+VE3WZ  Garry  ON
+VE3XKZ  Chris  ON
+VE3YT  Vic  2277
+VE4AEO  Rich  783
+VE4CDX    MB
+VE4EA  Cary  1828
+VE4MR  Kevin  1587
+VE4SNA  Jack  1047
+VE4YU  Ed  MB
+VE5GC  Gray  SK
+VE5MX  Todd  2540
+VE5SF  Sam  SK
+VE5UF  Doug  137
+VE5UO  David  SK
+VE5VG  Garth  SK
+VE6BF  Bill  222
+VE6DC  Renze  AB
+VE6JF  Jim  2009
+VE6RST  Max  AB
+VE7AHA  Andy  352
+VE7ALQ  Yaakov  BC
+VE7CC  Lee  139
+VE7CCY  Scott  BC
+VE7DZO  David  2106
+VE7FO  Jim  1368
+VE7GPG  Greg  BC
+VE7IO  Fred  2696
+VE7JH  Bagor  2702
+VE7KHI  Kevin  2487
+VE7KW  Keith  2182
+VE7MR  Willi  427
+VE7NZ  Adrian  2758
+VE7SK  Bob  BC
+VE7XT  Rick  BC
+VE8IR  Ian  NT
+VE9AA  Mike  1347
+VE9AA/M  Mike  1347
+VE9DX  Andy  NB
+VE9IU  Mike  NB
+VE9OA  Bill  NB
+VE9VIC  Vic  2482
+VE9WW  Bill  NB
+VE9XX  Don  AB
+VE9XX/6  Don  AB
+VC3CWO  Les  1701
+VK2AFA  Samuel  
+VK2BJ  Barry  294
+VK2DX  Nick  
+VK2IO  Gerard  2362
+VK2IOW  Patrick  
+VK3CWB  Moz  1895
+VK3ELT  Roger  
+VK3GDM  David  
+VK4AQ  Rossco  247
+VK4TJF  James  1191
+VK4TT  Keith  
+VK5EEE  Lou   
+VK6GX  Phil  2425
+VK6HG  Rob  1029
+VK7CW  Steve  1196
+VK8XX  Joe  339
+VO1AAM  Yuri  21
+VO1AW  BK  NL
+VO1BQ  Joe  1325
+VO1DD  Doug  1078
+VO1HP  Frank  684
+VO1MP  Gus  134
+VO1SA  Rick  NL
+VO1TTT  Mike  1347
+VO2AC  Chris  NL
+VP2MKG  Geo  970
+VP2MVV  Ken  697
+VP2MXF  Nigel  166
+VP5/K0PC  Pat  947
+VP5/K2SX  Dennis  124
+VP5/K4BAI  John  76
+VP5/K4QPL  Jim  244
+VP5/W5CW  Dave   
+VP5M  Jim  244
+VP9/N3AD  Alan  727
+VP9/W6PH  Kurt  
+VQ9JC  Jim  389
+VQ9LA  Larry  644
+VU2BGS  Kumar   
+VU2PAI  PAI  491
+VU2PTT  Prasad  615
+VY1AAA    YT
+VY1EI  Eric  YT
+VY2SS  Robby  PE
+W0A  Mike  IA
+W0AAE  Kees  MN
+W0AD  Paul  MN
+W0AG  Mike  1317
+W0AJU  Rich  MO
+W0BBI  Bill  MO
+W0BH  Bob  669
+W0BNW  Jim  IA
+W0BR  Bob  PA
+W0BV  Bob  753
+W0CCA  Cap  625
+W0CD  Jim  KS
+W0CO  Brad  1452
+W0CP  Walt  1752
+W0CWO    
+W0DAS  Dave  CO
+W0DLE  Chuck  CO
+W0EA  Tom  953
+W0EAR  Don  MN
+W0ECS  Frank  TX
+W0EJ  Bill  1269
+W0EWD  Mike  IA
+W0FK  Lou  MO
+W0GAS  Greg  CO
+W0GJ  Glenn  532
+W0GTL  Chris  SD
+W0GXA  Bob  1349
+W0GXQ  Jerry  1555
+W0IR  Dale  MN
+W0IS  Rick  MN
+W0ITT  Gary  2041
+W0IZ  IZ  CO
+W0JX  Den  1263
+W0KFG  Rich  MN
+W0KU  Scott  1988
+W0LGU  Tom  MN
+W0LPF  Pete  1779
+W0LTL  Mike  AZ
+W0MU  Mike  CO
+W0NEO  Duane  AR
+W0ODS  Jeff  1297
+W0OJ  Phil  2723
+W0OR  Bill  1162
+W0PF  Dave  MO
+W0PHX  Geo  2076
+W0PI  Gene  2426
+W0PWE  Jerry  IA
+W0RM  Ralph  IN
+W0RO  Ric  CO
+W0SA  Peter  503
+W0SJS  Steve  446
+W0SK  Jim  TN
+W0TG  Bill  1873
+W0UA  Geo  944
+W0UO  Jim  1069
+W0VX  Dave  967
+W0XE  Don  1500
+W0XI  Phil  KS
+W1AAX  Harry  MA
+W1AJT  Art  2647
+W1AO  Joe  125
+W1AX  Roger  99
+W1CWT    
+W1EBI  George  9
+W1EBM  Gary  784
+W1EQ  Bob  871
+W1FCV  John  917
+W1FJ  Al  504
+W1FOX  Brian  TX
+W1GD  Gerry  2500
+W1GF  Greg  2688
+W1HIJ  Bill  709
+W1HIS  Chuck  306
+W1HL  Jim  MA
+W1HT  Ralph  FL
+W1JR  Joe  249
+W1JSB  Hans  NH
+W1KM  Greg  1411
+W1LWH  Linn  551
+W1MA  Ed  MA
+W1MD  Marty  2591
+W1MO  Norm  FL
+W1ND  Glen  ME
+W1NN  Hal  785
+W1OL  Guy  MA
+W1OO    ME
+W1OPR  Dustin  ME
+W1PH  Kurt  NH
+W1PID  Jim  1507
+W1PY  Matt  2444
+W1QH  Harlan  CT
+W1QI  Walt  CT
+W1QK  Dan  1506
+W1QS  John  918
+W1RH  Bob  2443
+W1RM  Pete  8
+W1SFR  Steve  VT
+W1TEF  Tom  1541
+W1TO  Tom  2042
+W1UE  Dennis  437
+W1UE/VE3  Dennis  437
+W1UJ  Jay  426
+W1UU  Peter  91
+W1UU/4  Peter  91
+W1UU/1  Peter  91
+W1VE  Gerry  191
+W1WBB  Bill  2207
+W1WEF  Jack  48
+W1XT  Bob  AZ
+W1ZF  Skip  MA
+W1ZT  Geo  174
+W2AAB  Fred  1449
+W2APF  Thaire  1627
+W2CDO  Peter  2526
+W2CQ  Bill  928
+W2CS  Gary  1008
+W2DWL  Dennis  NJ
+W2ECK  Paul  GA
+W2FV  John  WA
+W2GD  John  204
+W2GD/KP2  John  204
+W2GEZ  MIke  NJ
+W2GN  Chas  1265
+W2HZ  Fred  2648
+W2HZ/7  Fred  CWA
+W2ID  John  NJ
+W2IW  Mike  FL
+W2IX  Frank  FL
+W2JAZ  Rick  2239
+W2JK  Joe  NY
+W2JLK  Jim  NJ
+W2KJ  Joe  1902
+W2LB  Larry  ny
+W2LCQ  Ed  701
+W2LE  Paul  NJ
+W2LJ  Larry  1005
+W2LK  Les  726
+W2M  Bill  VA
+W2MFT  Doc  NY
+W2MGF  Mike  NY
+W2MKM  Ed  2681
+W2MSW  Mark  NJ
+W2NO  Dan  2174
+W2NRA  Art  1955
+W2OR  DJ  1384
+W2OZB  Phil  2020
+W2PIX  Tom  WA
+W2PL  Phil  570
+W2PTT  Prasad  615
+W2QL  John  2331
+W2RAN  Randy  NH
+W2REA  Terry  NY
+W2RFN  Jeff  NY
+W2RQ  Bill  1764
+W2RRT  Nick  NY
+W2RU  Bud  65
+W2TB  Mike  346
+W2TR  Gary  2136
+W2TT  Ross  2716
+W2VJN  Geo  OR
+W2VM  Craig  1623
+W2VT  Richard  NY
+W2WG  Bob  GA
+W2XB  Don  1896
+W2XS  John  1407
+W2XYZ  Frank  2510
+W2YH  Carl  2384
+W2YR  John  751
+W2ZRA  Kevin  942
+W3AC  Dave  1235
+W3AG  Joe  PA
+W3AT  Jim  NM
+W3ATT  Brian  VA
+W3AVP  Alex  PA
+W3BBO  Bob  PA
+W3BG  Jim  PA
+W3BI  Rick  794
+W3BRF  Brad  SC
+W3BW  Brian  567
+W3CEI  Larry  PA
+W3DP  Dick  PA
+W3EEK  Carl  972
+W3EF  Maury  632
+W3EL  Billy  417
+W3FSA  John  1552
+W3FV  Barry  2025
+W3GC  Tom  FL
+W3GG  Burt  1994
+W3GW  Joe  LA
+W3GWM  George  1981
+W3II  John  PA
+W3IL  Bill  199
+W3KB  Keith  1156
+W3KHG  John  661
+W3LPL  Frank  29
+W3MA  John  2664
+W3MC  Mike  MD
+W3MF  John  PA
+W3MS  Craig  MD
+W3OKC  Steve  1808
+W3PNM  Bill  1985
+W3PU  NY  Adrian
+W3RE  Matt  2625
+W3RGA  Pat  PA
+W3RT  Emil  2410
+W3RZ  Lou  1963
+W3SD  Steve  PA
+W3SFG  Steve  MD
+W3TB  Ted  2477
+W3TMZ  Jack  FL
+W3TW  Tom  1972
+W3UA  Gene  2435
+W3UL  Bill  1699
+W3UR  Bernie  26
+W3US  Rusty  2668
+W3WH  Bill  PA
+W3WHK  Saul  1392
+W3WL  Wes  GA
+W3WW  Don  896
+W3YJ  Harry  PA
+W3YQ  Tim  1742
+W3YR  Ted  2719
+W3YY  Bob  517
+W3ZL  Cliff  NC
+W4/LZ5KF  Claude  2326
+W4ALF  Chris  1695
+W4ANE  Jim  SC
+W4AQL  Bruce  2297
+W4AU  John  224
+W4BGT  Jim  GA
+W4BQF  Tom  149
+W4BUW  George  1023
+W4CB  Bud  65
+W4CC  John  1284
+W4CDA  John  KY
+W4CI  Dave  932
+W4CK  Mark  33
+W4DD  Jeff  GA
+W4DDD  Jim  806
+W4DKS  Dan  321
+W4DLZ  Frank  FL
+W4DR  Bob  VA
+W4DXX  Eric  1040
+W4EDE  Lee  30
+W4ER  John  1189
+W4FC  Paul  SC
+W4FCG    FL
+W4FKM  Claude  1342
+W4FLN  Frank  FL
+W4FO  Pat  FL
+W4FOA  Tony  229
+W4FS  Tucker  NC
+W4GFA  George  SC
+W4GJ  Bob  FL
+W4GNS  Gary  VA
+W4HG  Wayne  494
+W4HOZ  Read  MS
+W4HXH  Dennis  FL
+W4IF  Carl  2021
+W4II  John  1273
+W4IPA  CJ  TX
+W4IPC  Con  VA
+W4IT  Steve  2492
+W4IX  John  984
+W4JS  John  FL
+W4KA  Dave  SC
+W4KEP  Chas  VA
+W4KIL  Andy  NC
+W4KLY  Paul  1540
+W4KX  Tom  NC
+W4LSV  Barry  1132
+W4LWZ  Larry  FL
+W4LZW  AD  SC
+W4MDV  Mike  2394
+W4MEF  Rick  VA
+W4MJE  Jim  1777
+W4MQC  Alan  182
+W4MQC/1  Alan  182
+W4MY  Marty  NC
+W4NA  Nate  1334
+W4NBS  Tom  1696
+W4NF  Jack  2360
+W4NI  Russ  TN
+W4NTA  Jim  GA
+W4NU  John  760
+W4NZ  Ted  831
+W4OC  Don  433
+W4OCO  Mike  VA
+W4PA  Scott  TN
+W4PF  Steve  2056
+W4PM  Puck  93
+W4QED  Benny  FL
+W4QN  Norm  1937
+W4QO  Jim  1366
+W4RK  Bill  459
+W4RM  Bill  2330
+W4RN  Mike  585
+W4RVU  Phil  FL
+W4SAA  Joe  FL
+W4SIG  Kerry  1700
+W4SON  Jack  373
+W4SPR  Spray  2259
+W4SSF  Stam  TN
+W4TB  Ted  FL
+W4THI  Rick  FL
+W4TJE  Jack  1577
+W4TTM  Mark  1114
+W4TY  Art  VA
+W4UAT  Larry  CA
+W4UM  Mike  1216
+W4UT  Ron  2202
+W4UTI  Karl  960
+W4UX  Jim  1175
+W4VG  Jay  1591
+W4VIC  Vic  1184
+W4VP  Ron  NC
+W4VQ  Bob  835
+W4WF  Chris  2095
+W4WJ  Don  654
+W4WQ  Jerry  2367
+W4WW  Eiichiro  PA
+W4WXA  Tom  GA
+W4XO  Lex  2217
+W4YE  Buddy  396
+W4YES  Glenn  1892
+W4ZGR  Peter  FL
+W4ZYT  Don  55
+W5AG  Arch  LA
+W5BM  Dan  1377
+W5BIB  Steve  2350
+W5BOS  Lanny  TX
+W5BQ  Bruce  1631
+W5BXE  Rich  AR
+W5CU  Sam  353
+W5CW  Dave  OK
+W5CWM  Martin  1992
+W5DNT  Dan  297
+W5DV  Chas  1364
+W5EP  Bill  2372
+W5FKX  Don  241
+W5FMH  Scott  TX
+W5FN  Doug  1938
+W5FOC  Ken  1446
+W5GAD    LA
+W5GAI  Skip  1649
+W5GJ  Bob  2416
+W5HFF  Ross  TX
+W5HPQ  Steve  NM
+W5IZ  Al  622
+W5JAW  Jim  68
+W5JBO  John  1115
+W5JK  Steve  2253
+W5JQ  Jay  607
+W5JW  Jack  WY
+W5JYK  San  NC
+W5KFT  Rob  TX
+W5KY  Kay  OK
+W5LA  Jim  1630
+W5LNI  John  1628
+W5MIG  Jerry  TX
+W5MJ  Madison  1479
+W5MKT  Dave  TX
+W5MT  Matt  1868
+W5MX  Bryan  2258
+W5NE  Alex  2141
+W5OV  Bob  OH
+W5PEH  Pete  TX
+W5PET  Dick  2316
+W5PGZ  Bill  TX
+W5QQ  Del  TX
+W5RIR  Robb  TX
+W5RST  Mike  OK
+W5RZ  Dennis  1352
+W5SG  Bill  45
+W5SJ  Bill  1980
+W5TA  Dick  TX
+W5TM  Ed  1336
+W5TN  Dave  2353
+W5TUF  James  1609
+W5TW  Tom  AL
+W5ULR  Hickey  LA
+W5UTW  Skip  1901
+W5UX  Bob  FL
+W5UXH  Chuck  314
+W5VE  Rob  NC
+W5WRL  Bill  TX
+W5WZ  Scott  LA
+W5XU  David  539
+W5XX  Mal  2375
+W5YA  Fred  58
+W5YDM  Bob  TX
+W5ZO  Mike  TX
+W5ZR  Bert  23
+W5ZV  Bill  SC
+W5ZW  Mark  AZ
+W6AEA  Geo  1478
+W6AIM  Jim  CA
+W6AT  Lanny  CA
+W6AQ  Dave  OK
+W6BK  Dave  1165
+W6BRY  Brian  CA
+W6BUX  Bux  2603
+W6CL  Carol  OK
+W6CWO    CA
+W6CYX  Bob  47
+W6DR  Dave  CA
+W6EU  Jim  317
+W6GJB  Glen  CA
+W6GMT  Brock  2211
+W6GMY  Terence  CA
+W6IJ  Tommy  111
+W6IYS  Bill  1101
+W6JBR  JR  CA
+W6JMP  Gene  1120
+W6KC  Jim  1266
+W6LAX  Roger  2412
+W6LD  John  CA
+W6LEN  Jess  1840
+W6ML  Jim  1266
+W6NEV  Marty  CA
+W6NF  Jack  1047
+W6MOB  Sam  CA
+W6NS  Tim  1498
+W6NUC  Dave  1770
+W6NV  Oli  CA
+W6NWS  Larry  1209
+W6OA  Don  WA
+W6OAT  Rusty  28
+W6ONV  Steve  CA
+W6OOM  Eric  2614
+W6OWP  Carl  TX
+W6PH  Kurt  CA
+W6PHO  David  1903
+W6QA  Tony  CWA
+W6QR  William  2449
+W6RGG  Bob  CA
+W6RK  Risto  98
+W6RKC  Rick  CA
+W6RLL  Joe  2633
+W6RO  Bob  CA
+W6RR  John  2566
+W6SBE  Daniel  CA
+W6SC  Jim  263
+W6SFG  Bruce  VA
+W6SMF  Stan  2467
+W6STR  Mike  1641
+W6SX  Hank  61
+W6TK  Dick  CA
+W6TN  Trung  1707
+W6UB  Larry  TN
+W6UDO  Joe  OR
+W6VO  Brad  2305
+W6WG  Ron  2173
+W6XU  Josh  712
+W6YA  Jim  72
+W6YR  Joe  1990
+W7AIT  Chip  CA
+W7ACM  Greg  WA
+W7BCW  Bruce  2247
+W7CQW  Quint  ID
+W7CT  Jim  287
+W7CWO    
+W7CXX  Jack  UT
+W7DZD  Darrel  WA
+W7EE  Gary  1949
+W7EEE  Tim  1905
+W7FB  Dave  301
+W7GB  Don  1186
+W7GET  Garret  MT
+W7GF  Mike  2005
+W7GTF  Ron  WA
+W7GVE  Ed  AZ
+W7IDM  Roy  ID
+W7IY  Stu  1620
+W7KF  Doug  2183
+W7KFI  Susan  2275
+W7KXB  Bill  AZ
+W7LG  Mike  2682
+W7LXN  Myron  1166
+W7KPL  Jerry  AZ
+W7MP  Adam  2461
+W7OLY  Aubrey  1637
+W7OM  Rod  680
+W7PAU  Paul  OR
+W7QC  Steve  1692
+W7QM  Hank  61
+W7RF  Dan  2140
+W7RN  Tom  108
+W7RX  Scott  2034
+W7SAG  John  1582
+W7SAG/0  John  1582
+W7SW    AZ
+W7TAO  Todd  WA
+W7UDH  Dick  WA
+W7UT  Bob  200
+W7VP  Bill  WA
+W7VQ  Rick  2441
+W7VSE  Vic  OR
+W7VZ  Kent  UT
+W7WHY  Tom  407
+W7XT  Dick  2004
+W7Y  Dale  404
+W7ZAP  Mindy  OR
+W7ZI  Mike  OR
+W7ZRC  Rod  1127
+W8AKS  Marty  WV
+W8BBQ  Mark  OH
+W8BG  Bill  1493
+W8BI  Rob  OH
+W8BO  Phil  OH
+W8BUB  Tom  OH
+W8BUD  Bud  1417
+W8BZY  Jim  2345
+W8CAR  Dan  1220
+W8DHG  Cory  OH
+W8DN  Mike  1813
+W8EDU  David  OH
+W8EH  Ernie  2656
+W8EO  Ed  MI
+W8FJ  John  201
+W8FK  Terry  CO
+W8FN  Randy  1864
+W8GF  Dick  MI
+W8GU  Mark  OH
+W8HOG  Jerry  OH
+W8HW  Bruce  958
+W8IQ  Kurt  755
+W8JLT  Joh  MI
+W8JPF  Joe  OH
+W8KNO  Joe  OH
+W8KR  John  1951
+W8LVI  Ron  2040
+W8LVN  Bill  IL
+W8MET  Met  2028
+W8MKR  Jim  MI
+W8MYU  Bob  MI
+W8NIC  Larry  MI
+W8OHR  Dick  MI
+W8OU  Andy  2771
+W8OV  Dave  2006
+W8PBO  Art  WV
+W8RF  Mike  OH
+W8RJL  Ron  VA
+W8RTJ  Jim  OH
+W8RZ  Dan  MI
+W8TG  Mike  OH
+W8TK  Tom  2129
+W8TU  Jim  MI
+W8UA  Jay  2662
+W8UE  Ted  MI
+W8UE/4  Ted  
+W8UV  Phil  DE
+W8VNZ  Mark  MI
+W8WOJ  Don  1824
+W8WTS  Jim  1689
+W8WY  Jim  OH
+W8WZ  Carl  1660
+W8XC  Win  2143
+W8XE  Winford  WI
+W8ZR  Jim  NM
+W9/CE2LR  Matt  WI
+W9AW  Motoaki  1014
+W9BGW  Brian  IN
+W9BGX  Ralph  IL
+W9BJL  Chris  2541
+W9CBT  Dick  IL
+W9CC  Larry  1082
+W9CJ  Carl  2300
+W9CSX  Tom  IN
+W9CWO  Fred  1881
+W9DCA  Dave  IL
+W9EBE  Chip  1906
+W9EO  Eric  1894
+W9FCX  Lyle  332
+W9FHA  John  IN
+W9FML  Carrie  WI
+W9FX  Brad  778
+W9FY  Olaf  IL
+W9GFB  Gerald  IL
+W9GL  Jim  1618
+W9HT  Josh  IN
+W9IE  Ken  1530
+W9ILY  John  471
+W9IM  Andy  IL
+W9JFK  Joel  PA
+W9JUG  Jim  IL
+W9KKN  Bill  2241
+W9KM  Andy  2489
+W9KNI  Bob  1648
+W9LR  Bill  WI
+W9LW  Jay  IN
+W9MDG  Mike  IL
+W9MIC  Mike  IL
+W9NJY  Andy  1348
+W9NX  Kent  866
+W9NXM  Gus  1841
+W9NXM/0  Gus  1841
+W9NZB  Wayne  IL
+W9OA  George  IL
+W9OD  Craig  2117
+W9OO  Carl  IL
+W9OP  Mark  1067
+W9PJ  Paul  1359
+W9RE  Mike  526
+W9RF  Joe  IL
+W9RFX  Geo  MN
+W9RGB  Vic  IN
+W9RND  Rob  IN
+W9RNY  Mike  2199
+W9SAU  Dan  IL
+W9SE  John  IL
+W9SN  Steve  TN
+W9SN/M  Steve  TN
+W9SZ  Zack  731
+W9UCR  Bob  1907
+W9UM  Nick  IN
+W9VE  Don  2099
+W9VNE  Jim  OH
+W9WR  John  2134
+W9XA  Kermit  1094
+W9XC  Les  IL
+W9XS  Ron  1731
+W9XT  Gary  WI
+W9XY  Bob  WI
+W9YA  Bob  289
+W9YK  Todd  2509
+W9ZCL  Bill  IL
+W9ZR  Randy  OH
+W9ZSJ  George  IL
+W9ZV  Bob  IL
+WA0BJR  Don  MO
+WA0I  Randy  MO
+WA0JZK  Larry  MO
+WA0MHJ  Mark  MN
+WA0NLK  Phil  CO
+WA0USA  Vic  645
+WA1BXY  Don  2601
+WA1EDN  Jim  MA
+WA1HEW  Craig  PA
+WA1HUD  Steve  PA
+WA1IIE  Chuck  ME
+WA1LWS  Hans  MD
+WA1NBS  Jim  CT
+WA1NTA  George  499
+WA1QDX  John  CT
+WA1S  Ann  196
+WA1SKQ  Rich  342
+WA1T  Al  2359
+WA1VAB  Henry  1839
+WA1WDE  John  MA
+WA1X  Bud  2427
+WA1Z  Bob  NH
+WA2AOG  Lon  NY
+WA2BCK  Tom  762
+WA2BJN  Rich  NC
+WA2DFI  Scotty  164
+WA2DIY  Mark  NJ
+WA2MBP  Jim  GA
+WA2OAX  Ira  534
+WA2SI  Bert  842
+WA2TBQ  Ron  NC
+WA2TGE  Mike  SC
+WA2USA  Dennis  819
+WA2VYA  Frank  FL
+WA2VZQ  Ken  NY
+WA2VZZ  Ken  NY
+WA3AAN  Grant  2064
+WA3AER  Ted  1879
+WA3FAE  Forrest  MD
+WA3GM  Greg  1827
+WA3IVV  Rich  PA
+WA3MIX  Lou  1308
+WA3NZR  John  PA
+WA3QNT  Bob  1687
+WA3TMR  Steve  NC
+WA3TRE  Don  PA
+WA3WAW  Bill  PA
+WA3YRI  Bob  NJ
+WA3ZKI  Alan  NJ
+WA4JFK  Steve  FL
+WA4JUK  Joe  1702
+WA4IPU  Bruce  FL
+WA4KSO  Curt  VA
+WA4KXX  Bob  AL
+WA4LJJ  Doug  KY
+WA4PGM  Kyle  255
+WA4PSC  Howie  1443
+WA4SCL  Paul  TN
+WA4STO  Luck  NE
+WA4TT  John  1282
+WA4WLI  Bob  874
+WA4ZLK  Bruce  NC
+WA5BDU  Nick  1429
+WA5LHM  Tom  TX
+WA5LXS  Dennis  1836
+WA5OBV  Phil  OK
+WA5PFJ  John  1629
+WA5RML  Andrew  1324
+WA5YOM  Tim  OK
+WA6DBC  Dennis  CA
+WA6HNA  Greg  CA
+WA6HZY  Jim  CA
+WA6KYR  Rich  CA
+WA6L  Doug  CA
+WA6O  Mike  42
+WA6SCX  Neil  CA
+WA6SVX  Mike  2692
+WA6URY  Dan  1176
+WA6UYO  Wayne  TX
+WA7BME  Ron  UT
+WA7BNM  Bruce  CA
+WA7DAU  Norm  UT
+WA7ETQ  Carl  2300
+WA7HJV  Jack  1239
+WA7KVI  Wes  2729
+WA7LNW  Jack  2454
+WA7YAZ  Steve  UT
+WA8AXF  Dave  MI
+WA8CLT  John  OH
+WA8IWK  Allen  1061
+WA8KAN  Dave  1961
+WA8L  Rich  NC
+WA8MDC  Jim  MI
+WA8OFU  Bob  FL
+WA8OJR  Bruce  1850
+WA8VSJ  Art  674
+WA8Y  Steve  2289
+WA8Y/M  Steve  2289
+WA8ZBT  Dennis  1222
+WA9ADT  Ron  1665
+WA9AGG  Gerald  IN
+WA9AQN  John  197
+WA9CW  Tom  2238
+WA9JBR  Jon  LA
+WA9LEY  Lee  1304
+WA9LKF  Robert  IL
+WA9MNF  Ed  2306
+WA9SEO  Mike  1748
+WA9TZE  Jim  WI
+WB0CFF  Carl  MN
+WB0GKH  Mitch  952
+WB0JRH  Terry  2774
+WB0PYF  Ray  1713
+WB0QVB  Tom  KY
+WB0RUR  Gary  AZ
+WB0SND  Mike  1469
+WB0TUA  Derek  MO
+WB0U  Len  MN
+WB1KE  Loren  UT
+WB1LLY  Bill  GA
+WB2AIV  Bill  542
+WB2FQL  Gary  NY
+WB2FUV  Mike  NY
+WB2GAI  Ron  NJ
+WB2HJV  Chas  NY
+WB2HNP  Bob  FL
+WB2IKL  Mark  NY
+WB2JKL  Ron  327
+WB2JNA  Jeff  MD
+WB2KAO  Tim  2188
+WB2KSP  Dave  NY
+WB2SMK  Mark  NY
+WB2SXY  Bill  NY
+WB2TQC  John  NY
+WB2TQE  Howard  FL
+WB2UDC  Bob  NJ
+WB2UZE  How  1361
+WB2WGX  Rich  2630
+WB2YQH  Bob  246
+WB3BIQ  Rick  PA
+WB3JGP  Randy  CA
+WB4AEG  Hal  1646
+WB4AQL  Mike  GA
+WB4DNL  Gary  497
+WB4FDT  Pip  916
+WB4FSF  Bonnie  734
+WB4GHZ  George  TN
+WB4HRL  Ed  2421
+WB4IT  Brian  AL
+WB4OMM  Steve  1943
+WB4OWC  Jerry  AL
+WB4RFQ  Dan  1601
+WB5BKL  Nick  1371
+WB5K  Jay  1769
+WB5LXJ  Greg  TX
+WB5OZA  Doug  LA
+WB6BEE  Don  CO
+WB6BRY  Brian  CA
+WB6IQL  Jeff  CA
+WB6SCT  Jack  CA
+WB6SEL  Vic  1534
+WB6TOU  Dave  1784
+WB7BWZ  Bob  2629
+WB7DKZ  Andy  2052
+WB7DND  Steve  2169
+WB7FDQ  Mike  AZ
+WB7TJI  John  UT
+WB7USJ  Tom  OR
+WB8AKW  John  2329
+WB8BZK  Mike  IL
+WB8EJN  Tom  788
+WB8HF  Bill  1605
+WB8JAY  Dan  2559
+WB8JUI  Rick  OH
+WB8MIW  Pat  MI
+WB8SCT  Jack  1709
+WB8SIW  Jim  IL
+WB8WKQ  Jeff  2086
+WB8YQJ  Don  CA
+WB8YSQ  Dave  NC
+WB9AYW  Jim  IL
+WB9DLC  Mike  2402
+WB9DZV  Tim  
+WB9G  Chris  1087
+WB9G/4  Chris  1087
+WB9HFK  Mark  IL
+WB9IXS  Jim  Wi
+WB9QDL  Ken  CO
+WB9Z  Jerry  707
+WC2C  Ron  NY
+WC3O  Bob  PA
+WC4E  Jeff  1715
+WC4X  Ned  2111
+WC5W  Dwight  IN
+WC6Y  Ken  2155
+WC7Q  Sam  1226
+WC7S  Dale  404
+WD0BC  Bill  MO
+WD0T  Todd  SD
+WD1AL  Ryan  MA
+WD4CFN  Steve  2228
+WD4EBR  Paul  TN
+WD4ERM  Ken  GA
+WD4EXI  Val  1546
+WD4LZC  Stu  KY
+WD4YFN  Steve  228
+WD5BZN  Dave  TX
+WD5DBV  Roy  290
+WD5RS  Russ  TX
+WD6T  Dave  2079
+WD7CWO    
+WD8DIN  Sis  VA
+WD9DZV  Tim  IL
+WD9F  Woody  591
+WD9FOO  Dean  IL
+WD9GET  Keith  TX
+WD9Q  Matt  2113
+WE0P  John  KS
+WE5P  Bill  2372
+WE7G  Wayne  1816
+WE8R  Bob  OH
+WF5K  Aml  LA
+WF6F  Ken  2386
+WF7T  Brad  729
+WG0M  Mike  1612
+WG3J  Eric  2473
+WG5H  Curt  1931
+WG5J  Darin  TX
+WH6R  Eran  HI
+WH7TT  Edward  HI
+WH7W  Mark  HI
+WI0WA  Lar  IA
+WI1E  Jerry  VA
+WI2C  John  NY
+WI4P  John  AL
+WI6T  Rex  CO
+WJ1B  Harold  CT
+WJ2O  Dave  1093
+WJ6O  Dave  482
+WJ7S  John  1582
+WJ8Y  Greg  1915
+WJ9B  Will  1085
+WK0P  Dave  2197
+WK2G  Merrill  292
+WK4WC  Lane  NC
+WK5N  John  2150
+WK6I  Jeff  CA
+WK9M  Randy  WI
+WL7E  Joe  AK
+WM4I  Burke  1798
+WM5H  Bob  LA
+WM5S  Mac  TX
+WM6Y  PJ  2280
+WM9Q  Ron  1170
+WN1M  Mike  CT
+WN4AFP  Dave  1208
+K2L  Dave  1208
+WN4R  Byron  FL
+WN5V  Dave  2642
+WN7S  Dick  1945
+WN7Y  Ron  MT
+WN9W  Dave  OH
+WO1X  Tom  1310
+WO4O  Ric  1311
+WO6W  Bob  2634
+WO9B  Mike  2203
+WP3A  Jaime  PR
+WP3C  Al  872
+WP3ME  Joel  FL
+WP4F  Danny  1526
+WQ2E  Jack  2054
+WQ3E  Josy  1135
+WQ7O  Dennis  WA
+WR1TC  Marv  MA
+WR4T  Ted  OH
+WR5J  Curt  1362
+WR5U  Mike  89
+WR6D  Dick  2618
+WR7Q  Bob  1423
+WR7T  Phil  2724
+WR8F  Ryan  OH
+WR8O  Ron  2299
+WS0TA  Fred  58
+WS1D  Chuck  ME
+WS1L  Chuck  2411
+WS4P  Al  1853
+WS5C  Will  2760
+WS6X  Jim  VA
+WS7L  Carl  2557
+WS7M  Mark  2069
+WS8G  Rick  2308
+WS8K  Tim  MI
+WS9F  Matthew  MI
+WS9V  Skip  1651
+WT2P  CJ  1346
+WT3C  Tom  2403
+WT3K  Daryl  2355
+WT4C  Tom  SC
+WT5RZ  Ron  1110
+WT6A  Bob  CA
+WT8P  Jim  2456
+WT8WV  Spencer  WV
+WT9Q  Vic  2594
+WT9U  Jim  1674
+WU0L  Mark  SD
+WU4B  Clark  1869
+WU4D  Clark  VA
+WU4F  Rob  2255
+WU6E  Den  CA
+WU6P  Nian  2715
+WU6X  Dennis  1632
+WU6X/4  Dennis  1632
+WU7F  Mark  1351
+WU8R  Roman  OH
+WV4P  Ron  TN
+WV4S  Bob  NC
+WW0WWV  Eric  CO
+WW0K  Zac  IA
+WW0SS  Nick  MN
+WW2Y  Peter  NJ
+WW3S  Jim  2775
+WW9R  Pat  730
+WW9S  Gary  IL
+WX0B  Jay  620
+WX2S  Steve  1757
+WX4W  CW  1991
+WX5CW  Chris  1762
+WX7SJ  Mark  1100
+WX8C  Harry  2528
+WX8NN  Andy  MI
+WX9U  Pete  CWA
+WY0M  Mike  MO
+WY6K  Mike  2181
+WY7CWO    WY
+WZ0W  Scott  MO
+WZ6T  Dave  CA
+WZ8P  Ev  OH
+XE1IM  Hector  2673
+XE1KK  Ramon   
+XE1YZY  Pete  
+XE2V  Mode  
+XE2X  Jorge  796
+XQ1KZ  Nicolas  
+XQ4CW  Roberto   
+XV2W  Larry  1209
+XV9D  Mats  1820
+YL1ZF  Kas  2256
+YL2AG  Alex  
+YL2CB  Arky  
+YL2CV  Vlad  
+YL3JD  Hanz  2227
+YN2AA  Jeff  67
+YO2BBX  Nel  
+YO2CEQ  Dan  
+YO2LEA  Nelu  2555
+YO2ZQ  Dan  
+YO3FLR  Christian  2527
+YO3FRI  Tina  475
+YO3GCL  Mike  
+YO3GNF  Jack  
+YO3LW  Cris  2205
+YO3RZ  Gil  
+YO4BP  Paul  
+YO4DCF  Marin  
+YO4PX  Fery  
+YO4TNV  Victor  
+YO5OHO  Chris  1079
+YO6DDF  Val  
+YO6LB  Laszo  
+YO7YO  Max  
+YO9AYN  Ion  
+YO9GDN  Marian  
+YO9GNF  Jack  
+YT1AA  Vema  
+YT1E  Rod  
+YT5FD  Slavko  
+YT5N  Mike  
+YU6DX  Alex  2744
+Z32U  Zoki  2667
+Z32XX  Dragan  370
+Z33B  Kirk  
+ZB2CW  Derek  
+ZB2X  Jorma  144
+ZD8W  Oli  
+ZF2DO  Dave  TX
+ZF2DX  Kevin  1293
+ZF2ET  Stan  272
+ZF2IN  Tim  1942
+ZF2LZ  Martin  MA
+ZF2NE  Joe  924
+ZF2SC  Scott  1698
+ZF9CW  Stan  272
+ZL1MH  Mike  
+ZL2AGY  Tony  
+ZL2AIM  Ian  1174
+ZL2KE  Steve  1281
+ZL3CW  Jacky  
+ZL3XDJ  Brian  ZL
+ZP6CW  Doug  
+ZR2A  Ulrich  2470
+ZS1C  Raoul  338
+ZS1EL  Vidi  13
+ZS1I  Johan  1307
+ZS1X  Dirk  
+ZS2I  Johan  
+ZS4TX  Bernie  
+ZS5SJ  John  
+ZS6AKU  Dirk  
+ZS6RI  Chris  1236
+ZS6UT  Ed  
