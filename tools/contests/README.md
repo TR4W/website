@@ -17,12 +17,12 @@ Data-quality warnings print to **stderr**; the page is written to `public_html/t
 
 | File | What | Source of truth |
 |------|------|-----------------|
-| `wa7bnm_contest_ids.csv` | `ContestName,WA7BNM_ID` — maps each TR4W contest name to a WA7BNM ref id (`0` = not assigned). | **The TR4W program repo** (`ny4i/TR4W`). This is a *snapshot*. |
+| `wa7bnm_contest_ids.csv` | `ContestName,WA7BNM_ID` — maps each TR4W contest name to a WA7BNM ref id (`0` = not assigned). | Maintained in the `TR4W/TR4W` repo. This copy is a *snapshot*. |
 | `wa7bnm_cabnames.txt` | `<ref-id>\|<Friendly Name>` — the WA7BNM ref id → friendly contest name. | Captured from <https://www.contestcalendar.com/cabnames.php> (each row's Contest link is `contestdetails.php?ref=<id>`). |
 
 ### Updating the data
 
-- **Contest ids change** (new contest, fixed id): update the canonical CSV in the TR4W program
+- **Contest ids change** (new contest, fixed id): update the canonical CSV in the `TR4W/TR4W`
   repo, copy it here, and regenerate:
   ```bash
   cp /path/to/TR4W/wa7bnm_contest_ids.csv tools/contests/wa7bnm_contest_ids.csv
@@ -32,7 +32,7 @@ Data-quality warnings print to **stderr**; the page is written to `public_html/t
   `wa7bnm_cabnames.txt` (keep the `id|Name` format; `#` lines are comments). The page only adds
   friendly names — it never invents them.
 
-> ⚠️ The CSV here is a **snapshot**, so it can drift from the program repo's canonical copy.
+> ⚠️ The CSV here is a **snapshot**, so it can drift from the canonical copy in `TR4W/TR4W`.
 > Always re-copy before regenerating. You can also point the generator straight at the canonical
 > file without vendoring: `build_contests.py --csv /path/to/TR4W/wa7bnm_contest_ids.csv`.
 
