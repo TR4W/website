@@ -17,7 +17,7 @@ build/
 *.nsi
 make_setup_file.bat
 
-# Callsign database — uploaded separately via the program-repo (n4af/TR4W)
+# Callsign database — uploaded separately via the program-repo (TR4W/TR4W)
 # release process, like the installers. The live copy stays on the web host.
 TRMASTER.DTA
 TRMASTER.ASC

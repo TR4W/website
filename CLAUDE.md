@@ -7,14 +7,14 @@ Guidance for working in the `tr4w.net` website repository (**GitHub: `TR4W/websi
 The **website and download portal for TR4W**, a free Windows contest-logging program for amateur
 radio. It is a web-hosting tree, **not** an application codebase — no build system for the site
 itself, no test suite, no package manager. The TR4W *application* lives elsewhere:
-<https://github.com/n4af/TR4W>. This repo serves the landing page, the installer downloads, and a
+<https://github.com/TR4W/TR4W>. This repo serves the landing page, the installer downloads, and a
 PHP network-diagnostics tool.
 
 **Source-only repo.** The repo tracks the site *source*; the bulky/managed artifacts are
 gitignored and live only on the production web host (synced via rsync from
 `ssh TR4W:/var/www/tr4w.net/public_html/`). See `.gitignore` for the full exclusion list:
 - Installer binaries — `*.exe`, `*.exe.gpg`, `*.7z` (served statically; never committed).
-- `TRMASTER.DTA` / `.ASC` callsign DB — uploaded separately via the n4af/TR4W release process.
+- `TRMASTER.DTA` / `.ASC` callsign DB — uploaded separately via the TR4W/TR4W release process.
 - Abandoned NSIS build toolchain — `NSIS/`, `build/`, `*.nsi`, `make_setup_file.bat`.
 - Secrets/cruft — `info.php`, `serial+key.txt`, `*.bak`, `*~`, etc.
 
@@ -77,7 +77,7 @@ So a release only changes **one line** here (and the display labels in `index.ht
 
 When a new major release ships (e.g. 4.149 in July 2026):
 
-1. Build the installers (in the n4af/TR4W repo) and **upload them to the server** under the new
+1. Build the installers (in the TR4W/TR4W repo) and **upload them to the server** under the new
    dir, e.g. `/var/www/tr4w.net/public_html/4.149/` (8 files: main + 7 langs). They are gitignored,
    so they do not go through this repo.
 2. Run `bin/release.sh <version> "<month year>"`, e.g. `bin/release.sh 4.149.1 "July 2026"`.
