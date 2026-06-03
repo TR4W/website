@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TR4W — Why TR4W</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #39ff6a; --green-dim: #1a7a35; --green-faint: #0d2e18; --amber: #f5a623;
+    --bg: #080c09; --surface: #0e1510; --surface2: #141d16;
+    --border: rgba(57,255,106,0.15); --border-bright: rgba(57,255,106,0.35);
+    --text: #c8e8cd; --muted: #5c8066;
+    --mono: 'Share Tech Mono', monospace; --body: 'Barlow', sans-serif;
+    --display: 'Barlow Condensed', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: var(--body);
+    font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; z-index: 9999; pointer-events: none;
+    background: repeating-linear-gradient(0deg, transparent, transparent 2px,
+      rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px); }
+  a { color: var(--green); }
+
+  /* nav */
+  nav { position: sticky; top: 0; z-index: 100; background: rgba(8,12,9,0.92);
+    backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
+    padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .nav-logo { font-family: var(--mono); font-size: 1.1rem; color: var(--green);
+    letter-spacing: 0.1em; text-decoration: none; }
+  .nav-logo span { color: var(--muted); }
+  nav ul { list-style: none; display: flex; gap: 2rem; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 0.85rem;
+    letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
+  nav a:hover { color: var(--green); }
+
+  section { padding: 5rem 2rem; }
+  .inner { max-width: 1000px; margin: 0 auto; }
+  .label { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--green-dim); margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 0.75rem; }
+  .label::before { content: ''; width: 24px; height: 1px; background: var(--green-dim); display: inline-block; }
+  h1 { font-family: var(--display); font-weight: 800; font-size: clamp(2.6rem, 6vw, 4.5rem);
+    line-height: 0.95; letter-spacing: -0.01em; color: #fff; margin-bottom: 1.5rem; }
+  h1 em { font-style: normal; color: var(--green); display: block; }
+  h2 { font-family: var(--display); font-weight: 800; font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1; text-transform: uppercase; color: var(--text); margin-bottom: 1.25rem; }
+  .lead { font-size: 1.15rem; color: var(--muted); max-width: 60ch; }
+  .lead strong { color: var(--text); }
+
+  /* hero */
+  .hero { min-height: 78vh; display: flex; align-items: center; position: relative; overflow: hidden; }
+  .hero-grid { position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(57,255,106,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(57,255,106,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 75% 60% at 40% 45%, black 25%, transparent 100%); }
+  .hero .inner { position: relative; z-index: 1; }
+  .ctas { display: flex; align-items: center; gap: 1.75rem; flex-wrap: wrap; margin-top: 2.25rem; }
+  .btn-primary { display: inline-flex; align-items: center; gap: 0.6rem; background: var(--green);
+    color: #080c09; font-family: var(--mono); font-size: 0.9rem; font-weight: bold;
+    letter-spacing: 0.05em; padding: 0.9rem 1.6rem; border-radius: 2px; text-decoration: none;
+    transition: all 0.2s; }
+  .btn-primary:hover { background: #fff; transform: translateY(-1px); box-shadow: 0 0 24px rgba(57,255,106,0.3); }
+  .btn-ghost { color: var(--muted); font-size: 0.85rem; text-decoration: none; font-family: var(--mono);
+    letter-spacing: 0.05em; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.2s; }
+  .btn-ghost:hover { color: var(--green); border-color: var(--green); }
+
+  /* philosophy band */
+  .band { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .band .quote { font-family: var(--display); font-weight: 800; text-transform: uppercase;
+    font-size: clamp(1.8rem, 4.5vw, 3rem); line-height: 1.05; color: #fff; }
+  .band .quote span { color: var(--green); }
+  .band p { color: var(--muted); max-width: 62ch; margin-top: 1.25rem; }
+
+  /* pillar cards */
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.5rem; transition: border-color 0.2s, transform 0.2s; }
+  .card:hover { border-color: var(--border-bright); transform: translateY(-2px); }
+  .card .tag { font-family: var(--mono); font-size: 0.7rem; color: var(--green); letter-spacing: 0.1em; }
+  .card h3 { font-family: var(--display); font-weight: 700; font-size: 1.5rem; text-transform: uppercase;
+    color: var(--text); margin: 0.4rem 0 0.6rem; line-height: 1.05; }
+  .card p { color: var(--muted); font-size: 0.96rem; }
+
+  /* expected list (chips) */
+  .expected { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.75rem; }
+  .chip { font-family: var(--mono); font-size: 0.78rem; color: var(--text);
+    background: var(--surface2); border: 1px solid var(--border); border-radius: 999px; padding: 0.4rem 0.9rem; }
+
+  /* steps */
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+  .step .n { font-family: var(--display); font-weight: 800; font-size: 2.5rem; color: var(--green-dim); line-height: 1; }
+  .step h3 { font-family: var(--display); font-weight: 700; font-size: 1.3rem; text-transform: uppercase;
+    color: var(--text); margin: 0.3rem 0 0.5rem; }
+  .step p { color: var(--muted); font-size: 0.96rem; }
+
+  /* final cta */
+  .cta-final { text-align: center; }
+  .cta-final h2 { color: #fff; }
+  .cta-final p { color: var(--muted); margin: 0 auto 2rem; max-width: 50ch; }
+
+  footer { border-top: 1px solid var(--border); padding: 2rem; display: flex;
+    align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    color: var(--muted); font-size: 0.8rem; }
+  footer .f-logo { font-family: var(--mono); color: var(--green); letter-spacing: 0.1em; }
+  @media (max-width: 560px) { nav ul { gap: 1.1rem; } section { padding: 3.5rem 1.5rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">TR4W<span>_</span></a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tr4w_contests.html">Contests</a></li>
+    <li><a href="index.html#download">Download</a></li>
+    <li><a href="https://github.com/TR4W/TR4W" target="_blank">GitHub &#8599;</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="inner">
+    <div class="label">why tr4w</div>
+    <h1>Your first contest<em>shouldn't need a manual.</em></h1>
+    <p class="lead">Contesting is the best part of the hobby — and the software is where most newcomers
+      give up. The powerful loggers are <strong>built for experts</strong>, so a lot of people fall back to
+      their everyday logger during a contest and miss out on the spotting, dupe-checking, and live scoring
+      that make it fun. TR4W takes the other road: <strong>you make the contacts, it handles the rest.</strong></p>
+    <div class="ctas">
+      <a class="btn-primary" href="https://tr4w.net/download/tr4w_setup.exe">⬇ &nbsp;Download TR4W</a>
+      <a class="btn-ghost" href="tr4w_contests.html">See supported contests →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="band">
+  <div class="inner">
+    <p class="quote">"We're the computer.<br><span>You just operate."</span></p>
+    <p>That single idea drives every design decision in TR4W. The fiddly parts of contesting — keying CW,
+      wrangling digital modes, remembering which field goes where — are the computer's job, not yours.
+      Your job is to find the next station and work it.</p>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section>
+  <div class="inner">
+    <div class="label">the tr4w way</div>
+    <h2>Built to get out of your way</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">[ entry ]</span>
+        <h3>One field, any order</h3>
+        <p>Type the callsign, press Enter. Type the exchange — in whatever order it comes — into a single
+          field, press Enter. TR4W figures out what's what. No tab dance, no hunting for the right window.</p>
+      </div>
+      <div class="card">
+        <span class="tag">[ cw ]</span>
+        <h3>CW that just works</h3>
+        <p>CW-by-CAT turns the plain text in your macros into the right keying for your radio — no external
+          keyer box, no cryptic codes to memorize. The thing that scares people away from CW contesting
+          simply isn't there.</p>
+      </div>
+      <div class="card">
+        <span class="tag">[ digital ]</span>
+        <h3>FT8 without the fuss</h3>
+        <p>Keep using the WSJT-X you already run — no special setup. TR4W rides along quietly, highlights
+          the calls and multipliers you need right inside the WSJT-X window, and plays nicely with
+          GridTracker and JT-Alert.</p>
+      </div>
+      <div class="card">
+        <span class="tag">[ radio ]</span>
+        <h3>Plug into the network</h3>
+        <p>Many modern radios — IC-705, IC-7300, K4, TS-890 and more — connect straight over Ethernet or
+          Wi-Fi. No extra interface box. And HamLib covers 200+ radios besides.</p>
+      </div>
+      <div class="card">
+        <span class="tag">[ pota ]</span>
+        <h3>POTA-friendly</h3>
+        <p>Coming from Parks on the Air? TR4W speaks your language: park lookup on entry, Park-to-Park,
+          Pass-the-Mic, and N-fer activations that log a separate QSO per park automatically.</p>
+      </div>
+      <div class="card">
+        <span class="tag">[ open ]</span>
+        <h3>Free &amp; open source</h3>
+        <p>No license fee, no black box. The full source lives on
+          <a href="https://github.com/TR4W/TR4W" target="_blank">GitHub</a> — community-hosted, community-built.
+          Installers ship with VirusTotal scans so you can install with confidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPECTED (the only nod to "other loggers", kept generic) -->
+<section class="band">
+  <div class="inner">
+    <div class="label">no compromises</div>
+    <h2>Everything you'd expect — already in the box</h2>
+    <p class="lead">Simple doesn't mean stripped-down. All the things you expect from a serious contest
+      logger are here; TR4W's job is just to make them effortless.</p>
+    <div class="expected">
+      <span class="chip">180+ contests</span>
+      <span class="chip">Dupe checking</span>
+      <span class="chip">Super Check Partial</span>
+      <span class="chip">Cluster spotting</span>
+      <span class="chip">Graphical bandmap</span>
+      <span class="chip">CW &amp; voice keyers</span>
+      <span class="chip">Full SO2R</span>
+      <span class="chip">Real-time scoring (RTC)</span>
+      <span class="chip">Multi-op networking</span>
+      <span class="chip">Cabrillo &amp; ADIF export</span>
+      <span class="chip">7 languages</span>
+    </div>
+  </div>
+</section>
+
+<!-- FIRST CONTEST -->
+<section>
+  <div class="inner">
+    <div class="label">getting on the air</div>
+    <h2>Your first contest, in three steps</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="n">01</div>
+        <h3>Connect</h3>
+        <p>Point TR4W at your radio — over the network for many modern rigs, or via HamLib. Pick the contest
+          from the list and you're set up.</p>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <h3>Operate</h3>
+        <p>Call CQ or search and pounce. Type calls and exchanges naturally; TR4W keys the CW, sends the
+          macros, and tracks dupes and multipliers as you go.</p>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <h3>Submit</h3>
+        <p>Watch your score climb in real time, then export a clean Cabrillo file for the contest sponsor.
+          That's it — you contested.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="band cta-final">
+  <div class="inner">
+    <h2>Give it a contest.</h2>
+    <p>Free, open source, and ready for your next weekend on the air.</p>
+    <a class="btn-primary" href="https://tr4w.net/download/tr4w_setup.exe">⬇ &nbsp;Download TR4W</a>
+  </div>
+</section>
+
+<footer>
+  <p class="f-logo">TR4W_</p>
+  <p>&copy; TR4W Project &middot; Free &amp; Open Source</p>
+  <a href="https://github.com/TR4W/TR4W" target="_blank" style="font-family:var(--mono);font-size:0.75rem">GitHub ↗</a>
+</footer>
+
+</body>
+</html>

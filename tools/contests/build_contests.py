@@ -212,7 +212,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="index.html#download">Download</a></li>
-    <li><a href="https://github.com/n4af/TR4W" target="_blank">GitHub &#8599;</a></li>
+    <li><a href="https://github.com/TR4W/TR4W" target="_blank">GitHub &#8599;</a></li>
   </ul>
 </nav>
 
