@@ -24,6 +24,7 @@ gitignored and live only on the production web host (synced via rsync from
 |------|---------|
 | `public_html/` | **The canonical deployed web root.** Everything served at `https://tr4w.net/` is here. |
 | `public_html/index.html` | The landing page (single file, inline CSS, terminal/green theme). This is the **source of truth** — there is no longer a separate root-level `index.html`. |
+| `public_html/site.css` | Shared theme — design tokens + base chrome (nav/footer/scan-line). Linked by every page **and** the contests generator template; edit colors/fonts here, once. **Bump `?v=N` in each `<link href="site.css?v=N">` whenever you change this file**, or browsers serve stale CSS. |
 | `public_html/.htaccess` | Apache config: `Options +Indexes` **plus the download redirect** (see below). |
 | `public_html/4.NN/` | One directory per TR4W release (4.31 → 4.148, ~116 dirs). Holds the Windows installer plus 7 localized builds. |
 | `public_html/*/tr4wmaintlist.html` | Per-version maintenance/changelog pages. |
