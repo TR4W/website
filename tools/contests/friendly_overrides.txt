@@ -10,5 +10,4 @@
 
 TEN TEN|Various Ten Tec Contests
 WRTC|IARU Contest as a WRTC Competitor
-VAQP|Virginia QSO Party
 IN7QPNE|Combined Indiana, 7th Area, New England and Delaware QSO Parties
