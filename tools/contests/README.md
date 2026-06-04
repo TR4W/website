@@ -19,6 +19,7 @@ Data-quality warnings print to **stderr**; the page is written to `public_html/t
 |------|------|-----------------|
 | `wa7bnm_contest_ids.csv` | `ContestName,WA7BNM_ID` — maps each TR4W contest name to a WA7BNM ref id (`0` = not assigned). | Maintained in the `TR4W/TR4W` repo. This copy is a *snapshot*. |
 | `wa7bnm_cabnames.txt` | `<ref-id>\|<Friendly Name>` — the WA7BNM ref id → friendly contest name. | Captured from <https://www.contestcalendar.com/cabnames.php> (each row's Contest link is `contestdetails.php?ref=<id>`). |
+| `friendly_overrides.txt` | `ContestName\|Friendly text` — plain-text description (no link) for contests **not** in the WA7BNM table; shown instead of the blank `—` sentinel. | Curated here. **Edit this file to add/adjust contest descriptions.** |
 
 ### Updating the data
 
