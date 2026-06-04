@@ -130,37 +130,8 @@ TEMPLATE = r"""<!DOCTYPE html>
 <title>TR4W — Supported Contests</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
 <style>
-  :root {
-    --green: #39ff6a; --green-dim: #1a7a35; --amber: #f5a623;
-    --bg: #080c09; --surface: #0e1510; --surface2: #141d16;
-    --border: rgba(57,255,106,0.15); --border-bright: rgba(57,255,106,0.35);
-    --text: #c8e8cd; --muted: #5c8066;
-    --mono: 'Share Tech Mono', monospace; --body: 'Barlow', sans-serif;
-    --display: 'Barlow Condensed', sans-serif;
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { background: var(--bg); color: var(--text); font-family: var(--body);
-    font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-  body::before { content: ''; position: fixed; inset: 0; z-index: 9999;
-    pointer-events: none;
-    background: repeating-linear-gradient(0deg, transparent, transparent 2px,
-      rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px); }
-  a { color: var(--green); }
-
-  nav { position: sticky; top: 0; z-index: 100; background: rgba(8,12,9,0.92);
-    backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
-    padding: 0 2rem; display: flex; align-items: center;
-    justify-content: space-between; height: 56px; }
-  .nav-logo { font-family: var(--mono); font-size: 1.1rem; color: var(--green);
-    letter-spacing: 0.1em; text-decoration: none; }
-  .nav-logo span { color: var(--muted); }
-  nav ul { list-style: none; display: flex; gap: 2rem; }
-  nav a { color: var(--muted); text-decoration: none; font-size: 0.85rem;
-    letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
-  nav a:hover { color: var(--green); }
-
   main { max-width: 940px; margin: 0 auto; padding: 4rem 1.5rem 5rem; }
   .page-label { font-family: var(--mono); font-size: 0.8rem; color: var(--green-dim);
     letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.75rem; }
@@ -198,10 +169,6 @@ TEMPLATE = r"""<!DOCTYPE html>
   .note { margin-top: 1.75rem; font-size: 0.85rem; color: var(--muted); }
   .note a { color: var(--green); }
 
-  footer { border-top: 1px solid var(--border); padding: 2rem; display: flex;
-    align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
-    color: var(--muted); font-size: 0.8rem; }
-  footer .f-logo { font-family: var(--mono); color: var(--green); letter-spacing: 0.1em; }
   @media (max-width: 560px) { td.name { white-space: normal; } nav ul { gap: 1.1rem; } }
 </style>
 </head>

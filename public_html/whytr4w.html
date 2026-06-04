@@ -6,36 +6,8 @@
 <title>TR4W — Why TR4W</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
 <style>
-  :root {
-    --green: #39ff6a; --green-dim: #1a7a35; --green-faint: #0d2e18; --amber: #f5a623;
-    --bg: #080c09; --surface: #0e1510; --surface2: #141d16;
-    --border: rgba(57,255,106,0.15); --border-bright: rgba(57,255,106,0.35);
-    --text: #c8e8cd; --muted: #5c8066;
-    --mono: 'Share Tech Mono', monospace; --body: 'Barlow', sans-serif;
-    --display: 'Barlow Condensed', sans-serif;
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { background: var(--bg); color: var(--text); font-family: var(--body);
-    font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-  body::before { content: ''; position: fixed; inset: 0; z-index: 9999; pointer-events: none;
-    background: repeating-linear-gradient(0deg, transparent, transparent 2px,
-      rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px); }
-  a { color: var(--green); }
-
-  /* nav */
-  nav { position: sticky; top: 0; z-index: 100; background: rgba(8,12,9,0.92);
-    backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
-    padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
-  .nav-logo { font-family: var(--mono); font-size: 1.1rem; color: var(--green);
-    letter-spacing: 0.1em; text-decoration: none; }
-  .nav-logo span { color: var(--muted); }
-  nav ul { list-style: none; display: flex; gap: 2rem; }
-  nav a { color: var(--muted); text-decoration: none; font-size: 0.85rem;
-    letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
-  nav a:hover { color: var(--green); }
-
   section { padding: 5rem 2rem; }
   .inner { max-width: 1000px; margin: 0 auto; }
   .label { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.2em;
@@ -102,10 +74,6 @@
   .cta-final h2 { color: #fff; }
   .cta-final p { color: var(--muted); margin: 0 auto 2rem; max-width: 50ch; }
 
-  footer { border-top: 1px solid var(--border); padding: 2rem; display: flex;
-    align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
-    color: var(--muted); font-size: 0.8rem; }
-  footer .f-logo { font-family: var(--mono); color: var(--green); letter-spacing: 0.1em; }
   @media (max-width: 560px) { nav ul { gap: 1.1rem; } section { padding: 3.5rem 1.5rem; } }
 </style>
 </head>
