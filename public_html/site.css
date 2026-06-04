@@ -1,0 +1,99 @@
+/* ============================================================
+   TR4W site theme — shared by index.html, whytr4w.html,
+   tr4w_contests.html (and the contests-page generator template
+   in tools/contests/build_contests.py).
+   Single source of truth for design tokens + base chrome.
+   Page-specific layout stays in each page's own <style>.
+   ============================================================ */
+
+:root {
+  --green: #39ff6a;
+  --green-dim: #2c9a48;          /* brightened for label legibility */
+  --green-faint: #0d2e18;
+  --amber: #f5a623;
+  --bg: #080c09;
+  --surface: #131c16;            /* lifted from #0e1510 */
+  --surface2: #1b261e;           /* lifted from #141d16 */
+  --border: rgba(57,255,106,0.22);   /* firmer from 0.15 */
+  --border-bright: rgba(57,255,106,0.35);
+  --text: #c8e8cd;
+  --muted: #90b09c;              /* lightened from #5c8066 (was below WCAG AA) */
+  --mono: 'Share Tech Mono', monospace;
+  --body: 'Barlow', sans-serif;
+  --display: 'Barlow Condensed', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scan-line overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 2px,
+    rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+a { color: var(--green); }
+
+/* ── NAV ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8,12,9,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+.nav-logo {
+  font-family: var(--mono);
+  font-size: 1.1rem;
+  color: var(--green);
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+.nav-logo span { color: var(--muted); }
+nav ul { list-style: none; display: flex; gap: 2rem; }
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+nav a:hover { color: var(--green); }
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+footer .f-logo { font-family: var(--mono); color: var(--green); letter-spacing: 0.1em; }
