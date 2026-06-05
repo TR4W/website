@@ -11,8 +11,10 @@
 #      publish dead download buttons.
 #   2. Rewrites the single version in public_html/.htaccess (the redirect target).
 #   3. Updates the visible version + date labels in public_html/index.html.
-#   4. Prints the diff and stops. You review, commit, push, then rsync
-#      .htaccess + index.html to the server (installers are uploaded separately).
+#   4. Prints the diff and stops. You review, commit, and push/merge to main;
+#      the GitHub Actions deploy workflow (.github/workflows/deploy.yml) then
+#      rsyncs the changed files to the server. GitHub is the single source of
+#      truth — never rsync from your laptop. (Installers are uploaded separately.)
 #
 # Prereq: the new installers must already be uploaded to the server under
 #         /<major>/ (e.g. /4.149/) before you run this.
@@ -101,11 +103,11 @@ replace "$IDX" "$CUR_DATE" "$NEW_DATE"
 echo "=== diff (review before committing) ==="
 git -C "$ROOT" --no-pager diff -- public_html/.htaccess public_html/index.html || true
 echo
-cat <<MSG
-Done (working tree only). Next steps:
-  1. Review the diff above.
-  2. git add -A && git commit -m "Release $NEW_VER ($NEW_DATE)" && git push
-  3. Deploy the two changed text files to the server:
-       rsync -av public_html/.htaccess public_html/index.html TR4W:/var/www/tr4w.net/public_html/
-  4. Verify:  curl -sI https://tr4w.net/download/tr4w_setup.exe   (expect 302 -> /$NEW_MAJOR/...)
-MSG
+echo "Done (working tree only). Next steps:"
+echo "  1. Review the diff above."
+echo "  2. Commit and get it onto main (PR from a branch, or push straight to main):"
+echo "       git add -A && git commit -m \"Release $NEW_VER ($NEW_DATE)\" && git push"
+echo "  3. Merging to main triggers the deploy workflow, which rsyncs the changed"
+echo "     files to the server automatically. GitHub is the source of truth — do"
+echo "     NOT rsync from your laptop. Watch the run in the Actions tab."
+echo "  4. Verify:  curl -sI https://tr4w.net/download/tr4w_setup.exe   (expect 302 -> /$NEW_MAJOR/...)"
