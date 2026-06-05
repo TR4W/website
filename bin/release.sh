@@ -82,7 +82,7 @@ else
     echo "Upload the build artifacts to the server first, then re-run."
     exit 1
   fi
-  echo "All 8 installers present."
+  echo "All ${#files[@]} installers present."
 fi
 echo
 
