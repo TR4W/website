@@ -3,6 +3,11 @@
 # rsync public_html/ -> server, skipping the gitignored binaries (installers, etc.).
 # Safe: no --delete, so it only adds/updates. Pass -n for a dry run.
 #
+# -c (--checksum): compare by content hash, not size+mtime. CI checks out a
+# fresh tree every run, so every file gets a new mtime and the default size+mtime
+# heuristic would re-upload the entire site each deploy. Checksum mode transfers
+# only files whose bytes actually changed.
+#
 # CI-ONLY. Production is deployed exclusively by the GitHub Actions workflow
 # (.github/workflows/deploy.yml) on push to main — GitHub is the single source
 # of truth. This script intentionally has NO local default target: it refuses
@@ -21,7 +26,7 @@ if [ -z "${DEPLOY_DEST:-}" ]; then
 fi
 DEST="$DEPLOY_DEST"
 
-rsync -av $DRY \
+rsync -avc $DRY \
   --exclude='*.exe' --exclude='*.gpg' --exclude='*.7z' --exclude='*.zip' \
   --exclude='TRMASTER.DTA' --exclude='TRMASTER.ASC' \
   --exclude='*.bak' --exclude='*~' --exclude='.DS_Store' \
