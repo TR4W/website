@@ -19,7 +19,7 @@
 #
 set -euo pipefail
 
-LANGS=(ukr rom ser ger rus cze mng)
+LANGS=(ukr rom ser ger rus cze mng esp)
 BASE_URL="https://tr4w.net"
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
