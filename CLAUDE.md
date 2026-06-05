@@ -26,7 +26,7 @@ gitignored and live only on the production web host (synced via rsync from
 | `public_html/index.html` | The landing page (single file, inline CSS, terminal/green theme). This is the **source of truth** — there is no longer a separate root-level `index.html`. |
 | `public_html/site.css` | Shared theme — design tokens + base chrome (nav/footer/scan-line). Linked by every page **and** the contests generator template; edit colors/fonts here, once. **Bump `?v=N` in each `<link href="site.css?v=N">` whenever you change this file**, or browsers serve stale CSS. |
 | `public_html/.htaccess` | Apache config: `Options +Indexes` **plus the download redirect** (see below). |
-| `public_html/4.NN/` | One directory per TR4W release (4.31 → 4.148, ~116 dirs). Holds the Windows installer plus 7 localized builds. |
+| `public_html/4.NN/` | One directory per TR4W release (4.31 → 4.148, ~116 dirs). Holds the Windows installer plus 8 localized builds. |
 | `public_html/*/tr4wmaintlist.html` | Per-version maintenance/changelog pages. |
 | `bin/release.sh` | Release helper — repoints the site at a new major version (see Releases). |
 | `public_html/tr4w_contests.html` | Searchable table of supported contests — **generated**, do not hand-edit. |
@@ -39,8 +39,8 @@ Versions are `4.<minor>.<patch>`. **The naming convention changed over time:**
 - Older dirs (≤ ~4.97): underscore — `tr4w_setup_4_97.11.exe`.
 - Current dirs (e.g. 4.148): dots — `tr4w_setup_4.148.1.exe`.
 
-Localized builds append a 3-letter suffix before `.exe`: `_cze _ger _mng _rom _rus _ser _ukr`
-(Czech, German, Mongolian, Romanian, Russian, Serbian, Ukrainian). The current advertised release
+Localized builds append a 3-letter suffix before `.exe`: `_cze _esp _ger _mng _rom _rus _ser _ukr`
+(Czech, Spanish, German, Mongolian, Romanian, Russian, Serbian, Ukrainian). The current advertised release
 is **4.148.1**. Installers are binary — never `cat`/read them; exclude `public_html/**/*.exe` from
 bulk search.
 
@@ -79,7 +79,7 @@ So a release only changes **one line** here (and the display labels in `index.ht
 When a new major release ships (e.g. 4.149 in July 2026):
 
 1. Build the installers (in the TR4W/TR4W repo) and **upload them to the server** under the new
-   dir, e.g. `/var/www/tr4w.net/public_html/4.149/` (8 files: main + 7 langs). They are gitignored,
+   dir, e.g. `/var/www/tr4w.net/public_html/4.149/` (9 files: main + 8 langs). They are gitignored,
    so they do not go through this repo.
 2. Run `bin/release.sh <version> "<month year>"`, e.g. `bin/release.sh 4.149.1 "July 2026"`.
    It **validates all 8 installers are live** (curl → 200) before editing — refusing otherwise —
