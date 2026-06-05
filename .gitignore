@@ -38,3 +38,7 @@ index.html.10.14
 index.html.20260602
 tr.out
 testupload.txt
+
+# Python build artifacts (the contests generator)
+__pycache__/
+*.pyc
