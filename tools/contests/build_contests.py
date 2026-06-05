@@ -2,119 +2,76 @@
 """
 build_contests.py — generate public_html/tr4w_contests.html
 
-Joins two vendored data files on the WA7BNM contest id and renders a themed,
-filterable HTML table of every contest TR4W supports.
+Single source of truth: the TR4W program's ContestsArray in the TR4W source
+(tr4w/src/VC.pas). Each record carries the contest Name, its WA7BNM ref id, and a
+FriendlyName. We parse that array and render a themed, filterable HTML table.
 
-Inputs (defaults are the vendored snapshots next to this script):
-  wa7bnm_contest_ids.csv   TR4W contest name -> WA7BNM ref id   (ContestName,WA7BNM_ID)
-                           Canonical copy lives in the TR4W program repo; this is a
-                           snapshot. When it changes upstream, copy it here and re-run.
-  wa7bnm_cabnames.txt      WA7BNM ref id -> friendly name        ("id|Friendly Name")
-                           Captured from https://www.contestcalendar.com/cabnames.php
-                           (each row's Contest link is contestdetails.php?ref=<id>).
-  friendly_overrides.txt   ContestName -> plain friendly text (no link), for contests
-                           NOT in the WA7BNM table. Edit to add/curate descriptions.
+Per contest:
+  - column 1 (TR4W Name) = the program's Name field (with the {comment} braces
+    stripped).
+  - column 2 (Contest)   = FriendlyName, or the Name when FriendlyName is empty;
+                           rendered as a link to contestdetails.php?ref=<WA7BNM>
+                           when WA7BNM > 0, otherwise plain text.
 
-Output:
-  public_html/tr4w_contests.html
-
-A row whose id is 0 or doesn't resolve gets a BLANK friendly cell (a sentinel for
-"not matched yet" — never invent a name). On every run, data problems (duplicate
-ids = collisions, non-zero ids missing from the WA7BNM table) are reported to stderr.
+The 'DUMMY CONTEST' placeholder record is skipped. There is no separate friendly
+table or overrides file any more — edit the contest data in the program.
 
 Usage:
   python3 tools/contests/build_contests.py
-  python3 tools/contests/build_contests.py --csv /path/to/wa7bnm_contest_ids.csv
+  python3 tools/contests/build_contests.py --vc /path/to/tr4w/src/VC.pas
 """
 import argparse
-import collections
 import html
+import re
 import sys
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parents[1]
 DETAIL = "https://www.contestcalendar.com/contestdetails.php?ref="
+DEFAULT_VC = Path.home() / "projects" / "TR4W" / "tr4w" / "src" / "VC.pas"
 
 
-def load_cabnames(path):
-    fid = {}
-    for line in path.read_text().splitlines():
-        line = line.strip()
-        if not line or line.startswith("#"):
+_NAME = re.compile(r"[({]\s*Name:\s*'([^']*)'")     # Name preceded by ( or { (not FriendlyName)
+_WA7BNM = re.compile(r"WA7BNM:\s*(\d+)")
+_FRIENDLY = re.compile(r"FriendlyName:\s*'([^']*)'")
+
+
+def parse_vc(path):
+    """Parse the ContestsArray records from the TR4W source (VC.pas).
+
+    Returns [(name, wa7bnm_id, friendly), ...] in array order, skipping the
+    DUMMY CONTEST placeholder. A record line is one carrying both a WA7BNM field
+    and a FriendlyName field.
+    """
+    contests = []
+    for line in path.read_text(encoding="latin-1").splitlines():
+        if "WA7BNM:" not in line or "FriendlyName:" not in line:
             continue
-        ref, name = line.split("|", 1)
-        fid[ref.strip()] = name.strip()
-    return fid
-
-
-def load_csv(path):
-    rows = []
-    for i, line in enumerate(path.read_text().splitlines()):
-        if not line.strip():
+        nm = _NAME.search(line)
+        wa = _WA7BNM.search(line)
+        fn = _FRIENDLY.search(line)
+        name = nm.group(1).strip() if nm else ""
+        wid = int(wa.group(1)) if wa else 0
+        friendly = fn.group(1).strip() if fn else ""
+        if name == "DUMMY CONTEST":
             continue
-        if i == 0 and line.lower().startswith("contestname"):
-            continue  # header
-        name, wid = line.rsplit(",", 1)
-        rows.append((name.strip(), wid.strip()))
-    return rows
+        contests.append((name, wid, friendly))
+    return contests
 
 
-def load_overrides(path):
-    """ContestName -> manual friendly text (plain, no link) for contests not in WA7BNM."""
-    ov = {}
-    if not path.exists():
-        return ov
-    for line in path.read_text().splitlines():
-        line = line.strip()
-        if not line or line.startswith("#"):
-            continue
-        name, text = line.split("|", 1)
-        ov[name.strip()] = text.strip()
-    return ov
-
-
-def report_quality(rows, fid):
-    """Warn (stderr) about collisions and unresolved non-zero ids. Returns issue count."""
-    byid = collections.defaultdict(list)
-    for name, wid in rows:
-        if wid not in ("0", ""):
-            byid[wid].append(name)
-    collisions = {w: ns for w, ns in byid.items() if len(ns) > 1}
-    unmatched = [(n, w) for n, w in rows if w not in ("0", "") and w not in fid]
-
-    if collisions:
-        print("WARNING: %d WA7BNM id(s) assigned to multiple contests (collisions):"
-              % len(collisions), file=sys.stderr)
-        for w, ns in sorted(collisions.items()):
-            print("  id %s -> %s  : %s"
-                  % (w, fid.get(w, "(not in table)"), ", ".join(ns)), file=sys.stderr)
-    if unmatched:
-        print("WARNING: %d non-zero id(s) not found in the WA7BNM table:"
-              % len(unmatched), file=sys.stderr)
-        for n, w in unmatched:
-            print("  %s (id=%s)" % (n, w), file=sys.stderr)
-    return len(collisions) + len(unmatched)
-
-
-def render(rows, fid, overrides):
+def render(contests):
     out_rows = []
-    linked = annotated = 0
-    for name, wid in rows:
-        friendly = fid.get(wid, "") if wid not in ("0", "") else ""
-        if friendly:
+    linked = 0
+    for name, wid, friendly in contests:
+        display = friendly or name          # fall back to Name when no FriendlyName
+        search = html.escape((name + " " + display).lower(), quote=True)
+        if wid > 0:
             linked += 1
-            search = html.escape((name + " " + friendly).lower(), quote=True)
-            cell = ('<a href="%s%s" target="_blank" rel="noopener">%s</a>'
-                    % (DETAIL, html.escape(wid, quote=True), html.escape(friendly)))
-        elif name in overrides:
-            annotated += 1
-            text = overrides[name]
-            search = html.escape((name + " " + text).lower(), quote=True)
-            cell = html.escape(text)  # plain-text annotation, no link
+            cell = ('<a href="%s%d" target="_blank" rel="noopener">%s</a>'
+                    % (DETAIL, wid, html.escape(display)))
         else:
-            search = html.escape(name.lower(), quote=True)
-            cell = ""  # blank sentinel
+            cell = html.escape(display)
         out_rows.append(
             '      <tr data-search="%s"><td class="name">%s</td>'
             '<td class="friendly">%s</td></tr>'
@@ -122,28 +79,27 @@ def render(rows, fid, overrides):
         )
     page = (TEMPLATE
             .replace("__ROWS__", "\n".join(out_rows))
-            .replace("__TOTAL__", str(len(rows)))
+            .replace("__TOTAL__", str(len(contests)))
             .replace("__RESOLVED__", str(linked)))
-    return page, linked, annotated
+    return page, linked
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Build tr4w_contests.html")
-    ap.add_argument("--csv", type=Path, default=SCRIPT_DIR / "wa7bnm_contest_ids.csv")
-    ap.add_argument("--cabnames", type=Path, default=SCRIPT_DIR / "wa7bnm_cabnames.txt")
-    ap.add_argument("--overrides", type=Path, default=SCRIPT_DIR / "friendly_overrides.txt")
+    ap = argparse.ArgumentParser(description="Build tr4w_contests.html from the TR4W ContestsArray")
+    ap.add_argument("--vc", type=Path, default=DEFAULT_VC,
+                    help="path to the TR4W source file VC.pas")
     ap.add_argument("--out", type=Path, default=REPO_ROOT / "public_html" / "tr4w_contests.html")
     args = ap.parse_args()
 
-    fid = load_cabnames(args.cabnames)
-    rows = load_csv(args.csv)
-    overrides = load_overrides(args.overrides)
-    report_quality(rows, fid)
+    if not args.vc.exists():
+        sys.exit("ERROR: TR4W source not found: %s\n"
+                 "       Pass --vc <path to tr4w/src/VC.pas>." % args.vc)
 
-    page, linked, annotated = render(rows, fid, overrides)
+    contests = parse_vc(args.vc)
+    page, linked = render(contests)
     args.out.write_text(page)
-    print("wrote %s  (%d contests, %d linked, %d annotated, %d blank)"
-          % (args.out, len(rows), linked, annotated, len(rows) - linked - annotated))
+    print("wrote %s  (%d contests, %d linked, %d name-only)"
+          % (args.out, len(contests), linked, len(contests) - linked))
 
 
 TEMPLATE = r"""<!DOCTYPE html>
@@ -151,11 +107,10 @@ TEMPLATE = r"""<!DOCTYPE html>
 <head>
 <!-- ============================================================
      AUTO-GENERATED — DO NOT EDIT THIS FILE BY HAND.
-     Built by tools/contests/build_contests.py from the source data:
-       tools/contests/wa7bnm_contest_ids.csv   (contest name -> WA7BNM id)
-       tools/contests/wa7bnm_cabnames.txt        (WA7BNM id -> friendly name)
-       tools/contests/friendly_overrides.txt     (manual descriptions, no link)
-     Any hand edits to THIS file are overwritten on the next regeneration.
+     Built by tools/contests/build_contests.py from the TR4W program's
+     ContestsArray (tr4w/src/VC.pas): Name, WA7BNM id, FriendlyName.
+     Edit contest data in the program, not here. Hand edits to THIS
+     file are overwritten on the next regeneration.
      ============================================================ -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
