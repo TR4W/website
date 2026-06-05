@@ -1,0 +1,49 @@
+name: Deploy to production
+
+# Deploys the website source to the live host on every push to main that
+# touches site files. Reuses bin/deploy.sh verbatim — rsync WITHOUT --delete,
+# excluding the gitignored binaries. NEVER add --delete here: the installers,
+# TRMASTER.DTA/.ASC and NSIS/ toolchain live ONLY on the server and are not in
+# git; --delete would wipe them. See CLAUDE.md ("Source-only repo").
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public_html/**'
+      - 'bin/deploy.sh'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch: {}        # manual "Run workflow" button as well
+
+# Never run two deploys at once; never cancel one mid-rsync.
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production     # attach required reviewers here for an approval gate
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure SSH transport
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d "$HOME/.ssh"
+          printf '%s\n' "$DEPLOY_SSH_KEY"    > "$HOME/.ssh/deploy_key"
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/deploy_key"
+          chmod 644 "$HOME/.ssh/known_hosts"
+
+      - name: Deploy via rsync (no --delete; binaries excluded)
+        env:
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}   # optional; defaults to 22
+        run: |
+          export DEPLOY_DEST="${DEPLOY_USER}@${DEPLOY_HOST}:/var/www/tr4w.net/public_html/"
+          export RSYNC_RSH="ssh -p ${DEPLOY_PORT:-22} -i $HOME/.ssh/deploy_key -o IdentitiesOnly=yes -o UserKnownHostsFile=$HOME/.ssh/known_hosts"
+          bin/deploy.sh

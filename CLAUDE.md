@@ -85,12 +85,17 @@ When a new major release ships (e.g. 4.149 in July 2026):
    It **validates all 8 installers are live** (curl → 200) before editing — refusing otherwise —
    then rewrites the `.htaccess` redirect target and the display labels in `index.html`, and prints
    a diff. It does **not** commit or deploy.
-3. Review the diff, `git commit` + `push`.
-4. Deploy the two changed text files (installers are already up):
-   `rsync -av public_html/.htaccess public_html/index.html TR4W:/var/www/tr4w.net/public_html/`
+3. Review the diff, `git commit`, and get it onto `main` (PR from a branch, or push
+   straight to `main`).
+4. **Deploy is automatic.** Merging/pushing to `main` triggers the GitHub Actions
+   workflow (`.github/workflows/deploy.yml`), which rsyncs the changed text files to
+   the server. Installers are already up (uploaded out-of-band). Watch the run in the
+   repo's **Actions** tab.
 5. Verify: `curl -sI https://tr4w.net/download/tr4w_setup.exe` → expect `302` to the new dir.
 
-A GitHub Action could wrap step 4 later; for now deploy is manual rsync.
+> **GitHub is the single source of truth for deploys — never rsync from a laptop.**
+> `bin/deploy.sh` is the rsync used *by CI only*: it refuses to run unless `DEPLOY_DEST`
+> is set (which only the workflow sets), so a local working copy can't be pushed to prod.
 
 ## LookingGlass (`LookingGlass/`)
 
@@ -112,9 +117,11 @@ interpolation of unvalidated input.
 
 - **No build/test/lint for the site.** Edits to `index.html`/PHP/`.htaccess` are the deliverable;
   verify by inspection (and curl against the live site after deploy).
-- **Deployment = rsync to the production host.** Per global rules: **never** change the live
-  `tr4w.net` server (files *or* Apache config) without explicit approval, and **back up remote
-  files before overwriting** (`cp -p file file.bak` on the server first).
+- **Deployment = push to `main`; GitHub Actions rsyncs to prod.** `.github/workflows/deploy.yml`
+  is the only thing that deploys (rsync **without** `--delete`, binaries excluded). Do **not**
+  rsync from a laptop — GitHub is the single source of truth. Apache config and the one-off
+  server-state changes (host hygiene, backups before overwriting) are still manual and, per global
+  rules, **never** done without explicit approval.
 - **Server hygiene (already handled, don't regress):** `info.php` (phpinfo) is removed (404);
   `serial+key.txt` (an old third-party Delphi 7 key, not ours) is blocked (403). The public
   `NSIS/` toolkit + `full.nsi` on the server are harmless leftover cruft, low-priority cleanup.
