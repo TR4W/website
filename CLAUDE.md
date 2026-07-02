@@ -76,6 +76,9 @@ So a release only changes **one line** here (and the display labels in `index.ht
 
 ## Releases
 
+**Full step-by-step:** see [`bin/RELEASE_RUNBOOK.md`](bin/RELEASE_RUNBOOK.md) — it includes
+verifying installers are live and refreshing the standalone `TRMASTER.DTA`. Summary below.
+
 When a new major release ships (e.g. 4.149 in July 2026):
 
 1. Build the installers (in the TR4W/TR4W repo) and **upload them to the server** under the new
