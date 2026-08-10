@@ -100,14 +100,24 @@ waits for the deploy workflow, and verifies the live redirects. It stops at the 
 failed check, and prompts `y/N` before every irreversible action (`--dry-run` to rehearse,
 `--yes` to skip prompts).
 
-Two things it decides by hashing rather than asking, which you should not undo:
+Three things it decides by hashing rather than asking, which you should not undo:
 - **The `TRMASTER.DTA` inside the installer is authoritative**, not the copy committed to
   `TR4W/TR4W`. The repo copy is a cross-check; a mismatch means the build machine shipped
   something it didn't commit.
-- **Whether the callsign DB changed** is determined by comparing the installer's DTA to
-  what the site already serves — not by a human judgment call. `bin/release.sh` advances
-  *every* date on the page including the `Callsign database · <MONTH>` label, so
-  `publish-release.sh` reverts that one when the DB is unchanged.
+- **Whether the callsign DB changed** is determined **installer-to-installer** — this
+  release's DTA vs the one in the currently advertised release — not against the live
+  standalone file, so the answer survives a re-run after a partial failure. It drives the
+  `Callsign database · <MONTH>` label: `bin/release.sh` advances *every* date on the page,
+  so `publish-release.sh` reverts that one when the DB is unchanged.
+- **Whether the standalone file needs uploading** is a separate check against the live copy,
+  purely so a re-run skips a redundant upload. Don't collapse these two back together.
+
+**A release resets the standalone `TRMASTER.DTA` to the installer's copy — mid-month builds
+are transient by design.** Hand-building a DTA between releases is normal practice (e.g. the
+2026-07-10 WRTC2026 special callsigns); the next release overwrites it because the
+regenerated database supersedes it. Intended, not data loss — the live copy is backed up to
+`TRMASTER.DTA.bak-<YYYYMMDD>` first. **Do not "fix" the script to preserve a divergent
+standalone file.** See the runbook for the full reasoning.
 
 The pieces it drives, if you ever need them individually:
 
