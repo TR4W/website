@@ -227,19 +227,49 @@ else
   warn "could not fetch $DTA_IN_APP_REPO from $APP_REPO (cross-check skipped)"
 fi
 
-# decide whether the DB actually changed, by hashing what is live right now
+# Two independent questions, deliberately not conflated:
+#
+#   DB_CHANGED   — did the database change between the previous release and this
+#                  one? Drives the "Callsign database · <MONTH>" label. Answered by
+#                  comparing installer-to-installer, NOT against the live standalone
+#                  file, so the answer does not change if this script is re-run after
+#                  a partial failure (which would already have replaced the live file
+#                  and made it look like "nothing changed").
+#   NEEDS_UPLOAD — is the live standalone file already the right bytes? Purely an
+#                  idempotency check so a re-run skips a redundant upload.
+CUR_MAJOR="${CUR_VER%.*}"
 DB_CHANGED=1
+if curl -fsL --max-time 300 -o "$STAGE/prev.exe" \
+     "$BASE_URL/$CUR_MAJOR/tr4w_setup_${CUR_VER}.exe"; then
+  mkdir -p "$STAGE/prevdta"
+  "$SEVENZ" e -y "$STAGE/prev.exe" -o"$STAGE/prevdta" 'TRMASTER.DTA' -r >/dev/null 2>&1 || true
+  if [ -s "$STAGE/prevdta/TRMASTER.DTA" ]; then
+    PREV_SHA="$(sha256 "$STAGE/prevdta/TRMASTER.DTA")"
+    if [ "$PREV_SHA" = "$SHIPPED_SHA" ]; then
+      DB_CHANGED=0
+      ok "identical to the DB in $CUR_VER — callsign DB did NOT change this release"
+      ok "  → the \"Callsign database · <MONTH>\" label will be left untouched"
+    else
+      ok "differs from the DB in $CUR_VER (${PREV_SHA:0:16}…) — DB changed this release"
+    fi
+  else
+    warn "could not extract TRMASTER.DTA from the $CUR_VER installer — assuming the DB changed"
+  fi
+else
+  warn "could not fetch the $CUR_VER installer for comparison — assuming the DB changed"
+fi
+
+NEEDS_UPLOAD=1
 if curl -fsL --max-time 60 -o "$STAGE/dta/live.DTA" "$BASE_URL/TRMASTER.DTA"; then
   LIVE_SHA="$(sha256 "$STAGE/dta/live.DTA")"
   if [ "$LIVE_SHA" = "$SHIPPED_SHA" ]; then
-    DB_CHANGED=0
-    ok "live copy is already identical — callsign DB did NOT change this release"
-    ok "  → the \"Callsign database · <MONTH>\" label will be left untouched"
+    NEEDS_UPLOAD=0
+    ok "live standalone copy is already these exact bytes — upload not needed"
   else
-    ok "live copy differs (${LIVE_SHA:0:16}…) — DB changed, will refresh and re-date"
+    ok "live standalone copy differs (${LIVE_SHA:0:16}…) — will be replaced"
   fi
 else
-  warn "could not fetch the live $BASE_URL/TRMASTER.DTA — assuming the DB changed"
+  warn "could not fetch the live $BASE_URL/TRMASTER.DTA — will upload"
 fi
 
 # ── 4. upload installers ────────────────────────────────────────────
@@ -270,8 +300,8 @@ fi
 # ── 5. refresh the standalone TRMASTER.DTA ──────────────────────────
 step "5/8  Standalone TRMASTER.DTA"
 
-if [ "$DB_CHANGED" -eq 0 ]; then
-  ok "unchanged — nothing to upload"
+if [ "$NEEDS_UPLOAD" -eq 0 ]; then
+  ok "live copy already matches the installer — nothing to upload"
 else
   STAMP="$(date +%Y%m%d)"
   confirm "Replace $BASE_URL/TRMASTER.DTA (backup: TRMASTER.DTA.bak-$STAMP) ?"
@@ -342,15 +372,25 @@ else
   git -C "$ROOT" push -q origin main || die "push failed."
   ok "pushed to origin/main — deploy workflow triggered"
 
-  sleep 10
-  RUN_ID="$(gh run list --repo "$SITE_REPO" --limit 1 --json databaseId -q '.[0].databaseId' 2>/dev/null || true)"
+  # Wait for the run belonging to *this* commit. Matching on --limit 1 alone races:
+  # if the run hasn't registered yet you end up watching the previous deploy and
+  # reporting its success as your own.
+  HEAD_SHA="$(git -C "$ROOT" rev-parse HEAD)"
+  RUN_ID=""
+  for _ in $(seq 1 30); do
+    RUN_ID="$(gh run list --repo "$SITE_REPO" --limit 20 \
+              --json databaseId,headSha -q \
+              ".[] | select(.headSha==\"$HEAD_SHA\") | .databaseId" 2>/dev/null | head -1 || true)"
+    [ -n "$RUN_ID" ] && break
+    sleep 5
+  done
   if [ -n "$RUN_ID" ]; then
     printf '  waiting for deploy run %s …\n' "$RUN_ID"
     gh run watch --repo "$SITE_REPO" "$RUN_ID" --exit-status --interval 10 >/dev/null 2>&1 \
       || die "the deploy workflow failed. See: gh run view --repo $SITE_REPO $RUN_ID --log-failed"
     ok "deploy workflow succeeded"
   else
-    warn "could not find the workflow run; check the Actions tab manually"
+    warn "no deploy run appeared for $HEAD_SHA after 150s; check the Actions tab manually"
   fi
 fi
 
