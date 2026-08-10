@@ -26,9 +26,10 @@ gitignored and live only on the production web host (synced via rsync from
 | `public_html/index.html` | The landing page (single file, inline CSS, terminal/green theme). This is the **source of truth** — there is no longer a separate root-level `index.html`. |
 | `public_html/site.css` | Shared theme — design tokens + base chrome (nav/footer/scan-line). Linked by every page **and** the contests generator template; edit colors/fonts here, once. **Bump `?v=N` in each `<link href="site.css?v=N">` whenever you change this file**, or browsers serve stale CSS. |
 | `public_html/.htaccess` | Apache config: `Options +Indexes` **plus the download redirect** (see below). |
-| `public_html/4.NN/` | One directory per TR4W release (4.31 → 4.148, ~116 dirs). Holds the Windows installer plus 8 localized builds. |
+| `public_html/4.NN/` | One directory per TR4W release. Holds the Windows installer plus 8 localized builds. **In the repo these stop at 4.148** (~116 dirs, 4.31 →) because newer releases ship *only* gitignored `.exe` files, so their dirs exist on the server but not here. Don't read the newest dir in the working tree as "the current release". |
 | `public_html/*/tr4wmaintlist.html` | Per-version maintenance/changelog pages. |
-| `bin/release.sh` | Release helper — repoints the site at a new major version (see Releases). |
+| `bin/publish-release.sh` | **Start here for a release.** End-to-end publisher: fetch → upload → TRMASTER.DTA → repoint → push → verify (see Releases). |
+| `bin/release.sh` | Lower-level helper called by the above — repoints `.htaccess`/`index.html` only. |
 | `public_html/tr4w_contests.html` | Searchable table of supported contests — **generated**, do not hand-edit. |
 | `tools/contests/` | Generator + vendored data for the contest list page (`build_contests.py`, see its README). |
 | `LookingGlass/` | Third-party PHP looking-glass tool (ping/traceroute/mtr/host). |
@@ -37,12 +38,20 @@ gitignored and live only on the production web host (synced via rsync from
 
 Versions are `4.<minor>.<patch>`. **The naming convention changed over time:**
 - Older dirs (≤ ~4.97): underscore — `tr4w_setup_4_97.11.exe`.
-- Current dirs (e.g. 4.148): dots — `tr4w_setup_4.148.1.exe`.
+- Newer dirs: dots — `tr4w_setup_4.150.0.exe`.
 
 Localized builds append a 3-letter suffix before `.exe`: `_cze _esp _ger _mng _rom _rus _ser _ukr`
-(Czech, Spanish, German, Mongolian, Romanian, Russian, Serbian, Ukrainian). The current advertised release
-is **4.148.1**. Installers are binary — never `cat`/read them; exclude `public_html/**/*.exe` from
-bulk search.
+(Czech, Spanish, German, Mongolian, Romanian, Russian, Serbian, Ukrainian).
+
+> **Never hardcode the current version in docs — read it.** The single source of truth is the
+> `RewriteRule` in `public_html/.htaccess`:
+> ```sh
+> grep -oE 'tr4w_setup_[0-9.]+' public_html/.htaccess | head -1
+> ```
+> Releases happen roughly monthly; any version written into prose here is stale by definition.
+> (This paragraph exists because `CLAUDE.md` sat four releases behind reality.)
+
+Installers are binary — never `cat`/read them; exclude `public_html/**/*.exe` from bulk search.
 
 ## Download redirect (how the homepage links work)
 
@@ -56,7 +65,8 @@ https://tr4w.net/download/tr4w_setup_<lang>.exe   (ukr/rom/ser/ger/rus/cze/mng)
 `public_html/.htaccess` 302-redirects those to the current versioned files via one rule:
 
 ```apache
-RewriteRule ^download/tr4w_setup(_[a-z]{3})?\.exe$ https://tr4w.net/4.148/tr4w_setup_4.148.1$1.exe [R=302,L]
+# shape only — the live version is whatever is in the file, see above
+RewriteRule ^download/tr4w_setup(_[a-z]{3})?\.exe$ https://tr4w.net/<MAJOR>/tr4w_setup_<VER>$1.exe [R=302,L]
 ```
 
 So a release only changes **one line** here (and the display labels in `index.html`), not 9 links.
@@ -76,25 +86,41 @@ So a release only changes **one line** here (and the display labels in `index.ht
 
 ## Releases
 
-**Full step-by-step:** see [`bin/RELEASE_RUNBOOK.md`](bin/RELEASE_RUNBOOK.md) — it includes
-verifying installers are live and refreshing the standalone `TRMASTER.DTA`. Summary below.
+**One command, after the GitHub release is published:**
 
-When a new major release ships (e.g. 4.149 in July 2026):
+```sh
+bin/publish-release.sh <VER> "<MONTH YEAR>"     # e.g. 4.150.0 "August 2026"
+```
 
-1. Build the installers (in the TR4W/TR4W repo) and **upload them to the server** under the new
-   dir, e.g. `/var/www/tr4w.net/public_html/4.149/` (9 files: main + 8 langs). They are gitignored,
-   so they do not go through this repo.
-2. Run `bin/release.sh <version> "<month year>"`, e.g. `bin/release.sh 4.149.1 "July 2026"`.
-   It **validates all 8 installers are live** (curl → 200) before editing — refusing otherwise —
-   then rewrites the `.htaccess` redirect target and the display labels in `index.html`, and prints
-   a diff. It does **not** commit or deploy.
-3. Review the diff, `git commit`, and get it onto `main` (PR from a branch, or push
-   straight to `main`).
-4. **Deploy is automatic.** Merging/pushing to `main` triggers the GitHub Actions
+`bin/publish-release.sh` is the executable form of
+[`bin/RELEASE_RUNBOOK.md`](bin/RELEASE_RUNBOOK.md) — **read the runbook before changing
+either.** It fetches the 9 installers from the GitHub release, uploads them to the host,
+refreshes the standalone `TRMASTER.DTA`, runs `bin/release.sh`, commits, pushes to `main`,
+waits for the deploy workflow, and verifies the live redirects. It stops at the first
+failed check, and prompts `y/N` before every irreversible action (`--dry-run` to rehearse,
+`--yes` to skip prompts).
+
+Two things it decides by hashing rather than asking, which you should not undo:
+- **The `TRMASTER.DTA` inside the installer is authoritative**, not the copy committed to
+  `TR4W/TR4W`. The repo copy is a cross-check; a mismatch means the build machine shipped
+  something it didn't commit.
+- **Whether the callsign DB changed** is determined by comparing the installer's DTA to
+  what the site already serves — not by a human judgment call. `bin/release.sh` advances
+  *every* date on the page including the `Callsign database · <MONTH>` label, so
+  `publish-release.sh` reverts that one when the DB is unchanged.
+
+The pieces it drives, if you ever need them individually:
+
+1. Installers are built in the **TR4W/TR4W** repo and uploaded to `<DOCROOT>/<MAJOR>/`
+   (9 files: main + 8 langs). They are gitignored — they never go through this repo.
+2. `bin/release.sh <version> "<month year>"` validates all 9 installers are live
+   (curl → 200) before editing — refusing otherwise — then rewrites the `.htaccess`
+   redirect target and the display labels in `index.html` and prints a diff. It does
+   **not** commit or deploy.
+3. **Deploy is automatic.** Merging/pushing to `main` triggers the GitHub Actions
    workflow (`.github/workflows/deploy.yml`), which rsyncs the changed text files to
-   the server. Installers are already up (uploaded out-of-band). Watch the run in the
-   repo's **Actions** tab.
-5. Verify: `curl -sI https://tr4w.net/download/tr4w_setup.exe` → expect `302` to the new dir.
+   the server. Watch the run in the repo's **Actions** tab.
+4. Verify: `curl -sI https://tr4w.net/download/tr4w_setup.exe` → expect `302` to the new dir.
 
 > **GitHub is the single source of truth for deploys — never rsync from a laptop.**
 > `bin/deploy.sh` is the rsync used *by CI only*: it refuses to run unless `DEPLOY_DEST`
