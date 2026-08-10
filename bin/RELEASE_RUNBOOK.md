@@ -56,6 +56,13 @@ a cross-check, and a mismatch means the build machine didn't commit what it ship
 > sanity check. That catches an HTML error page but *not* a stale-yet-valid database —
 > so there was no way to tell "the build machine failed" from "the build machine is fine".
 
+**A release resets the standalone `TRMASTER.DTA` to the installer's copy, so any mid-month
+build is transient by design.** Publishing a hand-built DTA between releases is fine and
+expected — e.g. `2026-07-10`, special callsigns for WRTC2026 — but the next release
+overwrites it, because by then the regenerated database supersedes it. This is intended,
+not data loss: step 5 backs the live copy up to `TRMASTER.DTA.bak-<YYYYMMDD>` first. Don't
+"fix" the script to preserve a divergent standalone file.
+
 **Did the callsign database change?** Decided by hashing, not by asking: the script
 compares the installer's DTA against what the site currently serves. Identical means the
 DB didn't change, so it skips the upload *and* leaves the
