@@ -6,9 +6,9 @@
 # Example: bin/release.sh 4.149.1 "July 2026"
 #
 # What it does (edits the working tree only — it does NOT commit or deploy):
-#   1. Validates all 8 installers for the new version are already live on the
-#      server (curl-checks they return 200). Refuses otherwise, so you never
-#      publish dead download buttons.
+#   1. Validates all 9 installers (main + 8 languages) for the new version are
+#      already live on the server (curl-checks they return 200). Refuses
+#      otherwise, so you never publish dead download buttons.
 #   2. Rewrites the single version in public_html/.htaccess (the redirect target).
 #   3. Updates the visible version + date labels in public_html/index.html.
 #   4. Prints the diff and stops. You review, commit, and push/merge to main;
@@ -64,24 +64,36 @@ if [ "$CUR_VER" = "$NEW_VER" ] && [ "$CUR_DATE" = "$NEW_DATE" ]; then
   exit 0
 fi
 
-# ── validate the 8 installers are live on the server ────────────────
+# ── validate the 9 installers are live on the server ────────────────
 if [ "$SKIP_VALIDATION" -eq 1 ]; then
   echo "Skipping installer validation (--skip-validation)."
 else
   echo "Validating installers under $BASE_URL/$NEW_MAJOR/ ..."
   files=("tr4w_setup_${NEW_VER}.exe")
   for l in "${LANGS[@]}"; do files+=("tr4w_setup_${NEW_VER}_${l}.exe"); done
-  missing=()
+  missing=(); stale=0
   for f in "${files[@]}"; do
     code="$(curl -sS -o /dev/null -w '%{http_code}' --max-time 25 "$BASE_URL/$NEW_MAJOR/$f" || echo 000)"
-    printf '  %-32s %s\n' "$f" "$code"
+    note=""
+    # Cloudflare caches 404s (~3 min), so a URL requested before its file was
+    # uploaded can still 404. A cache-busting query string asks the origin.
+    if [ "$code" != "200" ] && \
+       [ "$(curl -sS -o /dev/null -w '%{http_code}' --max-time 25 "$BASE_URL/$NEW_MAJOR/$f?nocache=$(date +%s)" || echo 000)" = "200" ]; then
+      note="  (on the server; Cloudflare cached the $code)"
+      stale=$((stale + 1))
+    fi
+    printf '  %-32s %s%s\n' "$f" "$code" "$note"
     [ "$code" = "200" ] || missing+=("$f")
   done
   if [ "${#missing[@]}" -gt 0 ]; then
     echo
     echo "REFUSING: ${#missing[@]} installer(s) not reachable (need HTTP 200) under $BASE_URL/$NEW_MAJOR/:"
     printf '  - %s\n' "${missing[@]}"
-    echo "Upload the build artifacts to the server first, then re-run."
+    if [ "$stale" -eq "${#missing[@]}" ]; then
+      echo "All of them are on the server; Cloudflare is serving cached 404s. Wait ~3 minutes and re-run."
+    else
+      echo "Upload the build artifacts to the server first, then re-run."
+    fi
     exit 1
   fi
   echo "All ${#files[@]} installers present."

@@ -59,7 +59,7 @@ The download buttons in `index.html` point at **stable, version-free URLs** and 
 
 ```
 https://tr4w.net/download/tr4w_setup.exe          (main installer)
-https://tr4w.net/download/tr4w_setup_<lang>.exe   (ukr/rom/ser/ger/rus/cze/mng)
+https://tr4w.net/download/tr4w_setup_<lang>.exe   (ukr/rom/ser/ger/rus/cze/mng/esp)
 ```
 
 `public_html/.htaccess` 302-redirects those to the current versioned files via one rule:
@@ -70,6 +70,18 @@ RewriteRule ^download/tr4w_setup(_[a-z]{3})?\.exe$ https://tr4w.net/<MAJOR>/tr4w
 ```
 
 So a release only changes **one line** here (and the display labels in `index.html`), not 9 links.
+
+> **Cloudflare sits in front of the site** (DNS → Cloudflare → Apache on the `TR4W` host) and
+> caches static files. Two consequences for releases:
+> - **404s are cached (~3 min).** An installer URL requested before its file was uploaded keeps
+>   returning 404 afterwards, with `cf-cache-status: HIT`. Appending `?nocache=1` bypasses the
+>   cached copy and shows the origin's real answer. `bin/publish-release.sh` detects this and
+>   waits it out; don't go debugging the server over a `HIT` 404.
+> - **Installer 200s are cached too** (`HIT`, browsers told `max-age=14400` = 4 h). Never
+>   re-upload *different* bytes under an existing installer filename — people keep getting the
+>   old file. Ship a new version number, or purge that URL in the Cloudflare dashboard.
+>
+> Not cached: the `/download/` redirects (`BYPASS`), the homepage and `TRMASTER.DTA` (`DYNAMIC`).
 
 > **⚠️ Server dependency — do not lose this.** This redirect only works because the host
 > (Apache 2.4, Ubuntu) was configured to honor `.htaccess` for this docroot. Ubuntu's stock

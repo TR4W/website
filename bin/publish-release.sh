@@ -78,6 +78,40 @@ run() { # run a state-changing command, honouring --dry-run
 http_code() { curl -sS -o /dev/null -w '%{http_code}' --max-time 30 "$1" 2>/dev/null || echo 000; }
 sha256()    { shasum -a 256 "$1" | cut -d' ' -f1; }
 
+# Report a completed action — or, in a dry run, the action that was skipped.
+did() { if [ "$DRY_RUN" -eq 1 ]; then warn "dry run — would have: $*"; else ok "$*"; fi; }
+
+# Cloudflare fronts tr4w.net and caches 404s (~3 min by default). Any request for a
+# file before it exists — our own checks included — leaves a stale 404 at the edge
+# that outlives the upload, so a single 404 proves nothing. A cache-busting query
+# string misses Cloudflare's copy and gets the origin's real answer, which separates
+# "not on the server" (fail now) from "uploaded, edge is stale" (wait it out).
+EDGE_WAIT=300   # seconds; comfortably longer than Cloudflare's 404 cache
+wait_until_live() { # wait_until_live <url>...  — returns once every URL is 200, else dies
+  local deadline=$(( SECONDS + EDGE_WAIT )) url code origin n_stale n_missing
+  while :; do
+    n_stale=0; n_missing=0
+    for url in "$@"; do
+      code="$(http_code "$url")"
+      [ "$code" = "200" ] && continue
+      origin="$(http_code "$url?nocache=$(date +%s)")"
+      if [ "$origin" = "200" ]; then
+        n_stale=$((n_stale + 1))
+        printf '  %s  %s  (on the server; Cloudflare cached the %s)\n' "${url##*/}" "$code" "$code"
+      else
+        n_missing=$((n_missing + 1))
+        printf '  %s  %s  (origin also returns %s — not on the server)\n' "${url##*/}" "$code" "$origin"
+      fi
+    done
+    [ "$n_missing" -eq 0 ] || die "$n_missing file(s) are not reachable on the server itself."
+    [ "$n_stale" -eq 0 ] && return 0
+    [ "$SECONDS" -lt "$deadline" ] \
+      || die "$n_stale file(s) are on the server but Cloudflare still serves a cached 404 after ${EDGE_WAIT}s. Purge those URLs in the Cloudflare dashboard, then re-run with --skip-upload."
+    warn "$n_stale cached 404(s) at Cloudflare — rechecking in 20s …"
+    sleep 20
+  done
+}
+
 # ── args ────────────────────────────────────────────────────────────
 VER=""; MONTH=""; TAG=""
 DRY_RUN=0; ASSUME_YES=0; SKIP_UPLOAD=0; NO_PUSH=0
@@ -281,19 +315,15 @@ else
   confirm "Upload ${#EXPECTED[@]} installers to $SERVER:$DOCROOT/$MAJOR/ ?"
   run ssh -n "$SERVER" "mkdir -p $DOCROOT/$MAJOR"
   run rsync -av "$STAGE/installers/" "$SERVER:$DOCROOT/$MAJOR/"
-  ok "uploaded"
+  did "uploaded"
 fi
 
 if [ "$DRY_RUN" -eq 1 ]; then
   warn "dry run — skipping the live HTTP check (files were not uploaded)"
 else
-  bad=()
-  for f in "${EXPECTED[@]}"; do
-    code="$(http_code "$BASE_URL/$MAJOR/$f")"
-    printf '  %-34s %s\n' "$f" "$code"
-    [ "$code" = "200" ] || bad+=("$f")
-  done
-  [ "${#bad[@]}" -eq 0 ] || die "${#bad[@]} installer(s) are not reachable under $BASE_URL/$MAJOR/."
+  urls=()
+  for f in "${EXPECTED[@]}"; do urls+=("$BASE_URL/$MAJOR/$f"); done
+  wait_until_live "${urls[@]}"
   ok "all ${#EXPECTED[@]} installers return 200"
 fi
 
@@ -307,7 +337,7 @@ else
   confirm "Replace $BASE_URL/TRMASTER.DTA (backup: TRMASTER.DTA.bak-$STAMP) ?"
   run ssh -n "$SERVER" \
     "test -f $DOCROOT/TRMASTER.DTA && cp -p $DOCROOT/TRMASTER.DTA $DOCROOT/TRMASTER.DTA.bak-$STAMP || true"
-  ok "backed up existing copy to TRMASTER.DTA.bak-$STAMP"
+  did "backed up existing copy to TRMASTER.DTA.bak-$STAMP"
   run rsync -av "$SHIPPED" "$SERVER:$DOCROOT/TRMASTER.DTA"
 
   if [ "$DRY_RUN" -eq 1 ]; then

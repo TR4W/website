@@ -33,7 +33,7 @@ The 8 language suffixes are: `_ukr _rom _ser _ger _rus _cze _mng _esp`.
 | 1 | Preflight: tools, `gh` auth, on `main`, clean tree, up to date with origin, ssh works | any of those fail, or the site already advertises `<VER>` |
 | 2 | Downloads the 9 installers from the GitHub release | fewer than 9 assets match `tr4w_setup_<VER>*.exe` |
 | 3 | **Extracts `TRMASTER.DTA` from the installer** and compares it to `TR4W/TR4W:tr4w/target/TRMASTER.DTA` | they differ (prompts; the installer's copy wins) |
-| 4 | rsyncs the installers to `<MAJOR>/`, then curls all 9 | any URL is not `200` |
+| 4 | rsyncs the installers to `<MAJOR>/`, then curls all 9, waiting out any 404 Cloudflare cached before the upload | a file is missing on the server itself, or Cloudflare still serves a cached 404 after 5 minutes |
 | 5 | Backs up and replaces the standalone `TRMASTER.DTA` — **only if the DB actually changed** | the live copy doesn't hash-match afterwards |
 | 6 | Runs `bin/release.sh`, then un-does the callsign-database date if the DB didn't change | `release.sh` fails |
 | 7 | Commits, pushes to `main`, waits for the deploy workflow | the workflow fails |
@@ -64,10 +64,13 @@ not data loss: step 5 backs the live copy up to `TRMASTER.DTA.bak-<YYYYMMDD>` fi
 "fix" the script to preserve a divergent standalone file.
 
 **Did the callsign database change?** Decided by hashing, not by asking: the script
-compares the installer's DTA against what the site currently serves. Identical means the
-DB didn't change, so it skips the upload *and* leaves the
-`TRMASTER.DTA — Callsign database · <MONTH>` label in `index.html` alone. (`bin/release.sh`
-advances every date string on the page, including that one — the script reverts it.)
+compares this installer's DTA against the DTA inside the *currently advertised* installer.
+Identical means the DB didn't change, so the `TRMASTER.DTA — Callsign database · <MONTH>`
+label in `index.html` is left alone. (`bin/release.sh` advances every date string on the
+page, including that one — the script reverts it.) The comparison is installer-to-installer,
+not against the live standalone file, so the answer survives a re-run after a partial
+failure. Whether the standalone file needs *uploading* is a separate hash check against the
+live copy.
 
 ---
 
@@ -95,6 +98,19 @@ done
 ```
 
 Every line must be `200`. If any is `404`, step 4 will refuse to run.
+
+A `404` right after uploading is not proof the file is missing: Cloudflare caches 404s for
+about 3 minutes, so a URL requested *before* the upload keeps returning 404 for a while.
+Check which it is:
+
+```sh
+curl -sI  "https://tr4w.net/<MAJOR>/tr4w_setup_<VER>.exe"            | grep -iE '^HTTP|cf-cache-status'
+curl -sI  "https://tr4w.net/<MAJOR>/tr4w_setup_<VER>.exe?nocache=1"  | grep -iE '^HTTP|cf-cache-status'
+```
+
+`404` + `cf-cache-status: HIT` on the first line but `200` on the second means the file is
+on the server and Cloudflare is serving its cached 404 — wait a few minutes. `404` on both
+means the upload really didn't land.
 
 ### 3. Refresh the standalone TRMASTER.DTA  *(webserver side)*
 
