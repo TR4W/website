@@ -1,4 +1,4 @@
-Options +Indexes
+Options -Indexes
 
 # ── Download redirect ───────────────────────────────────────────────
 # Stable URLs for the current major release. The download buttons in
